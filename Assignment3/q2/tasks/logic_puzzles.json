@@ -1,0 +1,126 @@
+{
+  "task_type": "logic_puzzles",
+  "description": "Logical deduction puzzles requiring systematic constraint satisfaction and reasoning",
+  "problems": [
+    {
+      "id": "logic_001",
+      "difficulty": "basic",
+      "problem": "Three friends Alice, Bob, and Carol each have a different pet: a cat, a dog, and a bird. We know: (1) Alice doesn't have the cat, (2) Bob doesn't have the bird, (3) Carol doesn't have the dog. Who has which pet?",
+      "expected_answer": "Alice has the dog, Bob has the cat, Carol has the bird",
+      "solution_steps": [
+        "From constraint (1): Alice has dog or bird",
+        "From constraint (2): Bob has cat or dog", 
+        "From constraint (3): Carol has cat or bird",
+        "If Alice has bird, then Carol must have cat (from constraint 3)",
+        "This leaves Bob with dog, but constraint (1) eliminates Alice having bird",
+        "Therefore: Alice has dog, Bob has cat, Carol has bird"
+      ],
+      "key_concepts": ["constraint satisfaction", "logical elimination", "systematic reasoning"]
+    },
+    {
+      "id": "logic_002",
+      "difficulty": "intermediate", 
+      "problem": "Five friends (Alice, Bob, Carol, David, Eve) sit in a row. Constraints: (1) Alice sits next to Bob, (2) Carol doesn't sit at either end, (3) David sits to the left of Eve, (4) Bob doesn't sit next to Carol. Find all valid seating arrangements.",
+      "expected_answer": "Valid arrangements: [Alice, Bob, David, Carol, Eve], [David, Alice, Bob, Carol, Eve], [David, Carol, Alice, Bob, Eve]",
+      "solution_steps": [
+        "Carol must be in position 2, 3, or 4 (constraint 2)",
+        "Alice and Bob must be adjacent (constraint 1)",
+        "David must be left of Eve (constraint 3)",
+        "Bob and Carol cannot be adjacent (constraint 4)",
+        "Test each possible Carol position systematically",
+        "Verify all constraints for each valid arrangement"
+      ],
+      "key_concepts": ["constraint propagation", "systematic enumeration", "adjacency constraints"]
+    },
+    {
+      "id": "logic_003",
+      "difficulty": "intermediate",
+      "problem": "In a logic puzzle, there are 4 statements: (A) Exactly one of these statements is false, (B) Exactly two of these statements are false, (C) Exactly three of these statements are false, (D) Exactly four of these statements are false. Which statement is true?",
+      "expected_answer": "Statement C is true",
+      "solution_steps": [
+        "If A is true, then exactly 1 statement is false, but B, C, D would all be false (3 false) - contradiction",
+        "If B is true, then exactly 2 statements are false, but A, C, D would all be false (3 false) - contradiction", 
+        "If C is true, then exactly 3 statements are false (A, B, D false, C true) - consistent",
+        "If D is true, then all 4 statements are false, but D itself is true - contradiction",
+        "Therefore, C is the only consistent statement"
+      ],
+      "key_concepts": ["self-reference", "logical consistency", "proof by contradiction"]
+    },
+    {
+      "id": "logic_004",
+      "difficulty": "advanced",
+      "problem": "A murder mystery: The victim was killed in the library. There were 4 suspects present: Professor, Colonel, Butler, and Maid. Evidence: (1) The killer used the candlestick, (2) The Professor was in the dining room when the murder occurred, (3) The Colonel never goes to the library, (4) Either the Butler or the Maid is lying about their alibi, (5) The Maid claims she was cleaning the kitchen, (6) The Butler claims he was serving tea in the garden. Who is the killer?",
+      "expected_answer": "The Maid is the killer",
+      "solution_steps": [
+        "Professor has alibi (dining room) - eliminated",
+        "Colonel never goes to library - eliminated", 
+        "Either Butler or Maid is lying (constraint 4)",
+        "If Butler is lying, he wasn't in garden, could be in library",
+        "If Maid is lying, she wasn't in kitchen, could be in library",
+        "Both Butler and Maid could potentially be the killer",
+        "Need additional deduction: who had access to candlestick?",
+        "Kitchen (Maid's claimed location) typically has utensils/implements",
+        "Garden service (Butler's claim) less likely to involve candlestick access",
+        "Maid most likely had opportunity and access to weapon"
+      ],
+      "key_concepts": ["alibi analysis", "opportunity assessment", "deductive reasoning"]
+    },
+    {
+      "id": "logic_005",
+      "difficulty": "advanced",
+      "problem": "Knights and Knaves puzzle: On an island, Knights always tell the truth and Knaves always lie. You meet three people A, B, and C. A says: 'B and C are both knaves.' B says: 'A is a knight and C is a knave.' C says: 'A is a knave and B is a knight.' Determine who is a Knight and who is a Knave.",
+      "expected_answer": "A is a Knave, B is a Knight, C is a Knave",
+      "solution_steps": [
+        "Assume A is a Knight (tells truth): 'B and C are both knaves'",
+        "If A is Knight and C is Knave, then C's statement 'A is knave' is false (consistent)",
+        "But C also says 'B is knight' - if this is false, B is knave",
+        "This matches A's claim that B is knave - consistent so far",
+        "Check B's statement: 'A is knight and C is knave'",
+        "But we assumed B is knave, so this statement must be false",
+        "For B's statement to be false, either A is knave or C is knight",
+        "This contradicts our assumption that A is knight - contradiction!",
+        "Therefore A must be a Knave",
+        "Work through: A knave, B knight, C knave - verify consistency"
+      ],
+      "key_concepts": ["truth tables", "logical consistency", "assumption testing"]
+    },
+    {
+      "id": "logic_006",
+      "difficulty": "basic",
+      "problem": "A farmer has chickens and cows. In total, there are 20 heads and 56 legs. How many chickens and how many cows are there?",
+      "expected_answer": "12 chickens and 8 cows",
+      "solution_steps": [
+        "Let c = chickens, h = cows",
+        "Heads equation: c + h = 20",
+        "Legs equation: 2c + 4h = 56",
+        "From first equation: c = 20 - h",
+        "Substitute: 2(20 - h) + 4h = 56",
+        "Simplify: 40 - 2h + 4h = 56",
+        "Solve: 2h = 16, so h = 8",
+        "Therefore: c = 20 - 8 = 12"
+      ],
+      "key_concepts": ["system of equations", "substitution method", "logical setup"]
+    },
+    {
+      "id": "logic_007",
+      "difficulty": "intermediate",
+      "problem": "Four playing cards are placed in a row. Each card is either red or black, and either a face card or number card. Given: (1) There are exactly 2 red cards, (2) There are exactly 2 face cards, (3) No two cards of the same color are adjacent, (4) The face cards are not adjacent to each other. Determine all possible arrangements.",
+      "expected_answer": "Possible arrangements: [Red-Number, Black-Face, Red-Face, Black-Number] and [Black-Number, Red-Face, Black-Face, Red-Number]",
+      "solution_steps": [
+        "2 red, 2 black cards with alternating colors (constraint 3)",
+        "Pattern must be: R-B-R-B or B-R-B-R",
+        "2 face cards that are not adjacent (constraint 4)",
+        "Face cards must be in positions (1,3), (1,4), or (2,4)",
+        "Test each color pattern with each face card placement",
+        "Verify all constraints for valid combinations"
+      ],
+      "key_concepts": ["pattern recognition", "constraint satisfaction", "combinatorial reasoning"]
+    }
+  ],
+  "evaluation_criteria": {
+    "correctness_weight": 0.4,
+    "logical_consistency": 0.3,
+    "systematic_approach": 0.2,
+    "constraint_handling": 0.1
+  }
+} 

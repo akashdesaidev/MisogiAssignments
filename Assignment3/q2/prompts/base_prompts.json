@@ -1,0 +1,43 @@
+{
+  "system_prompt": "You are an expert reasoning assistant that excels at systematic problem-solving and multi-step analysis. You approach problems methodically, considering multiple perspectives and solution paths.",
+  
+  "task_prompts": {
+    "math_problems": {
+      "base": "Solve the following math word problem step by step. Show your work clearly and verify your answer.\n\nProblem: {problem}\n\nPlease:\n1. Identify the key information given\n2. Determine what needs to be calculated\n3. Show each calculation step\n4. State your final answer clearly\n5. Verify your answer makes sense",
+      "few_shot_examples": [
+        {
+          "problem": "A store sells apples for $2 per pound and oranges for $3 per pound. If someone buys 4 pounds of apples and 3 pounds of oranges, what is the total cost?",
+          "solution": "Step 1: Identify given information\n- Apples: $2 per pound, buying 4 pounds\n- Oranges: $3 per pound, buying 3 pounds\n\nStep 2: Calculate apple cost\nApple cost = 4 pounds × $2/pound = $8\n\nStep 3: Calculate orange cost\nOrange cost = 3 pounds × $3/pound = $9\n\nStep 4: Calculate total cost\nTotal cost = $8 + $9 = $17\n\nStep 5: Verification\n4 × $2 + 3 × $3 = $8 + $9 = $17 ✓\n\nFinal answer: $17"
+        }
+      ]
+    },
+    
+    "logic_puzzles": {
+      "base": "Solve the following logic puzzle using systematic reasoning. Work through the constraints methodically.\n\nPuzzle: {problem}\n\nPlease:\n1. List all given constraints clearly\n2. Set up the logical framework\n3. Work through the deductions step by step\n4. Verify your solution against all constraints\n5. State your final answer",
+      "few_shot_examples": [
+        {
+          "problem": "Three people A, B, C each wear a different colored hat: red, blue, green. A says 'I don't wear red', B says 'I don't wear blue', C says 'I don't wear green'. Who wears which color?",
+          "solution": "Step 1: List constraints\n- A doesn't wear red\n- B doesn't wear blue  \n- C doesn't wear green\n- Each person wears exactly one color\n- Each color is worn by exactly one person\n\nStep 2: Logical deduction\n- A can wear blue or green\n- B can wear red or green\n- C can wear red or blue\n\nStep 3: Systematic elimination\n- If A wears blue, then C must wear red (since C can't wear green)\n- This leaves B with green, which satisfies B's constraint\n- Check: A-blue, B-green, C-red satisfies all constraints\n\nStep 4: Verification\n- A wears blue (not red) ✓\n- B wears green (not blue) ✓ \n- C wears red (not green) ✓\n\nFinal answer: A wears blue, B wears green, C wears red"
+        }
+      ]
+    },
+    
+    "code_debugging": {
+      "base": "Analyze the following code for bugs and issues. Provide a comprehensive debugging analysis.\n\nCode:\n{problem}\n\nPlease:\n1. Identify all potential issues (logical, syntactic, performance, security)\n2. Explain why each issue is problematic\n3. Provide specific fixes for each issue\n4. Show the corrected code\n5. Explain how your fixes address the problems",
+      "few_shot_examples": [
+        {
+          "problem": "def divide_numbers(a, b):\n    return a / b",
+          "solution": "Analysis:\n\nIssue 1: Division by zero\n- Problem: No check for b == 0, will raise ZeroDivisionError\n- Impact: Program crashes on invalid input\n\nIssue 2: No input validation\n- Problem: No type checking for a and b\n- Impact: May fail with non-numeric inputs\n\nIssue 3: No documentation\n- Problem: Function purpose and parameters unclear\n- Impact: Maintenance and usage difficulties\n\nFixed code:\ndef divide_numbers(a, b):\n    \"\"\"\n    Divide two numbers safely.\n    \n    Args:\n        a (float): Dividend\n        b (float): Divisor\n    \n    Returns:\n        float: Result of a/b\n    \n    Raises:\n        ValueError: If b is zero\n        TypeError: If inputs are not numbers\n    \"\"\"\n    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):\n        raise TypeError(\"Both arguments must be numbers\")\n    \n    if b == 0:\n        raise ValueError(\"Cannot divide by zero\")\n    \n    return a / b\n\nFixes applied:\n1. Added zero division check with meaningful error\n2. Added type validation with clear error messages\n3. Added comprehensive documentation\n4. Added proper error handling"
+        }
+      ]
+    }
+  },
+  
+  "meta_prompts": {
+    "reasoning_quality": "Evaluate the quality of this reasoning process:\n{reasoning}\n\nConsider:\n1. Logical coherence and flow\n2. Completeness of analysis\n3. Accuracy of conclusions\n4. Clarity of explanation\n5. Identification of potential issues\n\nProvide a score (1-10) and detailed feedback.",
+    
+    "consistency_check": "Compare these different solution approaches to the same problem:\n\nProblem: {problem}\n\nSolution 1: {solution1}\n\nSolution 2: {solution2}\n\nSolution 3: {solution3}\n\nAnalyze:\n1. Which solutions are correct?\n2. Are the approaches consistent?\n3. What are the key differences?\n4. Which approach is most reliable?\n5. What is the final consensus answer?",
+    
+    "path_evaluation": "Evaluate this reasoning path for the given problem:\n\nProblem: {problem}\nReasoning Path: {path}\n\nAssess:\n1. Correctness of each step\n2. Logical flow between steps  \n3. Completeness of the solution\n4. Potential for errors or improvements\n5. Overall confidence in this path\n\nProvide score (1-10) and recommendations."
+  }
+} 

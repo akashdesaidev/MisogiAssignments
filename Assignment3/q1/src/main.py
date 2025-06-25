@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Medical Q&A Assistant - CLI Application
-Uses Ollama Qwen3:0.6b with different prompt engineering strategies
+Uses Ollama qwen3:8b with different prompt engineering strategies
 """
 
 import json
@@ -11,14 +11,31 @@ from typing import Dict, List, Any
 import requests
 from utils import (
     load_prompts, load_queries, evaluate_response, 
-    log_hallucination, save_results, OllamaClient
+    log_hallucination, save_results, OllamaClient, MockOllamaClient
 )
 
 class MedicalQAAssistant:
-    def __init__(self, model_name: str = "qwen:0.5b"):
+    def __init__(self, model_name: str = "qwen3:8b", use_mock: bool = False):
         """Initialize the Medical Q&A Assistant"""
         self.model_name = model_name
-        self.ollama_client = OllamaClient(model_name)
+        
+        # Try to connect to Ollama, fallback to mock if not available
+        if use_mock:
+            print("🤖 Using Mock Ollama Client for testing")
+            self.ollama_client = MockOllamaClient(model_name)
+        else:
+            try:
+                # Test connection to Ollama
+                test_client = OllamaClient(model_name)
+                test_response = test_client.generate("test")
+                if "Error: HTTP" in test_response or "Connection error" in test_response:
+                    raise Exception("Ollama not available")
+                self.ollama_client = test_client
+                print(f"🦙 Connected to Ollama with model: {model_name}")
+            except:
+                print("⚠️  Ollama not available, using Mock Client for testing")
+                self.ollama_client = MockOllamaClient(model_name)
+        
         self.prompts = load_prompts()
         self.results = {
             'zero_shot': {'query_results': [], 'performance_metrics': {}},

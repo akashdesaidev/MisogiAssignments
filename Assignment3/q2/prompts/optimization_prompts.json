@@ -1,0 +1,31 @@
+{
+  "analyze_failures": "Analyze these failed reasoning attempts and identify what went wrong:\n\nProblem: {problem}\n\nFailed attempts:\n{failed_attempts}\n\nFor each failure, identify:\n1. What specific aspect caused the failure?\n2. What information was missing or incorrectly processed?\n3. What reasoning errors were made?\n4. How could the prompt be improved to avoid this failure?\n\nProvide specific, actionable feedback for prompt improvement.",
+
+  "improve_prompt": "You are a prompt optimization expert. Improve this prompt based on the feedback provided.\n\nOriginal prompt:\n{original_prompt}\n\nPerformance feedback:\n{feedback}\n\nCommon failure patterns:\n{failure_patterns}\n\nTask: Create an improved version of the prompt that addresses the identified issues.\n\nRequirements:\n1. Keep the core structure and intent\n2. Add specific guidance to avoid identified failures\n3. Include examples if they would help\n4. Ensure clarity and specificity\n5. Maintain appropriate length (not too verbose)\n\nImproved prompt:",
+
+  "evaluate_improvement": "Evaluate whether this prompt improvement is likely to be effective:\n\nOriginal prompt:\n{original_prompt}\n\nImproved prompt:\n{improved_prompt}\n\nImprovement reasoning:\n{improvement_reasoning}\n\nRate the improvement on a scale of 1-10 considering:\n1. How well it addresses identified issues\n2. Clarity and specificity\n3. Likelihood to improve performance\n4. Potential for new issues\n\nScore: [1-10]\nReasoning:",
+
+  "mutation_strategies": {
+    "add_specificity": "Make this prompt more specific by adding detailed step-by-step instructions:\n\n{original_prompt}\n\nEnhanced prompt with specific steps:",
+    
+    "add_examples": "Enhance this prompt by adding concrete examples:\n\n{original_prompt}\n\nPrompt with helpful examples:",
+    
+    "add_verification": "Improve this prompt by adding verification and error-checking steps:\n\n{original_prompt}\n\nPrompt with verification steps:",
+    
+    "simplify_language": "Simplify the language in this prompt while maintaining its effectiveness:\n\n{original_prompt}\n\nSimplified prompt:",
+    
+    "add_constraints": "Add appropriate constraints and guidelines to this prompt:\n\n{original_prompt}\n\nPrompt with constraints:",
+    
+    "improve_structure": "Improve the structure and organization of this prompt:\n\n{original_prompt}\n\nBetter structured prompt:"
+  },
+
+  "crossover_prompt": "Create a new prompt that combines the best aspects of these two approaches:\n\nPrompt A:\n{prompt_a}\n\nPrompt B:\n{prompt_b}\n\nAnalyze the strengths of each approach and create a combined prompt that leverages both:\n\nCombined prompt:",
+
+  "performance_analysis": "Analyze the performance of these different prompt versions:\n\n{prompt_performance_data}\n\nIdentify:\n1. Which prompts performed best and why\n2. Common patterns in successful prompts\n3. What elements should be avoided\n4. Recommendations for future prompt design\n\nAnalysis:",
+
+  "domain_adaptation": "Adapt this general prompt for the specific domain of {domain}:\n\nGeneral prompt:\n{general_prompt}\n\nDomain-specific requirements:\n{domain_requirements}\n\nDomain-adapted prompt:",
+
+  "feedback_integration": "Integrate this performance feedback into the prompt:\n\nCurrent prompt:\n{current_prompt}\n\nPerformance feedback:\n{performance_feedback}\n\nSpecific issues to address:\n{specific_issues}\n\nUpdated prompt that addresses the feedback:",
+
+  "meta_optimization": "You are optimizing prompts that are used to optimize other prompts. Improve this meta-optimization prompt:\n\n{meta_prompt}\n\nConsider:\n1. How to better guide prompt improvement\n2. What criteria are most important\n3. How to avoid optimization pitfalls\n4. How to ensure diverse exploration\n\nImproved meta-optimization prompt:"
+} 

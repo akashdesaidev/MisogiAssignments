@@ -1,0 +1,70 @@
+{
+  "tree_of_thought_prompts": {
+    "branch_generation": {
+      "system": "You are tasked with generating multiple distinct reasoning approaches for a given problem. Create diverse solution paths that explore different angles and methodologies.",
+      
+      "user_template": "Generate {num_branches} different approaches to solve this problem:\n\nProblem: {problem}\n\nFor each approach, provide:\n1. A brief description of the reasoning strategy\n2. The first 2-3 steps of the solution path\n3. An assessment of this approach's strengths and potential challenges\n\nEnsure the approaches are genuinely different, not just variations of the same method.",
+      
+      "examples": {
+        "math_problem": {
+          "problem": "A rectangular garden is twice as long as it is wide. If the perimeter is 60 feet, what are the dimensions?",
+          "branches": [
+            {
+              "approach": "Algebraic equation setup",
+              "steps": ["Let width = w, then length = 2w", "Perimeter = 2(w + 2w) = 6w = 60", "Solve: w = 10, length = 20"],
+              "assessment": "Strengths: Direct and systematic. Challenges: Requires algebra comfort."
+            },
+            {
+              "approach": "Trial and error with constraints",
+              "steps": ["Try different widths", "For each width, calculate length = 2×width", "Check if perimeter = 2(width + length) = 60"],
+              "assessment": "Strengths: Intuitive approach. Challenges: Could be time-consuming."
+            },
+            {
+              "approach": "Visual/geometric reasoning",
+              "steps": ["Draw rectangle with width w and length 2w", "Perimeter = w + 2w + w + 2w = 6w", "Set 6w = 60 and solve"],
+              "assessment": "Strengths: Visual understanding. Challenges: Still requires equation solving."
+            }
+          ]
+        }
+      }
+    },
+    
+    "path_expansion": {
+      "system": "You are expanding a reasoning path by taking it to the next logical steps. Build upon the existing work while maintaining logical coherence.",
+      
+      "user_template": "Continue this reasoning path for the given problem:\n\nProblem: {problem}\n\nCurrent path: {current_path}\n\nNext steps:\n1. What is the next logical step in this reasoning chain?\n2. What calculations or deductions need to be made?\n3. What potential issues should be watched for?\n4. How confident are you in this direction? (1-10)\n\nProvide the next 2-3 steps in detail."
+    },
+    
+    "path_evaluation": {
+      "system": "You are evaluating the quality and viability of reasoning paths. Assess each path objectively based on correctness, efficiency, and clarity.",
+      
+      "user_template": "Evaluate this reasoning path:\n\nProblem: {problem}\nPath: {path}\n\nEvaluation criteria:\n1. Correctness: Are the steps logically sound? (1-10)\n2. Completeness: Does it lead to a full solution? (1-10)\n3. Efficiency: Is this an efficient approach? (1-10)\n4. Clarity: Is the reasoning easy to follow? (1-10)\n5. Reliability: How likely is this to produce the right answer? (1-10)\n\nOverall assessment: Should this path be continued, modified, or abandoned?\nProvide specific feedback and suggestions."
+    },
+    
+    "path_pruning": {
+      "system": "You decide which reasoning paths to continue and which to abandon based on their quality and potential.",
+      
+      "user_template": "Given these reasoning paths for the problem, decide which ones to keep:\n\nProblem: {problem}\n\nPaths:\n{paths}\n\nFor each path, decide:\n- CONTINUE: Path shows promise, keep developing\n- MODIFY: Path has issues but salvageable, suggest changes  \n- ABANDON: Path is flawed or inefficient, stop pursuing\n\nProvide reasoning for each decision and rank the remaining paths by priority."
+    },
+    
+    "synthesis": {
+      "system": "You synthesize insights from multiple reasoning paths to arrive at the best solution approach.",
+      
+      "user_template": "Synthesize these different reasoning paths into a final solution:\n\nProblem: {problem}\n\nCompleted paths:\n{paths}\n\nSynthesis tasks:\n1. Identify which paths led to correct solutions\n2. Note any disagreements or inconsistencies\n3. Determine the most reliable approach\n4. Combine the best elements from different paths\n5. Present the final, synthesized solution\n\nProvide the definitive answer with confidence assessment."
+    }
+  },
+  
+  "reasoning_prompts": {
+    "step_by_step": "Break down this problem into clear, logical steps:\n\nProblem: {problem}\n\nProvide:\n1. Problem analysis and understanding\n2. Step-by-step solution process\n3. Verification of each step\n4. Final answer with confidence level",
+    
+    "alternative_approach": "Solve this problem using a different method than previously shown:\n\nProblem: {problem}\nPrevious approach: {previous_approach}\n\nYour alternative approach should:\n1. Use a genuinely different methodology\n2. Show clear step-by-step work\n3. Arrive at the same answer (if previous was correct)\n4. Highlight advantages/disadvantages vs. previous method",
+    
+    "error_checking": "Review this solution for potential errors:\n\nProblem: {problem}\nProposed solution: {solution}\n\nCheck for:\n1. Logical errors in reasoning\n2. Computational mistakes\n3. Missing steps or considerations\n4. Incorrect assumptions\n5. Answer verification\n\nProvide detailed feedback and corrections if needed."
+  },
+  
+  "metacognitive_prompts": {
+    "confidence_assessment": "Rate your confidence in this solution and explain why:\n\nProblem: {problem}\nSolution: {solution}\n\nConfidence level (1-10): ___\n\nExplanation:\n1. What makes you confident in this answer?\n2. What aspects are you uncertain about?\n3. What could you do to increase confidence?\n4. Are there alternative interpretations to consider?",
+    
+    "approach_comparison": "Compare these two approaches to solving the problem:\n\nProblem: {problem}\nApproach A: {approach_a}\nApproach B: {approach_b}\n\nComparison:\n1. Which is more reliable? Why?\n2. Which is more efficient? Why?\n3. Which is easier to understand? Why?\n4. In what situations would you prefer each approach?\n5. Can they be combined for a better solution?"
+  }
+} 

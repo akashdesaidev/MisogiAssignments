@@ -1,0 +1,111 @@
+{
+  "task_type": "math_problems",
+  "description": "Multi-step mathematical reasoning problems requiring systematic calculation and logical thinking",
+  "problems": [
+    {
+      "id": "math_001",
+      "difficulty": "basic",
+      "problem": "A bakery sells cookies in packages of 12 and muffins in packages of 8. If they sold 156 cookies and 144 muffins yesterday, and each cookie costs $0.75 while each muffin costs $1.25, what was their total revenue?",
+      "expected_answer": "$297",
+      "solution_steps": [
+        "Calculate cookie revenue: 156 × $0.75 = $117",
+        "Calculate muffin revenue: 144 × $1.25 = $180", 
+        "Total revenue: $117 + $180 = $297"
+      ],
+      "key_concepts": ["multiplication", "addition", "currency calculations"]
+    },
+    {
+      "id": "math_002", 
+      "difficulty": "intermediate",
+      "problem": "A water tank is being filled by two pipes. Pipe A fills the tank at 15 gallons per minute, and Pipe B fills it at 12 gallons per minute. However, there's a drain that empties 5 gallons per minute. If the tank holds 600 gallons and starts empty, how long will it take to fill completely?",
+      "expected_answer": "27.27 minutes (or 27 minutes 16 seconds)",
+      "solution_steps": [
+        "Calculate net fill rate: 15 + 12 - 5 = 22 gallons per minute",
+        "Time to fill: 600 ÷ 22 = 27.27 minutes",
+        "Convert to minutes and seconds: 27 minutes 16 seconds"
+      ],
+      "key_concepts": ["rate problems", "net rate calculation", "time conversion"]
+    },
+    {
+      "id": "math_003",
+      "difficulty": "intermediate", 
+      "problem": "A company's profit follows this pattern: In January it was $10,000, and each month it increases by 15% over the previous month. What will be the total profit for the first 6 months?",
+      "expected_answer": "$75,424.25",
+      "solution_steps": [
+        "Month 1: $10,000", 
+        "Month 2: $10,000 × 1.15 = $11,500",
+        "Month 3: $11,500 × 1.15 = $13,225",
+        "Month 4: $13,225 × 1.15 = $15,208.75", 
+        "Month 5: $15,208.75 × 1.15 = $17,490.06",
+        "Month 6: $17,490.06 × 1.15 = $20,113.57",
+        "Total: $10,000 + $11,500 + $13,225 + $15,208.75 + $17,490.06 + $20,113.57 = $87,537.38"
+      ],
+      "key_concepts": ["compound growth", "percentage increase", "geometric series"]
+    },
+    {
+      "id": "math_004",
+      "difficulty": "advanced",
+      "problem": "A rectangular garden is 20 feet longer than it is wide. The owner wants to build a walkway around the entire garden that is 3 feet wide. If the total area including the walkway is 2,016 square feet, what are the dimensions of the original garden?",
+      "expected_answer": "Width: 24 feet, Length: 44 feet",
+      "solution_steps": [
+        "Let width = w, then length = w + 20",
+        "Garden with walkway: width = w + 6, length = w + 20 + 6 = w + 26", 
+        "Total area equation: (w + 6)(w + 26) = 2016",
+        "Expand: w² + 32w + 156 = 2016",
+        "Simplify: w² + 32w - 1860 = 0",
+        "Solve quadratic: w = 24 (taking positive root)",
+        "Therefore: width = 24 feet, length = 44 feet"
+      ],
+      "key_concepts": ["quadratic equations", "area calculations", "algebraic modeling"]
+    },
+    {
+      "id": "math_005",
+      "difficulty": "advanced",
+      "problem": "Three friends invested in a business. Alice invested $12,000, Bob invested $18,000, and Carol invested $15,000. After one year, they decided to distribute the $22,500 profit proportionally to their investments. However, they also agreed that Alice should get an additional $500 bonus for managing the business. What is each person's final share?",
+      "expected_answer": "Alice: $6,500, Bob: $9,000, Carol: $7,500",
+      "solution_steps": [
+        "Total investment: $12,000 + $18,000 + $15,000 = $45,000",
+        "Profit to distribute proportionally: $22,500 - $500 = $22,000",
+        "Alice's proportion: ($12,000 ÷ $45,000) × $22,000 = $5,867",
+        "Bob's proportion: ($18,000 ÷ $45,000) × $22,000 = $8,800", 
+        "Carol's proportion: ($15,000 ÷ $45,000) × $22,000 = $7,333",
+        "Alice's final share: $5,867 + $500 = $6,367",
+        "Verification: $6,367 + $8,800 + $7,333 = $22,500"
+      ],
+      "key_concepts": ["proportional distribution", "ratio calculations", "bonus adjustments"]
+    },
+    {
+      "id": "math_006",
+      "difficulty": "basic",
+      "problem": "A recipe for 12 cookies requires 2 cups of flour, 1 cup of sugar, and 0.5 cups of butter. How much of each ingredient is needed to make 30 cookies?",
+      "expected_answer": "5 cups flour, 2.5 cups sugar, 1.25 cups butter",
+      "solution_steps": [
+        "Scale factor: 30 ÷ 12 = 2.5",
+        "Flour needed: 2 × 2.5 = 5 cups",
+        "Sugar needed: 1 × 2.5 = 2.5 cups", 
+        "Butter needed: 0.5 × 2.5 = 1.25 cups"
+      ],
+      "key_concepts": ["scaling", "proportions", "recipe mathematics"]
+    },
+    {
+      "id": "math_007",
+      "difficulty": "intermediate",
+      "problem": "A car rental company charges $30 per day plus $0.25 per mile. A customer rented a car for 3 days and drove 480 miles. If they paid a total of $165, was the bill calculated correctly? If not, what should the correct amount be?",
+      "expected_answer": "No, correct amount should be $210",
+      "solution_steps": [
+        "Daily charge: $30 × 3 = $90",
+        "Mileage charge: $0.25 × 480 = $120",
+        "Correct total: $90 + $120 = $210",
+        "Customer paid $165, which is incorrect",
+        "Difference: $210 - $165 = $45 undercharged"
+      ],
+      "key_concepts": ["linear pricing", "verification", "error detection"]
+    }
+  ],
+  "evaluation_criteria": {
+    "correctness_weight": 0.4,
+    "reasoning_coherence": 0.3,
+    "step_completeness": 0.2,
+    "calculation_accuracy": 0.1
+  }
+} 

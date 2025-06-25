@@ -1,0 +1,87 @@
+{
+  "task_type": "code_debugging",
+  "description": "Code debugging tasks requiring systematic analysis, issue identification, and solution proposal",
+  "problems": [
+    {
+      "id": "debug_001",
+      "difficulty": "basic",
+      "problem": "def calculate_average(numbers):\n    total = 0\n    for num in numbers:\n        total += num\n    return total / len(numbers)\n\n# This function sometimes crashes. Identify all issues and propose fixes.",
+      "expected_answer": "Issues: (1) Division by zero for empty list, (2) No type validation. Fix: Add input validation and exception handling.",
+      "solution_steps": [
+        "Issue 1: Division by zero when numbers list is empty",
+        "Issue 2: No validation for non-numeric inputs",
+        "Issue 3: No handling of None input",
+        "Fix: Add input validation, exception handling, and empty list check"
+      ],
+      "key_concepts": ["exception handling", "input validation", "edge cases"],
+      "fixed_code": "def calculate_average(numbers):\n    if not numbers or len(numbers) == 0:\n        raise ValueError('List cannot be empty')\n    if not all(isinstance(x, (int, float)) for x in numbers):\n        raise TypeError('All elements must be numbers')\n    total = sum(numbers)\n    return total / len(numbers)"
+    },
+    {
+      "id": "debug_002",
+      "difficulty": "intermediate",
+      "problem": "def binary_search(arr, target):\n    left, right = 0, len(arr)\n    while left < right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid\n        else:\n            right = mid\n    return -1\n\n# This binary search has bugs. Find and fix them.",
+      "expected_answer": "Issues: (1) Infinite loop with left=mid, (2) right should be len(arr)-1. Fix: Proper index updates.",
+      "solution_steps": [
+        "Issue 1: right should be len(arr) - 1",
+        "Issue 2: left = mid causes infinite loop, should be left = mid + 1",
+        "Issue 3: Loop condition should be left <= right",
+        "Fix: Correct boundary updates and initialization"
+      ],
+      "key_concepts": ["binary search", "loop invariants", "boundary conditions"],
+      "fixed_code": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1"
+    },
+    {
+      "id": "debug_003",
+      "difficulty": "advanced",
+      "problem": "class BankAccount:\n    def __init__(self, balance=0):\n        self.balance = balance\n    \n    def withdraw(self, amount):\n        self.balance -= amount\n        return self.balance\n    \n    def transfer(self, other, amount):\n        self.withdraw(amount)\n        other.deposit(amount)\n\n# Find security and logical issues.",
+      "expected_answer": "Issues: (1) No overdraft protection, (2) No validation, (3) Race conditions, (4) No transaction integrity.",
+      "solution_steps": [
+        "Issue 1: withdraw() allows negative balance",
+        "Issue 2: No validation for negative amounts",
+        "Issue 3: transfer() can fail partway through",
+        "Issue 4: No thread safety",
+        "Fix: Add validation, error handling, atomic operations"
+      ],
+      "key_concepts": ["data validation", "transaction integrity", "concurrency"],
+      "fixed_code": "import threading\n\nclass BankAccount:\n    def __init__(self, balance=0):\n        if balance < 0:\n            raise ValueError('Initial balance cannot be negative')\n        self.balance = balance\n        self._lock = threading.Lock()\n    \n    def deposit(self, amount):\n        if amount <= 0:\n            raise ValueError('Deposit amount must be positive')\n        with self._lock:\n            self.balance += amount\n            return self.balance\n    \n    def withdraw(self, amount):\n        if amount <= 0:\n            raise ValueError('Withdraw amount must be positive')\n        with self._lock:\n            if self.balance < amount:\n                raise ValueError('Insufficient funds')\n            self.balance -= amount\n            return self.balance\n    \n    def transfer(self, other_account, amount):\n        if amount <= 0:\n            raise ValueError('Transfer amount must be positive')\n        # Use ordered locking to prevent deadlocks\n        lock1, lock2 = (self._lock, other_account._lock) if id(self) < id(other_account) else (other_account._lock, self._lock)\n        with lock1, lock2:\n            if self.balance < amount:\n                raise ValueError('Insufficient funds for transfer')\n            self.balance -= amount\n            other_account.balance += amount"
+    },
+    {
+      "id": "debug_004",
+      "difficulty": "advanced",
+      "problem": "def quicksort(arr):\n    if len(arr) <= 1:\n        return arr\n    \n    pivot = arr[0]\n    left = [x for x in arr[1:] if x < pivot]\n    right = [x for x in arr[1:] if x > pivot]\n    \n    return quicksort(left) + [pivot] + quicksort(right)\n\n# This quicksort has subtle bugs. Identify performance and correctness issues.",
+      "expected_answer": "Issues: (1) Doesn't handle duplicates, (2) Poor pivot choice, (3) Not in-place, (4) Stack overflow risk.",
+      "solution_steps": [
+        "Issue 1: Duplicate elements are ignored (x > pivot misses equal elements)",
+        "Issue 2: Always choosing first element as pivot leads to O(n²) on sorted arrays",
+        "Issue 3: Creates new arrays instead of sorting in-place (space inefficient)",
+        "Issue 4: Deep recursion on sorted arrays can cause stack overflow",
+        "Issue 5: No handling of edge cases like empty arrays with complex types",
+        "Fix: Handle duplicates, better pivot selection, optional in-place sorting"
+      ],
+      "key_concepts": ["algorithm correctness", "time complexity", "space optimization", "edge cases"],
+      "fixed_code": "import random\n\ndef quicksort(arr, low=0, high=None, in_place=True):\n    if high is None:\n        high = len(arr) - 1\n    \n    if low < high:\n        # Use random pivot to avoid O(n²) on sorted arrays\n        pivot_idx = random.randint(low, high)\n        arr[low], arr[pivot_idx] = arr[pivot_idx], arr[low]\n        \n        pi = partition(arr, low, high)\n        quicksort(arr, low, pi - 1, in_place)\n        quicksort(arr, pi + 1, high, in_place)\n    \n    return arr if in_place else None\n\ndef partition(arr, low, high):\n    pivot = arr[high]\n    i = low - 1\n    \n    for j in range(low, high):\n        if arr[j] <= pivot:  # Handle duplicates correctly\n            i += 1\n            arr[i], arr[j] = arr[j], arr[i]\n    \n    arr[i + 1], arr[high] = arr[high], arr[i + 1]\n    return i + 1"
+    },
+    {
+      "id": "debug_005",
+      "difficulty": "advanced",
+      "problem": "class Cache:\n    def __init__(self, max_size=100):\n        self.cache = {}\n        self.max_size = max_size\n        self.access_count = {}\n    \n    def get(self, key):\n        if key in self.cache:\n            self.access_count[key] += 1\n            return self.cache[key]\n        return None\n    \n    def put(self, key, value):\n        if len(self.cache) >= self.max_size:\n            # Remove least accessed item\n            min_key = min(self.access_count, key=self.access_count.get)\n            del self.cache[min_key]\n            del self.access_count[min_key]\n        \n        self.cache[key] = value\n        self.access_count[key] = 1\n\n# This LFU cache implementation has several bugs. Find and fix them.",
+      "expected_answer": "Issues: (1) KeyError when cache empty, (2) Doesn't handle updates, (3) access_count inconsistency, (4) No thread safety.",
+      "solution_steps": [
+        "Issue 1: KeyError when trying to find min of empty access_count dict",
+        "Issue 2: put() always sets access_count to 1, even for existing keys",
+        "Issue 3: Inconsistent state when cache and access_count get out of sync",
+        "Issue 4: Race conditions in multi-threaded environment",
+        "Issue 5: Inefficient O(n) eviction due to min() operation",
+        "Fix: Proper state management, thread safety, efficient eviction"
+      ],
+      "key_concepts": ["cache algorithms", "data structure consistency", "thread safety", "performance optimization"],
+      "fixed_code": "import threading\nfrom collections import defaultdict, OrderedDict\n\nclass LFUCache:\n    def __init__(self, max_size=100):\n        self.max_size = max_size\n        self.cache = {}\n        self.frequencies = defaultdict(int)\n        self.freq_groups = defaultdict(OrderedDict)  # freq -> {key: value}\n        self.min_freq = 0\n        self._lock = threading.Lock()\n    \n    def get(self, key):\n        with self._lock:\n            if key not in self.cache:\n                return None\n            \n            self._update_frequency(key)\n            return self.cache[key]\n    \n    def put(self, key, value):\n        with self._lock:\n            if self.max_size <= 0:\n                return\n            \n            if key in self.cache:\n                self.cache[key] = value\n                self._update_frequency(key)\n                return\n            \n            if len(self.cache) >= self.max_size:\n                self._evict()\n            \n            self.cache[key] = value\n            self.frequencies[key] = 1\n            self.freq_groups[1][key] = value\n            self.min_freq = 1\n    \n    def _update_frequency(self, key):\n        freq = self.frequencies[key]\n        self.frequencies[key] += 1\n        \n        # Remove from old frequency group\n        del self.freq_groups[freq][key]\n        if freq == self.min_freq and not self.freq_groups[freq]:\n            self.min_freq += 1\n        \n        # Add to new frequency group\n        self.freq_groups[freq + 1][key] = self.cache[key]\n    \n    def _evict(self):\n        if not self.freq_groups[self.min_freq]:\n            return\n        \n        # Remove least recently used item from minimum frequency group\n        key_to_remove = next(iter(self.freq_groups[self.min_freq]))\n        del self.freq_groups[self.min_freq][key_to_remove]\n        del self.cache[key_to_remove]\n        del self.frequencies[key_to_remove]"
+    }
+  ],
+  "evaluation_criteria": {
+    "correctness_weight": 0.35,
+    "issue_identification": 0.25,
+    "fix_quality": 0.25,
+    "code_understanding": 0.15
+  }
+} 

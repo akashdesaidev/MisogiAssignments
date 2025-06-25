@@ -9,6 +9,49 @@ from datetime import datetime
 from typing import Dict, List, Any
 import requests
 
+class MockOllamaClient:
+    """Mock client for testing without Ollama installation"""
+    
+    def __init__(self, model_name: str, base_url: str = "mock"):
+        self.model_name = model_name
+        self.base_url = base_url
+        
+    def generate(self, prompt: str) -> str:
+        """Generate mock response based on prompt content"""
+        prompt_lower = prompt.lower()
+        
+        # Simple mock responses for testing
+        if "2+3" in prompt_lower:
+            return "The mathematical question 2+3 equals 5. However, as a medical assistant, I should note that if you're asking about medication dosages or medical calculations, please consult with a healthcare provider for accurate information."
+        
+        if any(word in prompt_lower for word in ['fever', 'temperature', 'headache', 'pain']):
+            return """Based on your symptoms, here are some general considerations:
+
+**Possible causes:**
+- Viral or bacterial infection
+- Dehydration
+- Stress or tension
+
+**General recommendations:**
+- Monitor your temperature
+- Stay hydrated
+- Get adequate rest
+- Consider over-the-counter pain relief if appropriate
+
+**Important:** This is general information only. Please consult with a healthcare provider for proper diagnosis and treatment, especially if symptoms persist or worsen. Seek immediate medical attention if you experience severe symptoms."""
+
+        # Default medical assistant response
+        return """I understand you're seeking medical information. While I can provide general health information, it's important to note:
+
+**Disclaimer:** This information is for educational purposes only and should not replace professional medical advice.
+
+For your specific situation, I recommend:
+- Consulting with a healthcare provider
+- Discussing your symptoms and concerns with a medical professional
+- Seeking appropriate medical evaluation
+
+If this is a medical emergency, please contact emergency services immediately."""
+
 class OllamaClient:
     """Client for interacting with Ollama API"""
     
