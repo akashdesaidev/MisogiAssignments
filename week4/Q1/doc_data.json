@@ -1,0 +1,244 @@
+{
+    "documents": [
+      {
+        "id": "doc_001",
+        "title": "Introduction to Machine Learning",
+        "content": "Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It involves the development of algorithms that can analyze data, identify patterns, and make predictions or decisions. The field has revolutionized industries from healthcare to finance, making it possible to process vast amounts of data and extract meaningful insights. Key types include supervised learning, unsupervised learning, and reinforcement learning.",
+        "metadata": {
+          "createdby": "Dr. Sarah Chen",
+          "time": "2024-01-15T10:30:00Z",
+          "category": "Machine Learning",
+          "word_count": 85,
+          "created_at": "2024-01-15"
+        }
+      },
+      {
+        "id": "doc_002",
+        "title": "Deep Learning Neural Networks Explained",
+        "content": "Deep learning represents a significant advancement in artificial intelligence, using neural networks with multiple layers to process complex data. These networks are inspired by the human brain's structure, consisting of interconnected nodes that can learn hierarchical representations of data. Deep learning has achieved remarkable success in image recognition, natural language processing, and speech recognition.",
+        "metadata": {
+          "createdby": "Prof. Michael Rodriguez",
+          "time": "2024-01-16T14:45:00Z",
+          "category": "Deep Learning",
+          "word_count": 70,
+          "created_at": "2024-01-16"
+        }
+      },
+      {
+        "id": "doc_003",
+        "title": "The Rise of Generative AI",
+        "content": "Generative artificial intelligence has emerged as one of the most transformative technologies of our time. Unlike traditional AI systems that classify or predict, generative AI creates new content including text, images, code, and even music. Large language models like GPT and image generators like DALL-E have demonstrated unprecedented capabilities in creative tasks.",
+        "metadata": {
+          "createdby": "Emily Watson",
+          "time": "2024-01-17T09:15:00Z",
+          "category": "Generative AI",
+          "word_count": 65,
+          "created_at": "2024-01-17"
+        }
+      },
+      {
+        "id": "doc_004",
+        "title": "Natural Language Processing Applications",
+        "content": "Natural Language Processing bridges the gap between human communication and computer understanding. This field combines computational linguistics with machine learning to enable computers to process, analyze, and generate human language. Applications range from chatbots and virtual assistants to language translation and sentiment analysis.",
+        "metadata": {
+          "createdby": "Dr. James Liu",
+          "time": "2024-01-18T11:20:00Z",
+          "category": "NLP",
+          "word_count": 55,
+          "created_at": "2024-01-18"
+        }
+      },
+      {
+        "id": "doc_005",
+        "title": "Computer Vision in Modern Applications",
+        "content": "Computer vision technology enables machines to interpret and understand visual information from the world around them. This field combines image processing, pattern recognition, and machine learning to analyze digital images and videos. Applications include autonomous vehicles, medical imaging, facial recognition, and quality control in manufacturing.",
+        "metadata": {
+          "createdby": "Dr. Lisa Thompson",
+          "time": "2024-01-19T16:30:00Z",
+          "category": "Computer Vision",
+          "word_count": 58,
+          "created_at": "2024-01-19"
+        }
+      },
+      {
+        "id": "doc_006",
+        "title": "Artificial Intelligence Ethics and Bias",
+        "content": "As AI systems become more prevalent in society, addressing ethical concerns and bias becomes increasingly critical. AI bias can perpetuate or amplify existing societal inequalities, affecting hiring decisions, loan approvals, and criminal justice outcomes. Ethical AI development requires diverse teams, comprehensive testing, and ongoing monitoring of AI systems.",
+        "metadata": {
+          "createdby": "Dr. Amara Okafor",
+          "time": "2024-01-20T13:45:00Z",
+          "category": "AI Ethics",
+          "word_count": 62,
+          "created_at": "2024-01-20"
+        }
+      },
+      {
+        "id": "doc_007",
+        "title": "Quantum Computing and AI Integration",
+        "content": "Quantum computing represents a paradigm shift in computational power, with significant implications for artificial intelligence. Quantum algorithms can potentially solve certain problems exponentially faster than classical computers, particularly in optimization and machine learning tasks. The integration of quantum computing with AI could revolutionize drug discovery, financial modeling, and cryptography.",
+        "metadata": {
+          "createdby": "Prof. David Kim",
+          "time": "2024-01-21T08:00:00Z",
+          "category": "Quantum AI",
+          "word_count": 61,
+          "created_at": "2024-01-21"
+        }
+      },
+      {
+        "id": "doc_008",
+        "title": "Reinforcement Learning in Real-World Applications",
+        "content": "Reinforcement learning has demonstrated remarkable success in complex decision-making scenarios, from game playing to robotics. This approach learns through trial and error, receiving rewards or penalties based on actions taken in an environment. Notable achievements include mastering games like chess, Go, and video games, as well as applications in autonomous driving.",
+        "metadata": {
+          "createdby": "Dr. Rachel Green",
+          "time": "2024-01-22T12:15:00Z",
+          "category": "Reinforcement Learning",
+          "word_count": 60,
+          "created_at": "2024-01-22"
+        }
+      },
+      {
+        "id": "doc_009",
+        "title": "Edge AI and IoT Integration",
+        "content": "Edge AI brings artificial intelligence processing directly to devices and sensors, reducing latency and improving privacy. This approach is particularly valuable for Internet of Things applications where real-time processing is crucial. Edge AI enables smart cameras, autonomous vehicles, and industrial sensors to make decisions locally without relying on cloud connectivity.",
+        "metadata": {
+          "createdby": "Alex Johnson",
+          "time": "2024-01-23T15:30:00Z",
+          "category": "Edge AI",
+          "word_count": 58,
+          "created_at": "2024-01-23"
+        }
+      },
+      {
+        "id": "doc_010",
+        "title": "AI in Healthcare Diagnostics",
+        "content": "Artificial intelligence is transforming healthcare diagnostics by enabling faster, more accurate analysis of medical data. AI systems can analyze medical images, predict disease onset, and assist in treatment planning. Applications include radiology image analysis, pathology diagnosis, and drug discovery. Machine learning models can identify patterns in medical data that might be missed by human practitioners.",
+        "metadata": {
+          "createdby": "Dr. Maria Gonzalez",
+          "time": "2024-01-24T10:45:00Z",
+          "category": "Healthcare AI",
+          "word_count": 66,
+          "created_at": "2024-01-24"
+        }
+      },
+      {
+        "id": "doc_011",
+        "title": "Autonomous Systems and Robotics",
+        "content": "Autonomous systems combine AI with robotics to create machines capable of operating independently in complex environments. These systems use sensors, actuators, and intelligent decision-making algorithms to navigate and perform tasks without human intervention. Applications range from autonomous vehicles and drones to robotic manufacturing and exploration rovers.",
+        "metadata": {
+          "createdby": "Prof. Robert Zhang",
+          "time": "2024-01-25T14:00:00Z",
+          "category": "Robotics",
+          "word_count": 52,
+          "created_at": "2024-01-25"
+        }
+      },
+      {
+        "id": "doc_012",
+        "title": "Explainable AI and Interpretability",
+        "content": "Explainable AI addresses the critical need for transparency in artificial intelligence systems. As AI becomes more complex, understanding how models make decisions becomes increasingly important for trust and accountability. Explainable AI techniques help users understand model behavior, identify potential biases, and validate predictions. This is particularly crucial in high-stakes applications like healthcare, finance, and criminal justice.",
+        "metadata": {
+          "createdby": "Dr. Jennifer Adams",
+          "time": "2024-01-26T11:30:00Z",
+          "category": "Explainable AI",
+          "word_count": 70,
+          "created_at": "2024-01-26"
+        }
+      },
+      {
+        "id": "doc_013",
+        "title": "AI-Powered Cybersecurity Solutions",
+        "content": "Artificial intelligence is revolutionizing cybersecurity by enabling proactive threat detection and response. AI systems can analyze network traffic patterns, identify anomalies, and predict potential security breaches before they occur. Machine learning models can adapt to new threats and attack patterns, providing dynamic protection against evolving cyber threats.",
+        "metadata": {
+          "createdby": "Mark Stevens",
+          "time": "2024-01-27T09:45:00Z",
+          "category": "Cybersecurity",
+          "word_count": 55,
+          "created_at": "2024-01-27"
+        }
+      },
+      {
+        "id": "doc_014",
+        "title": "AI in Financial Technology",
+        "content": "Financial technology has embraced artificial intelligence to improve services, reduce costs, and enhance security. AI applications in fintech include algorithmic trading, credit scoring, fraud detection, and personalized financial advice. Machine learning models can analyze vast amounts of financial data to identify patterns and make predictions.",
+        "metadata": {
+          "createdby": "Sarah Cooper",
+          "time": "2024-01-28T16:20:00Z",
+          "category": "Fintech",
+          "word_count": 52,
+          "created_at": "2024-01-28"
+        }
+      },
+      {
+        "id": "doc_015",
+        "title": "Future of Human-AI Collaboration",
+        "content": "The future of work will likely involve extensive collaboration between humans and artificial intelligence systems. Rather than replacing human workers, AI is expected to augment human capabilities, handling routine tasks while humans focus on creative and strategic work. This collaboration model requires new skills, training programs, and organizational structures.",
+        "metadata": {
+          "createdby": "Dr. Kevin Park",
+          "time": "2024-01-29T13:10:00Z",
+          "category": "Human-AI Collaboration",
+          "word_count": 58,
+          "created_at": "2024-01-29"
+        }
+      },
+      {
+        "id": "doc_016",
+        "title": "Sustainable AI Development",
+        "content": "Sustainable AI development focuses on creating environmentally responsible artificial intelligence systems. The computational requirements for training large AI models have significant energy consumption and carbon footprint implications. Sustainable AI practices include developing more efficient algorithms, using renewable energy for computation, and optimizing model architectures.",
+        "metadata": {
+          "createdby": "Dr. Emma Wilson",
+          "time": "2024-01-30T12:00:00Z",
+          "category": "Sustainable AI",
+          "word_count": 54,
+          "created_at": "2024-01-30"
+        }
+      },
+      {
+        "id": "doc_017",
+        "title": "Test Document",
+        "content": "This is a test document for testing the add_document functionality.",
+        "metadata": {
+          "createdby": "Test User",
+          "time": "2025-07-03T23:58:35.051163",
+          "category": "Testing",
+          "word_count": 10,
+          "created_at": "2025-07-03"
+        }
+      },
+      {
+        "id": "doc_018",
+        "title": "Test Document",
+        "content": "This is a test document for testing the add_document functionality.",
+        "metadata": {
+          "createdby": "Test User",
+          "time": "2025-07-04T00:01:12.268637",
+          "category": "Testing",
+          "word_count": 10,
+          "created_at": "2025-07-04"
+        }
+      },
+      {
+        "id": "doc_019",
+        "title": "Test Document",
+        "content": "This is a test document for testing the add_document functionality.",
+        "metadata": {
+          "createdby": "Test User",
+          "time": "2025-07-04T00:02:22.229002",
+          "category": "Testing",
+          "word_count": 10,
+          "created_at": "2025-07-04"
+        }
+      },
+      {
+        "id": "doc_020",
+        "title": "How to Live a Happy Life",
+        "content": "Living a happy life often comes from focusing on simple, meaningful practices. Cultivate gratitude by appreciating what you have rather than dwelling on what you lack. Build strong relationships with people who support and care about you. Find purpose in activities that align with your values, whether through work, hobbies, or helping others. Take care of your physical health through regular exercise, good sleep, and nutritious food. Practice mindfulness to stay present and reduce anxiety about the future or regrets about the past. Embrace growth by learning new things and accepting that challenges are opportunities to develop resilience. Finally, be kind to yourself and others - compassion creates a positive cycle that enhances well-being for everyone.",
+        "metadata": {
+          "createdby": "Claude",
+          "time": "2025-07-04T11:48:46.209842",
+          "category": "Personal Development",
+          "word_count": 116,
+          "created_at": "2025-07-04"
+        }
+      }
+    ]
+  }
