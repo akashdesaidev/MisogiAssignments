@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .text-container {
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .similarity-matrix {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .high-similarity {
+            background-color: #ffebee;
+        }
+        .controls {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        select {
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .error {
+            color: #f44336;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #f44336;
+            border-radius: 4px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Plagiarism Detector</h1>
+    
+    <div class="controls">
+        <button onclick="addTextBox()">Add Text Input</button>
+        <select id="modelSelect">
+            <option value="difflib">Difflib (Local)</option>
+            <option value="openai">OpenAI Embeddings</option>
+        </select>
+        <button onclick="analyze()">Analyze</button>
+    </div>
+
+    <div id="textInputs">
+        <div class="text-container">
+            <textarea placeholder="Enter text 1"></textarea>
+        </div>
+        <div class="text-container">
+            <textarea placeholder="Enter text 2"></textarea>
+        </div>
+    </div>
+
+    <div class="error" id="error"></div>
+    <div class="loading" id="loading">
+        Analyzing texts... Please wait...
+    </div>
+
+    <div class="results" id="results" style="display: none;">
+        <h2>Results</h2>
+        <div id="similarityMatrix"></div>
+        <div id="plagiarismResults"></div>
+    </div>
+
+    <script>
+        function addTextBox() {
+            const container = document.getElementById('textInputs');
+            const newInput = document.createElement('div');
+            newInput.className = 'text-container';
+            const count = container.children.length + 1;
+            newInput.innerHTML = `<textarea placeholder="Enter text ${count}"></textarea>`;
+            container.appendChild(newInput);
+        }
+
+        async function analyze() {
+            const textareas = document.querySelectorAll('textarea');
+            const texts = Array.from(textareas).map(ta => ta.value).filter(text => text.trim());
+            
+            if (texts.length < 2) {
+                showError('Please enter at least two texts to compare');
+                return;
+            }
+
+            const modelType = document.getElementById('modelSelect').value;
+            const loading = document.getElementById('loading');
+            const results = document.getElementById('results');
+            const error = document.getElementById('error');
+
+            loading.style.display = 'block';
+            results.style.display = 'none';
+            error.style.display = 'none';
+
+            try {
+                const response = await fetch('/analyze', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        texts: texts,
+                        model_type: modelType
+                    }),
+                });
+
+                const data = await response.json();
+                
+                if (!response.ok) {
+                    throw new Error(data.error || 'Analysis failed');
+                }
+
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+
+                displayResults(data, texts);
+            } catch (error) {
+                showError(error.message);
+            } finally {
+                loading.style.display = 'none';
+            }
+        }
+
+        function showError(message) {
+            const error = document.getElementById('error');
+            error.textContent = message;
+            error.style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+        }
+
+        function displayResults(data, texts) {
+            const matrixDiv = document.getElementById('similarityMatrix');
+            const plagiarismDiv = document.getElementById('plagiarismResults');
+            const results = document.getElementById('results');
+
+            // Display similarity matrix
+            let matrixHtml = '<h3>Similarity Matrix</h3><div class="similarity-matrix"><table>';
+            matrixHtml += '<tr><th>Text #</th>';
+            for (let i = 0; i < texts.length; i++) {
+                matrixHtml += `<th>Text ${i + 1}</th>`;
+            }
+            matrixHtml += '</tr>';
+
+            for (let i = 0; i < data.similarity_matrix.length; i++) {
+                matrixHtml += `<tr><th>Text ${i + 1}</th>`;
+                for (let j = 0; j < data.similarity_matrix[i].length; j++) {
+                    const similarity = data.similarity_matrix[i][j];
+                    const className = similarity > 0.8 ? 'high-similarity' : '';
+                    matrixHtml += `<td class="${className}">${(similarity * 100).toFixed(2)}%</td>`;
+                }
+                matrixHtml += '</tr>';
+            }
+            matrixHtml += '</table></div>';
+            matrixDiv.innerHTML = matrixHtml;
+
+            // Display plagiarism results
+            let plagiarismHtml = '<h3>Potential Plagiarism Detected</h3>';
+            if (data.plagiarism_detected.length === 0) {
+                plagiarismHtml += '<p>No significant similarity detected (threshold: 80%)</p>';
+            } else {
+                plagiarismHtml += '<ul>';
+                for (const pair of data.plagiarism_detected) {
+                    plagiarismHtml += `
+                        <li>Text ${pair.text1_index + 1} and Text ${pair.text2_index + 1} 
+                        have ${(pair.similarity * 100).toFixed(2)}% similarity</li>`;
+                }
+                plagiarismHtml += '</ul>';
+            }
+            plagiarismDiv.innerHTML = plagiarismHtml;
+            results.style.display = 'block';
+        }
+    </script>
+</body>
+</html> 
