@@ -1,0 +1,13 @@
+fastApi
+pydantic
+uvicorn
+python-dotenv
+python-multipart
+langchain
+langchain-community
+langchain-core
+langchain-openai
+langchain-community
+langchain-core
+langchain-openai
+fitz
