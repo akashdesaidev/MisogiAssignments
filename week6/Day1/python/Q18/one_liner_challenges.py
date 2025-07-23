@@ -8,4 +8,5 @@ Captilalize = list(map(str.capitalize, ['hello', 'world',"check"]))
 print(Captilalize)
 
 result  = reduce(lambda a,b: a+b ,evenSquare)
-print(result)
+print(result) 
+
