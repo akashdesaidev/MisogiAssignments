@@ -12,6 +12,7 @@ async def upload_pdf(file: UploadFile = File(...)):
     text = extract_text_from_pdf(contents)
 
     chunks = chunk_text(text)
+    print(chunks)
     # embeddings = embed_chunks(chunks)
     # store_chunks(chunks, embeddings)
 
