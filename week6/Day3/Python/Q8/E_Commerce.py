@@ -2,6 +2,7 @@ from collections import defaultdict
 class Product:
     all_prodcuts=[]
     products_category=defaultdict(int)
+    
     def __init__(self,product_id,name,price,category,stock_quantity) -> None:
         self.product_id=product_id
         self.name=name    
@@ -57,7 +58,10 @@ class ShoppingCart:
     def get_total(self):
         print(self.customer.__dict__)
         return self.get_sub_total()-(self.get_sub_total()*self.customer.discount_rate/100) 
-    
+    def clear_cart(self):
+        self.items={}
+        return True
+
     def palce_order(self):
         for item,qty in self.items.items():
             try:
@@ -89,6 +93,7 @@ print(cart.get_sub_total())
 print(cart.get_total())
 
 print(laptop.stock_quantiy)
+# print(cart.clear_cart())
 print(cart.palce_order())
 print(laptop.stock_quantiy)
 print(customer.orders)
