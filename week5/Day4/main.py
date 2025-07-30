@@ -34,42 +34,30 @@ def read_root():
 def extract_images_async():
     try:
         output_dir="./output_Dir/"
-        file_path = "./output_Dir/sample-report.pdf"
-        loader = DoclingLoader(file_path=file_path)
-        # docs = loader.load()
-       
-        Fitdoc = fitz.open("./output_Dir/Attention.pdf")
+        file_path = "./output_Dir/Attention.pdf"
+        loader = PyMuPDFLoader(
+            file_path=file_path,
+            mode="page",                        # Split PDF into per-page documents
+            extract_images=True,                 # Enable image extraction
+            images_inner_format="markdown-img"   # Embed images as markdown base64 in page content
+        )
+
+        docs = loader.load()  # docs is a list: one Document object per page
+
+        Fitdoc = fitz.open(filename=file_path)
         for page_num, page in enumerate(Fitdoc):
          imgs = page.get_images(full=True)
          print(f"Page {page_num}: {len(imgs)} images")
         # Loop through docling's unified documents
 
-        image_pattern = re.compile(r'!\[\]\((data:image\/[a-zA-Z]+;base64,[^)]+)\)')
-
-        num_images = 0
-
-        # for doc in docs:
-        #     # In Docling, extracted page/image content is often in markdown-style format
-        #     for match in image_pattern.findall(doc.page_content):
-        #         header, encoded = match.split(',', 1)
-        #         ext = header.split('/')[1].split(';')[0]
-        #         img_path = os.path.join(output_dir, f"docling_image_{num_images+1}.{ext}")
-        #         with open(img_path, "wb") as f:
-        #             f.write(base64.b64decode(encoded))
-        #         print(f"Saved image: {img_path}")
-        #         num_images += 1
-
-        # print(f"Total images extracted: {num_images}")
-        # # for doc in docs:
-        #     print(doc)
-        #     print()
-        # for page_num, doc in enumerate(docs):
-            # content = doc.page_content
-            # base64_images = re.findall(r'!\[\]\((data:image\/[a-zA-Z]+;base64,[^)]+)\)', content)
-            # for img_data in base64_images:
-            #     header, encoded = img_data.split(',', 1)
-            #     img_bytes = base64.b64decode(encoded)
-            #     images_bytes.append(img_bytes)
+        for idx, doc in enumerate(docs):
+            if idx == 2 or idx==3:
+                print(f"Page {idx} Metadata:", doc.metadata)
+                print(f"Page {idx} Content Sample:", doc.page_content[:400])
+                images = re.findall(r'!\[\]\((data:image\/[a-zA-Z]+;base64,[^)]+)\)', doc.page_content)
+                print("Images in page using langchain pymupdf", idx, "are", images)
+                
+  
         return {
             "message": "Images extracted successfully (async)",
           
