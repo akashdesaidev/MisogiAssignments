@@ -1,0 +1,1651 @@
+State,Crop,Year,Area,Production,Yield
+Uttar Pradesh,Rice,2010,1061.81,4168.74,3.926
+Uttar Pradesh,Wheat,2010,1597.99,5429.95,3.398
+Uttar Pradesh,Maize,2010,293.61,655.92,2.234
+Uttar Pradesh,Sorghum,2010,234.85,774.83,3.299
+Uttar Pradesh,Chickpea,2010,340.45,441.1,1.296
+Uttar Pradesh,Pigeon Pea,2010,108.23,160.07,1.479
+Uttar Pradesh,Lentil,2010,432.98,410.74,0.949
+Uttar Pradesh,Mung Bean,2010,95.46,1606.91,16.834
+Uttar Pradesh,Urad,2010,126.06,2552.42,20.248
+Uttar Pradesh,Tomato,2010,157.99,2829.9,17.912
+Uttar Pradesh,Onion,2010,202.96,3327.57,16.395
+Uttar Pradesh,Potato,2010,123.04,2296.3,18.664
+Uttar Pradesh,Brinjal,2010,164.02,3748.09,22.852
+Uttar Pradesh,Cabbage,2010,99.92,2012.59,20.142
+Uttar Pradesh,Cauliflower,2010,198.1,3063.57,15.465
+Maharashtra,Rice,2010,1411.32,3889.29,2.756
+Maharashtra,Wheat,2010,597.58,2344.49,3.923
+Maharashtra,Maize,2010,779.38,2503.83,3.213
+Maharashtra,Sorghum,2010,382.77,821.62,2.147
+Maharashtra,Chickpea,2010,373.69,414.09,1.108
+Maharashtra,Pigeon Pea,2010,148.82,170.64,1.147
+Maharashtra,Lentil,2010,113.76,163.41,1.437
+Maharashtra,Mung Bean,2010,114.69,2480.3,21.625
+Maharashtra,Urad,2010,127.93,2584.23,20.201
+Maharashtra,Tomato,2010,186.68,3145.25,16.849
+Maharashtra,Onion,2010,292.4,6652.4,22.751
+Maharashtra,Potato,2010,284.87,6822.26,23.948
+Maharashtra,Brinjal,2010,199.47,4831.03,24.219
+Maharashtra,Cabbage,2010,72.12,1223.2,16.96
+Maharashtra,Cauliflower,2010,61.31,1119.05,18.253
+Madhya Pradesh,Rice,2010,1083.02,3148.35,2.907
+Madhya Pradesh,Wheat,2010,1743.11,5290.55,3.035
+Madhya Pradesh,Maize,2010,368.56,1037.15,2.814
+Madhya Pradesh,Sorghum,2010,284.55,911.51,3.203
+Madhya Pradesh,Chickpea,2010,129.82,193.54,1.491
+Madhya Pradesh,Pigeon Pea,2010,408.9,384.0,0.939
+Madhya Pradesh,Lentil,2010,102.21,140.11,1.371
+Madhya Pradesh,Mung Bean,2010,226.71,5053.48,22.29
+Madhya Pradesh,Urad,2010,242.82,3822.06,15.74
+Madhya Pradesh,Tomato,2010,139.62,2256.02,16.159
+Madhya Pradesh,Onion,2010,265.78,5643.21,21.233
+Madhya Pradesh,Potato,2010,132.72,2075.23,15.636
+Madhya Pradesh,Brinjal,2010,127.75,2331.59,18.252
+Madhya Pradesh,Cabbage,2010,232.4,4967.72,21.376
+Madhya Pradesh,Cauliflower,2010,271.8,5360.54,19.722
+Rajasthan,Rice,2010,679.39,2425.34,3.57
+Rajasthan,Wheat,2010,1641.18,5484.68,3.342
+Rajasthan,Maize,2010,662.58,1815.93,2.741
+Rajasthan,Sorghum,2010,513.64,1356.68,2.641
+Rajasthan,Chickpea,2010,110.17,96.45,0.876
+Rajasthan,Pigeon Pea,2010,112.57,140.21,1.245
+Rajasthan,Lentil,2010,225.74,260.96,1.156
+Rajasthan,Mung Bean,2010,276.89,4843.64,17.493
+Rajasthan,Urad,2010,152.6,3441.87,22.556
+Rajasthan,Tomato,2010,107.2,1690.52,15.77
+Rajasthan,Onion,2010,122.44,2033.96,16.612
+Rajasthan,Potato,2010,282.42,6518.7,23.081
+Rajasthan,Brinjal,2010,208.35,4940.96,23.715
+Rajasthan,Cabbage,2010,250.92,4231.91,16.866
+Rajasthan,Cauliflower,2010,273.14,5570.25,20.393
+Karnataka,Rice,2010,1711.16,6577.93,3.844
+Karnataka,Wheat,2010,977.01,2603.79,2.665
+Karnataka,Maize,2010,336.76,889.27,2.641
+Karnataka,Sorghum,2010,690.81,2273.52,3.291
+Karnataka,Chickpea,2010,102.78,118.97,1.158
+Karnataka,Pigeon Pea,2010,266.96,255.08,0.955
+Karnataka,Lentil,2010,147.95,153.32,1.036
+Karnataka,Mung Bean,2010,285.73,5209.39,18.232
+Karnataka,Urad,2010,179.7,3958.77,22.03
+Karnataka,Tomato,2010,140.91,3482.92,24.718
+Karnataka,Onion,2010,290.61,5090.89,17.518
+Karnataka,Potato,2010,174.31,3139.15,18.009
+Karnataka,Brinjal,2010,121.21,1862.86,15.369
+Karnataka,Cabbage,2010,202.39,4053.24,20.027
+Karnataka,Cauliflower,2010,62.87,1118.23,17.786
+Gujarat,Rice,2010,1862.4,5325.24,2.859
+Gujarat,Wheat,2010,717.34,2320.01,3.234
+Gujarat,Maize,2010,791.39,1870.12,2.363
+Gujarat,Sorghum,2010,603.28,1895.77,3.142
+Gujarat,Chickpea,2010,195.06,255.47,1.31
+Gujarat,Pigeon Pea,2010,247.11,307.07,1.243
+Gujarat,Lentil,2010,353.41,415.27,1.175
+Gujarat,Mung Bean,2010,72.57,1694.79,23.353
+Gujarat,Urad,2010,130.2,2195.76,16.865
+Gujarat,Tomato,2010,60.19,1258.59,20.909
+Gujarat,Onion,2010,219.39,3327.26,15.166
+Gujarat,Potato,2010,178.02,3073.56,17.265
+Gujarat,Brinjal,2010,211.29,3537.82,16.744
+Gujarat,Cabbage,2010,222.73,4202.41,18.867
+Gujarat,Cauliflower,2010,284.18,4653.55,16.375
+West Bengal,Rice,2010,1011.6,2701.18,2.67
+West Bengal,Wheat,2010,1887.04,7200.96,3.816
+West Bengal,Maize,2010,354.76,1060.74,2.99
+West Bengal,Sorghum,2010,690.33,1955.58,2.833
+West Bengal,Chickpea,2010,311.86,302.29,0.969
+West Bengal,Pigeon Pea,2010,137.24,195.99,1.428
+West Bengal,Lentil,2010,460.17,572.07,1.243
+West Bengal,Mung Bean,2010,134.76,2491.95,18.492
+West Bengal,Urad,2010,231.49,5549.04,23.971
+West Bengal,Tomato,2010,271.77,6196.05,22.799
+West Bengal,Onion,2010,210.51,3334.74,15.841
+West Bengal,Potato,2010,90.41,2168.47,23.986
+West Bengal,Brinjal,2010,201.61,3042.65,15.092
+West Bengal,Cabbage,2010,75.37,1630.59,21.635
+West Bengal,Cauliflower,2010,51.27,851.42,16.608
+Bihar,Rice,2010,1323.1,4680.92,3.538
+Bihar,Wheat,2010,1477.94,4192.04,2.836
+Bihar,Maize,2010,627.31,1477.86,2.356
+Bihar,Sorghum,2010,395.24,1233.04,3.12
+Bihar,Chickpea,2010,359.85,501.8,1.394
+Bihar,Pigeon Pea,2010,363.05,434.86,1.198
+Bihar,Lentil,2010,137.47,145.36,1.057
+Bihar,Mung Bean,2010,116.3,2028.27,17.44
+Bihar,Urad,2010,293.25,5551.56,18.931
+Bihar,Tomato,2010,273.01,5818.26,21.311
+Bihar,Onion,2010,248.7,4980.62,20.026
+Bihar,Potato,2010,194.23,3869.99,19.925
+Bihar,Brinjal,2010,98.81,2196.02,22.225
+Bihar,Cabbage,2010,120.19,1832.12,15.243
+Bihar,Cauliflower,2010,211.37,3544.88,16.771
+Andhra Pradesh,Rice,2010,1910.69,7510.71,3.931
+Andhra Pradesh,Wheat,2010,1872.3,5720.31,3.055
+Andhra Pradesh,Maize,2010,209.27,709.96,3.392
+Andhra Pradesh,Sorghum,2010,456.91,1576.33,3.45
+Andhra Pradesh,Chickpea,2010,485.45,678.22,1.397
+Andhra Pradesh,Pigeon Pea,2010,217.78,232.93,1.07
+Andhra Pradesh,Lentil,2010,440.45,450.08,1.022
+Andhra Pradesh,Mung Bean,2010,92.37,1899.93,20.568
+Andhra Pradesh,Urad,2010,284.04,6237.57,21.96
+Andhra Pradesh,Tomato,2010,192.52,3074.81,15.972
+Andhra Pradesh,Onion,2010,203.75,5073.53,24.901
+Andhra Pradesh,Potato,2010,85.02,1716.0,20.183
+Andhra Pradesh,Brinjal,2010,269.34,6035.36,22.408
+Andhra Pradesh,Cabbage,2010,224.25,4939.16,22.025
+Andhra Pradesh,Cauliflower,2010,139.87,2508.75,17.936
+Tamil Nadu,Rice,2010,1714.04,6367.96,3.715
+Tamil Nadu,Wheat,2010,1800.61,6968.1,3.87
+Tamil Nadu,Maize,2010,506.81,1394.87,2.752
+Tamil Nadu,Sorghum,2010,678.98,2019.92,2.975
+Tamil Nadu,Chickpea,2010,380.79,516.75,1.357
+Tamil Nadu,Pigeon Pea,2010,456.0,472.69,1.037
+Tamil Nadu,Lentil,2010,250.23,216.65,0.866
+Tamil Nadu,Mung Bean,2010,194.57,2988.48,15.359
+Tamil Nadu,Urad,2010,166.4,3398.95,20.426
+Tamil Nadu,Tomato,2010,121.64,2543.19,20.908
+Tamil Nadu,Onion,2010,57.63,885.9,15.373
+Tamil Nadu,Potato,2010,255.65,4755.58,18.602
+Tamil Nadu,Brinjal,2010,81.77,1653.49,20.222
+Tamil Nadu,Cabbage,2010,242.5,4160.84,17.158
+Tamil Nadu,Cauliflower,2010,205.72,3261.42,15.853
+Uttar Pradesh,Rice,2011,605.21,1995.4,3.297
+Uttar Pradesh,Wheat,2011,1373.8,4748.06,3.456
+Uttar Pradesh,Maize,2011,666.13,2307.33,3.464
+Uttar Pradesh,Sorghum,2011,534.22,1327.24,2.484
+Uttar Pradesh,Chickpea,2011,438.12,433.55,0.99
+Uttar Pradesh,Pigeon Pea,2011,288.8,246.9,0.855
+Uttar Pradesh,Lentil,2011,115.42,170.11,1.474
+Uttar Pradesh,Mung Bean,2011,271.41,5960.14,21.96
+Uttar Pradesh,Urad,2011,159.54,2669.52,16.733
+Uttar Pradesh,Tomato,2011,93.38,1634.4,17.502
+Uttar Pradesh,Onion,2011,196.29,4346.96,22.146
+Uttar Pradesh,Potato,2011,225.36,4011.25,17.799
+Uttar Pradesh,Brinjal,2011,302.56,6770.94,22.379
+Uttar Pradesh,Cabbage,2011,197.63,4173.39,21.117
+Uttar Pradesh,Cauliflower,2011,162.33,2837.03,17.477
+Maharashtra,Rice,2011,1083.53,3940.55,3.637
+Maharashtra,Wheat,2011,546.6,1461.66,2.674
+Maharashtra,Maize,2011,238.51,491.6,2.061
+Maharashtra,Sorghum,2011,747.47,2283.89,3.055
+Maharashtra,Chickpea,2011,303.56,263.63,0.868
+Maharashtra,Pigeon Pea,2011,310.87,351.73,1.131
+Maharashtra,Lentil,2011,177.4,195.79,1.104
+Maharashtra,Mung Bean,2011,156.8,3317.65,21.159
+Maharashtra,Urad,2011,218.78,3380.86,15.453
+Maharashtra,Tomato,2011,150.54,3200.27,21.259
+Maharashtra,Onion,2011,184.21,4340.93,23.565
+Maharashtra,Potato,2011,224.97,3741.03,16.629
+Maharashtra,Brinjal,2011,70.89,1518.66,21.424
+Maharashtra,Cabbage,2011,59.34,1237.76,20.858
+Maharashtra,Cauliflower,2011,298.72,6199.94,20.755
+Madhya Pradesh,Rice,2011,1134.14,3929.72,3.465
+Madhya Pradesh,Wheat,2011,1244.31,4129.13,3.318
+Madhya Pradesh,Maize,2011,801.55,2067.32,2.579
+Madhya Pradesh,Sorghum,2011,813.95,2733.27,3.358
+Madhya Pradesh,Chickpea,2011,186.87,158.57,0.849
+Madhya Pradesh,Pigeon Pea,2011,147.04,119.51,0.813
+Madhya Pradesh,Lentil,2011,144.38,184.54,1.278
+Madhya Pradesh,Mung Bean,2011,71.05,1292.34,18.19
+Madhya Pradesh,Urad,2011,273.74,4169.84,15.233
+Madhya Pradesh,Tomato,2011,265.78,4735.75,17.819
+Madhya Pradesh,Onion,2011,83.35,1831.08,21.967
+Madhya Pradesh,Potato,2011,217.17,5163.18,23.775
+Madhya Pradesh,Brinjal,2011,244.98,5642.96,23.035
+Madhya Pradesh,Cabbage,2011,126.29,2118.37,16.774
+Madhya Pradesh,Cauliflower,2011,249.05,5745.11,23.068
+Rajasthan,Rice,2011,2080.96,6490.36,3.119
+Rajasthan,Wheat,2011,1108.75,4063.15,3.665
+Rajasthan,Maize,2011,423.87,1439.53,3.396
+Rajasthan,Sorghum,2011,749.33,1980.84,2.643
+Rajasthan,Chickpea,2011,419.54,557.23,1.328
+Rajasthan,Pigeon Pea,2011,148.02,211.94,1.432
+Rajasthan,Lentil,2011,316.58,436.42,1.379
+Rajasthan,Mung Bean,2011,136.25,3263.79,23.955
+Rajasthan,Urad,2011,154.36,2332.16,15.108
+Rajasthan,Tomato,2011,289.59,4608.27,15.913
+Rajasthan,Onion,2011,136.05,3333.38,24.501
+Rajasthan,Potato,2011,301.44,6250.22,20.734
+Rajasthan,Brinjal,2011,217.93,4246.24,19.484
+Rajasthan,Cabbage,2011,129.21,2362.89,18.287
+Rajasthan,Cauliflower,2011,228.59,5148.64,22.524
+Karnataka,Rice,2011,1768.27,6515.04,3.684
+Karnataka,Wheat,2011,667.34,2163.27,3.242
+Karnataka,Maize,2011,245.78,694.15,2.824
+Karnataka,Sorghum,2011,487.21,1623.16,3.332
+Karnataka,Chickpea,2011,251.89,222.15,0.882
+Karnataka,Pigeon Pea,2011,164.73,219.6,1.333
+Karnataka,Lentil,2011,363.94,316.91,0.871
+Karnataka,Mung Bean,2011,74.43,1638.22,22.01
+Karnataka,Urad,2011,71.46,1659.2,23.219
+Karnataka,Tomato,2011,237.42,3754.48,15.813
+Karnataka,Onion,2011,74.62,1855.61,24.866
+Karnataka,Potato,2011,150.45,2814.39,18.706
+Karnataka,Brinjal,2011,265.34,6493.5,24.472
+Karnataka,Cabbage,2011,310.72,7001.59,22.534
+Karnataka,Cauliflower,2011,150.97,2390.64,15.835
+Gujarat,Rice,2011,1745.58,5826.06,3.338
+Gujarat,Wheat,2011,1190.81,4595.98,3.86
+Gujarat,Maize,2011,279.51,765.55,2.739
+Gujarat,Sorghum,2011,216.73,585.81,2.703
+Gujarat,Chickpea,2011,128.4,113.4,0.883
+Gujarat,Pigeon Pea,2011,154.06,193.26,1.254
+Gujarat,Lentil,2011,417.52,504.51,1.208
+Gujarat,Mung Bean,2011,304.47,5708.47,18.749
+Gujarat,Urad,2011,127.25,3014.03,23.686
+Gujarat,Tomato,2011,110.98,2733.59,24.632
+Gujarat,Onion,2011,55.58,1372.79,24.699
+Gujarat,Potato,2011,63.7,1523.26,23.911
+Gujarat,Brinjal,2011,190.65,4752.77,24.93
+Gujarat,Cabbage,2011,71.73,1473.25,20.539
+Gujarat,Cauliflower,2011,306.34,6197.57,20.231
+West Bengal,Rice,2011,1513.33,5362.68,3.544
+West Bengal,Wheat,2011,1238.47,4262.0,3.441
+West Bengal,Maize,2011,576.99,1933.9,3.352
+West Bengal,Sorghum,2011,238.16,576.7,2.421
+West Bengal,Chickpea,2011,503.18,716.13,1.423
+West Bengal,Pigeon Pea,2011,295.8,365.04,1.234
+West Bengal,Lentil,2011,221.07,205.96,0.932
+West Bengal,Mung Bean,2011,173.88,3222.6,18.534
+West Bengal,Urad,2011,205.31,3239.19,15.777
+West Bengal,Tomato,2011,307.67,7649.44,24.862
+West Bengal,Onion,2011,235.31,4791.05,20.361
+West Bengal,Potato,2011,133.49,3088.66,23.138
+West Bengal,Brinjal,2011,231.79,3853.73,16.626
+West Bengal,Cabbage,2011,291.05,6759.67,23.225
+West Bengal,Cauliflower,2011,301.23,6704.56,22.257
+Bihar,Rice,2011,1488.21,4654.17,3.127
+Bihar,Wheat,2011,1990.14,7560.73,3.799
+Bihar,Maize,2011,238.02,485.45,2.04
+Bihar,Sorghum,2011,446.3,1435.21,3.216
+Bihar,Chickpea,2011,518.64,469.52,0.905
+Bihar,Pigeon Pea,2011,353.84,377.41,1.067
+Bihar,Lentil,2011,511.36,710.53,1.389
+Bihar,Mung Bean,2011,272.03,5355.38,19.687
+Bihar,Urad,2011,161.07,2856.5,17.734
+Bihar,Tomato,2011,67.17,1588.31,23.647
+Bihar,Onion,2011,265.37,6633.39,24.997
+Bihar,Potato,2011,313.5,6443.81,20.554
+Bihar,Brinjal,2011,253.86,6206.3,24.448
+Bihar,Cabbage,2011,274.99,4805.08,17.473
+Bihar,Cauliflower,2011,170.43,2776.63,16.292
+Andhra Pradesh,Rice,2011,2023.66,6899.18,3.409
+Andhra Pradesh,Wheat,2011,883.38,3098.49,3.508
+Andhra Pradesh,Maize,2011,598.25,1517.9,2.537
+Andhra Pradesh,Sorghum,2011,280.99,845.04,3.007
+Andhra Pradesh,Chickpea,2011,322.9,432.88,1.341
+Andhra Pradesh,Pigeon Pea,2011,322.83,450.85,1.397
+Andhra Pradesh,Lentil,2011,336.14,400.9,1.193
+Andhra Pradesh,Mung Bean,2011,282.07,5369.11,19.035
+Andhra Pradesh,Urad,2011,87.51,1337.79,15.288
+Andhra Pradesh,Tomato,2011,250.23,5305.7,21.203
+Andhra Pradesh,Onion,2011,236.86,4057.26,17.13
+Andhra Pradesh,Potato,2011,88.12,1334.68,15.145
+Andhra Pradesh,Brinjal,2011,144.25,3014.62,20.899
+Andhra Pradesh,Cabbage,2011,155.16,3006.18,19.375
+Andhra Pradesh,Cauliflower,2011,289.27,5346.52,18.483
+Tamil Nadu,Rice,2011,1331.92,4895.44,3.675
+Tamil Nadu,Wheat,2011,1147.3,3938.84,3.433
+Tamil Nadu,Maize,2011,751.81,2574.42,3.424
+Tamil Nadu,Sorghum,2011,302.06,1023.96,3.39
+Tamil Nadu,Chickpea,2011,311.08,305.1,0.981
+Tamil Nadu,Pigeon Pea,2011,297.25,441.73,1.486
+Tamil Nadu,Lentil,2011,311.29,320.67,1.03
+Tamil Nadu,Mung Bean,2011,218.34,3799.42,17.401
+Tamil Nadu,Urad,2011,72.27,1177.23,16.289
+Tamil Nadu,Tomato,2011,85.94,1419.7,16.519
+Tamil Nadu,Onion,2011,88.77,1900.41,21.409
+Tamil Nadu,Potato,2011,100.05,1846.54,18.457
+Tamil Nadu,Brinjal,2011,287.34,5672.04,19.74
+Tamil Nadu,Cabbage,2011,227.29,3800.98,16.723
+Tamil Nadu,Cauliflower,2011,102.77,1583.61,15.409
+Uttar Pradesh,Rice,2012,816.8,2383.33,2.918
+Uttar Pradesh,Wheat,2012,829.93,2185.25,2.633
+Uttar Pradesh,Maize,2012,295.3,794.71,2.691
+Uttar Pradesh,Sorghum,2012,351.05,893.91,2.546
+Uttar Pradesh,Chickpea,2012,326.73,419.28,1.283
+Uttar Pradesh,Pigeon Pea,2012,125.46,170.58,1.36
+Uttar Pradesh,Lentil,2012,380.71,326.36,0.857
+Uttar Pradesh,Mung Bean,2012,290.98,7044.24,24.209
+Uttar Pradesh,Urad,2012,70.76,1257.35,17.769
+Uttar Pradesh,Tomato,2012,272.72,6131.4,22.483
+Uttar Pradesh,Onion,2012,104.22,1781.47,17.093
+Uttar Pradesh,Potato,2012,154.62,3068.45,19.845
+Uttar Pradesh,Brinjal,2012,221.78,4144.82,18.689
+Uttar Pradesh,Cabbage,2012,179.57,4035.81,22.475
+Uttar Pradesh,Cauliflower,2012,64.15,1124.19,17.524
+Maharashtra,Rice,2012,1702.14,6540.99,3.843
+Maharashtra,Wheat,2012,1374.17,4532.26,3.298
+Maharashtra,Maize,2012,286.54,765.39,2.671
+Maharashtra,Sorghum,2012,563.29,1331.45,2.364
+Maharashtra,Chickpea,2012,225.17,239.61,1.064
+Maharashtra,Pigeon Pea,2012,117.12,120.1,1.025
+Maharashtra,Lentil,2012,200.11,205.96,1.029
+Maharashtra,Mung Bean,2012,86.67,2071.81,23.905
+Maharashtra,Urad,2012,215.09,4687.09,21.791
+Maharashtra,Tomato,2012,268.1,5357.86,19.984
+Maharashtra,Onion,2012,77.77,1584.18,20.371
+Maharashtra,Potato,2012,213.26,4788.69,22.454
+Maharashtra,Brinjal,2012,171.2,2786.47,16.276
+Maharashtra,Cabbage,2012,131.12,2442.89,18.631
+Maharashtra,Cauliflower,2012,229.27,4747.77,20.708
+Madhya Pradesh,Rice,2012,1121.17,4461.98,3.98
+Madhya Pradesh,Wheat,2012,1527.2,4361.43,2.856
+Madhya Pradesh,Maize,2012,283.04,630.97,2.229
+Madhya Pradesh,Sorghum,2012,376.82,844.47,2.241
+Madhya Pradesh,Chickpea,2012,189.32,189.24,1.0
+Madhya Pradesh,Pigeon Pea,2012,183.6,262.13,1.428
+Madhya Pradesh,Lentil,2012,143.21,167.15,1.167
+Madhya Pradesh,Mung Bean,2012,165.44,4106.85,24.824
+Madhya Pradesh,Urad,2012,84.57,1605.09,18.979
+Madhya Pradesh,Tomato,2012,316.97,7497.94,23.655
+Madhya Pradesh,Onion,2012,275.66,4845.9,17.579
+Madhya Pradesh,Potato,2012,100.52,2180.01,21.686
+Madhya Pradesh,Brinjal,2012,306.1,6295.8,20.568
+Madhya Pradesh,Cabbage,2012,209.14,3722.57,17.8
+Madhya Pradesh,Cauliflower,2012,262.77,4433.02,16.87
+Rajasthan,Rice,2012,1068.45,3352.95,3.138
+Rajasthan,Wheat,2012,1367.56,3916.16,2.864
+Rajasthan,Maize,2012,291.53,850.08,2.916
+Rajasthan,Sorghum,2012,404.58,1161.9,2.872
+Rajasthan,Chickpea,2012,175.36,199.34,1.137
+Rajasthan,Pigeon Pea,2012,339.38,283.81,0.836
+Rajasthan,Lentil,2012,254.39,227.44,0.894
+Rajasthan,Mung Bean,2012,71.38,1777.44,24.9
+Rajasthan,Urad,2012,141.58,3270.25,23.099
+Rajasthan,Tomato,2012,123.22,2688.14,21.815
+Rajasthan,Onion,2012,260.26,5454.05,20.956
+Rajasthan,Potato,2012,182.02,3479.97,19.118
+Rajasthan,Brinjal,2012,148.76,3614.25,24.295
+Rajasthan,Cabbage,2012,279.34,6885.7,24.65
+Rajasthan,Cauliflower,2012,87.9,1960.85,22.309
+Karnataka,Rice,2012,2068.02,5732.25,2.772
+Karnataka,Wheat,2012,650.21,2348.36,3.612
+Karnataka,Maize,2012,590.52,1926.71,3.263
+Karnataka,Sorghum,2012,307.75,982.61,3.193
+Karnataka,Chickpea,2012,195.85,179.12,0.915
+Karnataka,Pigeon Pea,2012,179.65,246.16,1.37
+Karnataka,Lentil,2012,396.88,462.82,1.166
+Karnataka,Mung Bean,2012,151.46,3600.59,23.772
+Karnataka,Urad,2012,160.57,3719.87,23.166
+Karnataka,Tomato,2012,173.23,3251.41,18.769
+Karnataka,Onion,2012,179.61,3235.47,18.014
+Karnataka,Potato,2012,256.84,5143.73,20.027
+Karnataka,Brinjal,2012,117.15,2810.99,23.996
+Karnataka,Cabbage,2012,158.26,3234.04,20.436
+Karnataka,Cauliflower,2012,299.89,6370.48,21.242
+Gujarat,Rice,2012,732.18,2862.62,3.91
+Gujarat,Wheat,2012,1562.87,4692.28,3.002
+Gujarat,Maize,2012,307.42,981.0,3.191
+Gujarat,Sorghum,2012,620.18,1736.62,2.8
+Gujarat,Chickpea,2012,496.06,670.68,1.352
+Gujarat,Pigeon Pea,2012,174.19,177.36,1.018
+Gujarat,Lentil,2012,216.17,285.51,1.321
+Gujarat,Mung Bean,2012,63.3,1310.15,20.699
+Gujarat,Urad,2012,260.86,6200.07,23.768
+Gujarat,Tomato,2012,146.92,3410.49,23.213
+Gujarat,Onion,2012,84.19,1975.54,23.465
+Gujarat,Potato,2012,88.76,1684.06,18.973
+Gujarat,Brinjal,2012,270.3,4459.79,16.499
+Gujarat,Cabbage,2012,116.34,2585.43,22.223
+Gujarat,Cauliflower,2012,249.36,5339.25,21.411
+West Bengal,Rice,2012,1670.59,5536.47,3.314
+West Bengal,Wheat,2012,951.55,2872.31,3.019
+West Bengal,Maize,2012,334.96,1126.35,3.363
+West Bengal,Sorghum,2012,596.32,1551.19,2.601
+West Bengal,Chickpea,2012,308.77,451.76,1.463
+West Bengal,Pigeon Pea,2012,174.92,211.71,1.21
+West Bengal,Lentil,2012,327.8,402.54,1.228
+West Bengal,Mung Bean,2012,59.12,1402.3,23.721
+West Bengal,Urad,2012,306.85,6336.77,20.651
+West Bengal,Tomato,2012,243.03,5887.29,24.225
+West Bengal,Onion,2012,245.9,4063.51,16.525
+West Bengal,Potato,2012,210.4,4432.59,21.067
+West Bengal,Brinjal,2012,169.16,3783.22,22.364
+West Bengal,Cabbage,2012,307.46,7457.54,24.256
+West Bengal,Cauliflower,2012,176.4,2845.77,16.132
+Bihar,Rice,2012,2143.64,8056.55,3.758
+Bihar,Wheat,2012,744.8,2890.77,3.881
+Bihar,Maize,2012,782.69,2174.51,2.778
+Bihar,Sorghum,2012,601.45,1562.86,2.599
+Bihar,Chickpea,2012,132.16,136.74,1.035
+Bihar,Pigeon Pea,2012,456.58,366.74,0.803
+Bihar,Lentil,2012,253.04,272.96,1.079
+Bihar,Mung Bean,2012,199.86,4836.36,24.199
+Bihar,Urad,2012,148.08,2734.97,18.47
+Bihar,Tomato,2012,254.1,4960.53,19.522
+Bihar,Onion,2012,115.08,2246.94,19.524
+Bihar,Potato,2012,92.38,1548.73,16.764
+Bihar,Brinjal,2012,189.28,3632.21,19.189
+Bihar,Cabbage,2012,302.16,5627.49,18.624
+Bihar,Cauliflower,2012,211.57,4511.19,21.323
+Andhra Pradesh,Rice,2012,563.37,1969.14,3.495
+Andhra Pradesh,Wheat,2012,831.6,3277.84,3.942
+Andhra Pradesh,Maize,2012,313.53,822.06,2.622
+Andhra Pradesh,Sorghum,2012,272.35,951.94,3.495
+Andhra Pradesh,Chickpea,2012,326.2,396.91,1.217
+Andhra Pradesh,Pigeon Pea,2012,137.5,182.19,1.325
+Andhra Pradesh,Lentil,2012,199.44,284.93,1.429
+Andhra Pradesh,Mung Bean,2012,109.81,1856.51,16.907
+Andhra Pradesh,Urad,2012,64.11,1264.36,19.721
+Andhra Pradesh,Tomato,2012,207.3,3245.72,15.657
+Andhra Pradesh,Onion,2012,264.4,5164.57,19.533
+Andhra Pradesh,Potato,2012,196.34,3810.42,19.408
+Andhra Pradesh,Brinjal,2012,162.83,3353.69,20.596
+Andhra Pradesh,Cabbage,2012,96.28,1619.41,16.819
+Andhra Pradesh,Cauliflower,2012,287.78,7039.5,24.461
+Tamil Nadu,Rice,2012,1149.16,3339.58,2.906
+Tamil Nadu,Wheat,2012,1589.36,4947.84,3.113
+Tamil Nadu,Maize,2012,233.34,521.34,2.234
+Tamil Nadu,Sorghum,2012,682.56,2039.76,2.988
+Tamil Nadu,Chickpea,2012,120.17,114.8,0.955
+Tamil Nadu,Pigeon Pea,2012,208.62,265.02,1.27
+Tamil Nadu,Lentil,2012,116.96,102.09,0.873
+Tamil Nadu,Mung Bean,2012,271.01,4549.09,16.785
+Tamil Nadu,Urad,2012,231.13,4017.38,17.382
+Tamil Nadu,Tomato,2012,81.16,1414.75,17.432
+Tamil Nadu,Onion,2012,249.97,5888.49,23.557
+Tamil Nadu,Potato,2012,279.23,5297.46,18.972
+Tamil Nadu,Brinjal,2012,235.28,4011.54,17.05
+Tamil Nadu,Cabbage,2012,133.66,3202.97,23.963
+Tamil Nadu,Cauliflower,2012,57.73,915.34,15.855
+Uttar Pradesh,Rice,2013,892.81,2267.55,2.54
+Uttar Pradesh,Wheat,2013,849.18,2865.59,3.375
+Uttar Pradesh,Maize,2013,498.03,1662.92,3.339
+Uttar Pradesh,Sorghum,2013,759.34,1908.01,2.513
+Uttar Pradesh,Chickpea,2013,224.1,238.84,1.066
+Uttar Pradesh,Pigeon Pea,2013,369.65,365.08,0.988
+Uttar Pradesh,Lentil,2013,384.54,417.83,1.087
+Uttar Pradesh,Mung Bean,2013,206.77,4003.25,19.361
+Uttar Pradesh,Urad,2013,135.95,3328.6,24.485
+Uttar Pradesh,Tomato,2013,264.93,4345.17,16.401
+Uttar Pradesh,Onion,2013,293.76,5838.31,19.874
+Uttar Pradesh,Potato,2013,300.93,6921.03,22.999
+Uttar Pradesh,Brinjal,2013,171.89,2617.04,15.225
+Uttar Pradesh,Cabbage,2013,128.86,2630.79,20.416
+Uttar Pradesh,Cauliflower,2013,229.15,4028.28,17.579
+Maharashtra,Rice,2013,779.76,2925.97,3.752
+Maharashtra,Wheat,2013,2173.77,7148.51,3.289
+Maharashtra,Maize,2013,333.23,802.58,2.408
+Maharashtra,Sorghum,2013,232.08,782.46,3.371
+Maharashtra,Chickpea,2013,161.77,194.7,1.204
+Maharashtra,Pigeon Pea,2013,230.53,273.85,1.188
+Maharashtra,Lentil,2013,396.53,547.54,1.381
+Maharashtra,Mung Bean,2013,111.74,1688.39,15.11
+Maharashtra,Urad,2013,92.62,2222.96,24.0
+Maharashtra,Tomato,2013,295.25,6192.67,20.974
+Maharashtra,Onion,2013,220.09,4765.07,21.65
+Maharashtra,Potato,2013,103.2,2491.76,24.144
+Maharashtra,Brinjal,2013,170.12,3203.65,18.831
+Maharashtra,Cabbage,2013,197.66,3057.69,15.47
+Maharashtra,Cauliflower,2013,100.7,2253.81,22.38
+Madhya Pradesh,Rice,2013,686.46,2337.21,3.405
+Madhya Pradesh,Wheat,2013,954.61,2943.96,3.084
+Madhya Pradesh,Maize,2013,410.44,1039.86,2.534
+Madhya Pradesh,Sorghum,2013,694.41,1698.31,2.446
+Madhya Pradesh,Chickpea,2013,359.14,406.99,1.133
+Madhya Pradesh,Pigeon Pea,2013,401.92,585.11,1.456
+Madhya Pradesh,Lentil,2013,432.23,410.82,0.95
+Madhya Pradesh,Mung Bean,2013,63.56,1120.11,17.623
+Madhya Pradesh,Urad,2013,218.6,3391.36,15.514
+Madhya Pradesh,Tomato,2013,191.46,4014.55,20.968
+Madhya Pradesh,Onion,2013,146.88,3335.6,22.709
+Madhya Pradesh,Potato,2013,84.3,1327.77,15.751
+Madhya Pradesh,Brinjal,2013,255.19,5092.37,19.955
+Madhya Pradesh,Cabbage,2013,244.26,4725.91,19.348
+Madhya Pradesh,Cauliflower,2013,122.73,2846.29,23.191
+Rajasthan,Rice,2013,1868.61,6618.7,3.542
+Rajasthan,Wheat,2013,998.81,3381.32,3.385
+Rajasthan,Maize,2013,458.14,979.21,2.137
+Rajasthan,Sorghum,2013,825.24,1819.84,2.205
+Rajasthan,Chickpea,2013,527.98,587.23,1.112
+Rajasthan,Pigeon Pea,2013,191.41,225.74,1.179
+Rajasthan,Lentil,2013,493.98,648.38,1.313
+Rajasthan,Mung Bean,2013,276.74,5974.24,21.588
+Rajasthan,Urad,2013,245.32,5763.05,23.492
+Rajasthan,Tomato,2013,123.63,2459.54,19.894
+Rajasthan,Onion,2013,115.81,2880.87,24.877
+Rajasthan,Potato,2013,314.54,4842.19,15.394
+Rajasthan,Brinjal,2013,248.98,6038.3,24.252
+Rajasthan,Cabbage,2013,104.63,2163.78,20.679
+Rajasthan,Cauliflower,2013,306.69,4704.45,15.339
+Karnataka,Rice,2013,1700.36,5009.29,2.946
+Karnataka,Wheat,2013,2074.78,8209.05,3.957
+Karnataka,Maize,2013,843.02,2285.71,2.711
+Karnataka,Sorghum,2013,788.77,2576.77,3.267
+Karnataka,Chickpea,2013,250.35,345.54,1.38
+Karnataka,Pigeon Pea,2013,126.25,153.7,1.217
+Karnataka,Lentil,2013,211.16,186.75,0.884
+Karnataka,Mung Bean,2013,76.14,1672.36,21.963
+Karnataka,Urad,2013,148.43,3302.26,22.248
+Karnataka,Tomato,2013,72.96,1324.37,18.153
+Karnataka,Onion,2013,203.31,4657.36,22.907
+Karnataka,Potato,2013,142.62,3032.04,21.259
+Karnataka,Brinjal,2013,298.58,6317.46,21.159
+Karnataka,Cabbage,2013,119.04,1814.6,15.244
+Karnataka,Cauliflower,2013,294.21,4475.73,15.213
+Gujarat,Rice,2013,1992.8,6563.11,3.293
+Gujarat,Wheat,2013,2098.98,7762.41,3.698
+Gujarat,Maize,2013,878.44,2218.99,2.526
+Gujarat,Sorghum,2013,726.18,1890.17,2.603
+Gujarat,Chickpea,2013,321.07,397.89,1.239
+Gujarat,Pigeon Pea,2013,494.31,735.95,1.489
+Gujarat,Lentil,2013,447.94,489.34,1.092
+Gujarat,Mung Bean,2013,170.83,3822.56,22.376
+Gujarat,Urad,2013,120.64,1942.82,16.105
+Gujarat,Tomato,2013,152.49,2725.3,17.872
+Gujarat,Onion,2013,136.45,2365.57,17.336
+Gujarat,Potato,2013,66.56,1010.3,15.179
+Gujarat,Brinjal,2013,326.55,6295.13,19.278
+Gujarat,Cabbage,2013,160.65,3501.67,21.796
+Gujarat,Cauliflower,2013,114.99,2817.3,24.5
+West Bengal,Rice,2013,1847.05,4865.34,2.634
+West Bengal,Wheat,2013,1238.73,4730.3,3.819
+West Bengal,Maize,2013,843.33,2277.92,2.701
+West Bengal,Sorghum,2013,624.71,1405.94,2.251
+West Bengal,Chickpea,2013,545.99,525.34,0.962
+West Bengal,Pigeon Pea,2013,524.68,658.35,1.255
+West Bengal,Lentil,2013,377.32,437.27,1.159
+West Bengal,Mung Bean,2013,118.41,1985.13,16.765
+West Bengal,Urad,2013,115.61,1949.65,16.864
+West Bengal,Tomato,2013,269.32,4982.84,18.501
+West Bengal,Onion,2013,70.89,1750.36,24.691
+West Bengal,Potato,2013,297.97,7234.05,24.278
+West Bengal,Brinjal,2013,328.52,5499.16,16.739
+West Bengal,Cabbage,2013,163.93,3701.91,22.582
+West Bengal,Cauliflower,2013,246.35,4074.37,16.539
+Bihar,Rice,2013,1895.69,5377.44,2.837
+Bihar,Wheat,2013,919.09,3038.02,3.305
+Bihar,Maize,2013,611.2,1754.23,2.87
+Bihar,Sorghum,2013,280.32,929.59,3.316
+Bihar,Chickpea,2013,226.81,202.01,0.891
+Bihar,Pigeon Pea,2013,500.94,735.85,1.469
+Bihar,Lentil,2013,489.22,668.6,1.367
+Bihar,Mung Bean,2013,235.14,4822.34,20.509
+Bihar,Urad,2013,78.9,1505.83,19.085
+Bihar,Tomato,2013,157.45,2770.79,17.598
+Bihar,Onion,2013,253.88,5067.18,19.959
+Bihar,Potato,2013,77.27,1329.19,17.202
+Bihar,Brinjal,2013,242.84,3827.49,15.761
+Bihar,Cabbage,2013,289.02,5766.29,19.951
+Bihar,Cauliflower,2013,187.12,3915.29,20.924
+Andhra Pradesh,Rice,2013,1910.29,5772.35,3.022
+Andhra Pradesh,Wheat,2013,1668.35,5586.62,3.349
+Andhra Pradesh,Maize,2013,396.15,1314.4,3.318
+Andhra Pradesh,Sorghum,2013,746.13,2229.2,2.988
+Andhra Pradesh,Chickpea,2013,484.15,681.24,1.407
+Andhra Pradesh,Pigeon Pea,2013,421.58,584.28,1.386
+Andhra Pradesh,Lentil,2013,416.79,531.87,1.276
+Andhra Pradesh,Mung Bean,2013,225.07,5070.12,22.527
+Andhra Pradesh,Urad,2013,98.59,2347.39,23.809
+Andhra Pradesh,Tomato,2013,294.69,4506.54,15.292
+Andhra Pradesh,Onion,2013,282.04,4593.99,16.289
+Andhra Pradesh,Potato,2013,147.12,3300.74,22.435
+Andhra Pradesh,Brinjal,2013,99.19,2299.11,23.18
+Andhra Pradesh,Cabbage,2013,283.77,5696.64,20.075
+Andhra Pradesh,Cauliflower,2013,56.74,1014.02,17.87
+Tamil Nadu,Rice,2013,1567.57,6226.05,3.972
+Tamil Nadu,Wheat,2013,1592.13,4600.79,2.89
+Tamil Nadu,Maize,2013,638.3,1793.6,2.81
+Tamil Nadu,Sorghum,2013,734.53,1586.93,2.16
+Tamil Nadu,Chickpea,2013,444.75,524.31,1.179
+Tamil Nadu,Pigeon Pea,2013,533.59,554.57,1.039
+Tamil Nadu,Lentil,2013,388.27,563.92,1.452
+Tamil Nadu,Mung Bean,2013,83.17,2027.07,24.372
+Tamil Nadu,Urad,2013,244.11,3827.29,15.678
+Tamil Nadu,Tomato,2013,137.73,3041.4,22.082
+Tamil Nadu,Onion,2013,73.5,1530.49,20.822
+Tamil Nadu,Potato,2013,150.08,3183.15,21.209
+Tamil Nadu,Brinjal,2013,67.56,1602.3,23.715
+Tamil Nadu,Cabbage,2013,322.64,7965.49,24.689
+Tamil Nadu,Cauliflower,2013,261.09,4256.07,16.301
+Uttar Pradesh,Rice,2014,1786.28,4531.59,2.537
+Uttar Pradesh,Wheat,2014,581.67,1736.52,2.985
+Uttar Pradesh,Maize,2014,538.03,1697.82,3.156
+Uttar Pradesh,Sorghum,2014,665.44,1775.97,2.669
+Uttar Pradesh,Chickpea,2014,228.5,342.28,1.498
+Uttar Pradesh,Pigeon Pea,2014,295.07,329.29,1.116
+Uttar Pradesh,Lentil,2014,180.49,244.82,1.356
+Uttar Pradesh,Mung Bean,2014,243.74,4194.14,17.208
+Uttar Pradesh,Urad,2014,77.01,1679.3,21.805
+Uttar Pradesh,Tomato,2014,233.05,4132.63,17.733
+Uttar Pradesh,Onion,2014,313.88,5182.3,16.511
+Uttar Pradesh,Potato,2014,172.46,4214.22,24.436
+Uttar Pradesh,Brinjal,2014,169.02,3614.53,21.385
+Uttar Pradesh,Cabbage,2014,162.98,2891.68,17.742
+Uttar Pradesh,Cauliflower,2014,322.91,6165.41,19.093
+Maharashtra,Rice,2014,2008.56,5714.23,2.845
+Maharashtra,Wheat,2014,894.19,2277.23,2.547
+Maharashtra,Maize,2014,644.74,1645.88,2.553
+Maharashtra,Sorghum,2014,783.96,2124.38,2.71
+Maharashtra,Chickpea,2014,531.59,494.3,0.93
+Maharashtra,Pigeon Pea,2014,488.14,655.87,1.344
+Maharashtra,Lentil,2014,445.5,619.85,1.391
+Maharashtra,Mung Bean,2014,262.1,5572.87,21.262
+Maharashtra,Urad,2014,90.34,1384.5,15.325
+Maharashtra,Tomato,2014,305.69,6470.42,21.167
+Maharashtra,Onion,2014,271.79,5385.54,19.815
+Maharashtra,Potato,2014,86.54,1406.44,16.252
+Maharashtra,Brinjal,2014,241.52,4662.12,19.303
+Maharashtra,Cabbage,2014,109.24,2175.54,19.916
+Maharashtra,Cauliflower,2014,72.06,1500.23,20.82
+Madhya Pradesh,Rice,2014,985.64,3643.27,3.696
+Madhya Pradesh,Wheat,2014,1053.34,3352.6,3.183
+Madhya Pradesh,Maize,2014,225.79,476.12,2.109
+Madhya Pradesh,Sorghum,2014,475.1,1292.22,2.72
+Madhya Pradesh,Chickpea,2014,370.93,372.47,1.004
+Madhya Pradesh,Pigeon Pea,2014,412.36,578.17,1.402
+Madhya Pradesh,Lentil,2014,449.4,371.98,0.828
+Madhya Pradesh,Mung Bean,2014,185.6,2978.69,16.049
+Madhya Pradesh,Urad,2014,120.56,2997.92,24.867
+Madhya Pradesh,Tomato,2014,93.41,1867.15,19.989
+Madhya Pradesh,Onion,2014,223.14,4914.53,22.025
+Madhya Pradesh,Potato,2014,207.18,3127.96,15.098
+Madhya Pradesh,Brinjal,2014,143.58,2897.09,20.177
+Madhya Pradesh,Cabbage,2014,78.51,1452.94,18.506
+Madhya Pradesh,Cauliflower,2014,63.6,1004.01,15.786
+Rajasthan,Rice,2014,1194.99,3225.36,2.699
+Rajasthan,Wheat,2014,1474.19,5210.06,3.534
+Rajasthan,Maize,2014,742.22,1707.26,2.3
+Rajasthan,Sorghum,2014,327.81,707.04,2.157
+Rajasthan,Chickpea,2014,386.81,500.74,1.295
+Rajasthan,Pigeon Pea,2014,122.88,178.83,1.455
+Rajasthan,Lentil,2014,131.77,155.35,1.179
+Rajasthan,Mung Bean,2014,247.93,5878.35,23.71
+Rajasthan,Urad,2014,249.3,5738.23,23.017
+Rajasthan,Tomato,2014,147.13,3405.7,23.148
+Rajasthan,Onion,2014,76.4,1829.55,23.948
+Rajasthan,Potato,2014,203.89,4724.8,23.173
+Rajasthan,Brinjal,2014,177.91,3813.6,21.436
+Rajasthan,Cabbage,2014,198.11,4421.08,22.316
+Rajasthan,Cauliflower,2014,76.81,1198.5,15.604
+Karnataka,Rice,2014,949.82,2601.87,2.739
+Karnataka,Wheat,2014,1972.05,5578.57,2.829
+Karnataka,Maize,2014,856.95,2146.94,2.505
+Karnataka,Sorghum,2014,337.39,1074.44,3.185
+Karnataka,Chickpea,2014,396.53,455.51,1.149
+Karnataka,Pigeon Pea,2014,351.44,458.08,1.303
+Karnataka,Lentil,2014,208.78,312.64,1.497
+Karnataka,Mung Bean,2014,320.4,6889.73,21.503
+Karnataka,Urad,2014,108.97,2375.76,21.802
+Karnataka,Tomato,2014,74.24,1136.32,15.307
+Karnataka,Onion,2014,124.82,2449.84,19.626
+Karnataka,Potato,2014,291.35,6488.91,22.272
+Karnataka,Brinjal,2014,257.11,4950.57,19.255
+Karnataka,Cabbage,2014,148.89,2785.87,18.71
+Karnataka,Cauliflower,2014,323.91,4988.58,15.401
+Gujarat,Rice,2014,1964.27,6615.69,3.368
+Gujarat,Wheat,2014,1263.21,4532.26,3.588
+Gujarat,Maize,2014,536.74,1776.68,3.31
+Gujarat,Sorghum,2014,807.75,2126.46,2.633
+Gujarat,Chickpea,2014,229.89,279.24,1.215
+Gujarat,Pigeon Pea,2014,507.22,480.58,0.947
+Gujarat,Lentil,2014,380.94,473.16,1.242
+Gujarat,Mung Bean,2014,254.49,4152.18,16.316
+Gujarat,Urad,2014,249.78,6017.17,24.09
+Gujarat,Tomato,2014,103.55,1799.26,17.375
+Gujarat,Onion,2014,319.48,5370.34,16.81
+Gujarat,Potato,2014,287.57,5729.09,19.923
+Gujarat,Brinjal,2014,121.97,2891.71,23.707
+Gujarat,Cabbage,2014,176.0,3545.99,20.148
+Gujarat,Cauliflower,2014,152.52,3192.19,20.93
+West Bengal,Rice,2014,813.05,2509.59,3.087
+West Bengal,Wheat,2014,2131.81,6154.95,2.887
+West Bengal,Maize,2014,648.06,1612.23,2.488
+West Bengal,Sorghum,2014,724.47,1591.16,2.196
+West Bengal,Chickpea,2014,532.3,594.92,1.118
+West Bengal,Pigeon Pea,2014,212.1,180.59,0.851
+West Bengal,Lentil,2014,183.17,213.18,1.164
+West Bengal,Mung Bean,2014,146.46,3410.84,23.289
+West Bengal,Urad,2014,172.06,3008.9,17.487
+West Bengal,Tomato,2014,222.86,4918.07,22.068
+West Bengal,Onion,2014,100.1,1669.36,16.676
+West Bengal,Potato,2014,64.55,1443.55,22.364
+West Bengal,Brinjal,2014,235.59,4651.98,19.746
+West Bengal,Cabbage,2014,284.78,6566.07,23.057
+West Bengal,Cauliflower,2014,214.19,5072.64,23.683
+Bihar,Rice,2014,882.3,2353.88,2.668
+Bihar,Wheat,2014,986.88,2551.71,2.586
+Bihar,Maize,2014,565.87,1926.73,3.405
+Bihar,Sorghum,2014,243.94,532.56,2.183
+Bihar,Chickpea,2014,306.42,445.45,1.454
+Bihar,Pigeon Pea,2014,247.05,285.36,1.155
+Bihar,Lentil,2014,127.23,115.0,0.904
+Bihar,Mung Bean,2014,323.63,7977.93,24.651
+Bihar,Urad,2014,55.89,1370.41,24.518
+Bihar,Tomato,2014,228.86,5419.1,23.679
+Bihar,Onion,2014,178.57,3599.23,20.156
+Bihar,Potato,2014,187.87,4070.91,21.669
+Bihar,Brinjal,2014,92.63,1417.27,15.3
+Bihar,Cabbage,2014,138.53,3054.12,22.047
+Bihar,Cauliflower,2014,109.6,2382.05,21.734
+Andhra Pradesh,Rice,2014,2132.62,5631.94,2.641
+Andhra Pradesh,Wheat,2014,1646.11,5210.96,3.166
+Andhra Pradesh,Maize,2014,786.44,1781.85,2.266
+Andhra Pradesh,Sorghum,2014,671.55,2187.35,3.257
+Andhra Pradesh,Chickpea,2014,521.3,666.36,1.278
+Andhra Pradesh,Pigeon Pea,2014,326.05,401.85,1.232
+Andhra Pradesh,Lentil,2014,488.26,585.63,1.199
+Andhra Pradesh,Mung Bean,2014,62.83,1527.46,24.309
+Andhra Pradesh,Urad,2014,242.6,5280.28,21.765
+Andhra Pradesh,Tomato,2014,113.37,2447.49,21.589
+Andhra Pradesh,Onion,2014,161.97,3484.27,21.512
+Andhra Pradesh,Potato,2014,83.62,1804.34,21.578
+Andhra Pradesh,Brinjal,2014,327.12,5064.5,15.482
+Andhra Pradesh,Cabbage,2014,321.05,6122.2,19.069
+Andhra Pradesh,Cauliflower,2014,292.03,6665.23,22.824
+Tamil Nadu,Rice,2014,1473.33,5315.28,3.608
+Tamil Nadu,Wheat,2014,1983.06,6159.81,3.106
+Tamil Nadu,Maize,2014,432.25,1297.35,3.001
+Tamil Nadu,Sorghum,2014,746.97,2348.04,3.143
+Tamil Nadu,Chickpea,2014,457.24,505.2,1.105
+Tamil Nadu,Pigeon Pea,2014,465.97,411.99,0.884
+Tamil Nadu,Lentil,2014,346.69,278.75,0.804
+Tamil Nadu,Mung Bean,2014,143.07,2670.38,18.665
+Tamil Nadu,Urad,2014,162.6,3569.73,21.955
+Tamil Nadu,Tomato,2014,160.52,3128.02,19.487
+Tamil Nadu,Onion,2014,119.33,2235.4,18.733
+Tamil Nadu,Potato,2014,116.53,1833.25,15.732
+Tamil Nadu,Brinjal,2014,219.13,4751.13,21.682
+Tamil Nadu,Cabbage,2014,223.5,4388.44,19.635
+Tamil Nadu,Cauliflower,2014,158.13,3737.05,23.633
+Uttar Pradesh,Rice,2015,1355.14,4361.9,3.219
+Uttar Pradesh,Wheat,2015,570.69,1718.84,3.012
+Uttar Pradesh,Maize,2015,453.74,1178.92,2.598
+Uttar Pradesh,Sorghum,2015,580.91,1626.77,2.8
+Uttar Pradesh,Chickpea,2015,363.7,485.69,1.335
+Uttar Pradesh,Pigeon Pea,2015,450.64,587.04,1.303
+Uttar Pradesh,Lentil,2015,511.07,415.38,0.813
+Uttar Pradesh,Mung Bean,2015,104.87,1580.92,15.076
+Uttar Pradesh,Urad,2015,224.55,5384.74,23.98
+Uttar Pradesh,Tomato,2015,117.51,2851.91,24.27
+Uttar Pradesh,Onion,2015,68.96,1678.81,24.344
+Uttar Pradesh,Potato,2015,146.16,2340.62,16.014
+Uttar Pradesh,Brinjal,2015,181.73,3192.59,17.568
+Uttar Pradesh,Cabbage,2015,128.47,2321.88,18.073
+Uttar Pradesh,Cauliflower,2015,265.76,5419.35,20.392
+Maharashtra,Rice,2015,1024.83,3500.31,3.416
+Maharashtra,Wheat,2015,1668.44,4853.38,2.909
+Maharashtra,Maize,2015,474.95,1036.73,2.183
+Maharashtra,Sorghum,2015,327.16,988.58,3.022
+Maharashtra,Chickpea,2015,182.9,213.56,1.168
+Maharashtra,Pigeon Pea,2015,406.58,355.68,0.875
+Maharashtra,Lentil,2015,346.49,339.42,0.98
+Maharashtra,Mung Bean,2015,308.13,6111.92,19.835
+Maharashtra,Urad,2015,266.55,5464.87,20.502
+Maharashtra,Tomato,2015,64.5,1375.78,21.332
+Maharashtra,Onion,2015,305.08,6411.55,21.016
+Maharashtra,Potato,2015,270.05,6438.46,23.842
+Maharashtra,Brinjal,2015,113.42,1941.88,17.12
+Maharashtra,Cabbage,2015,214.88,4106.4,19.11
+Maharashtra,Cauliflower,2015,275.52,6612.63,24.0
+Madhya Pradesh,Rice,2015,1091.78,3117.37,2.855
+Madhya Pradesh,Wheat,2015,1770.78,5156.88,2.912
+Madhya Pradesh,Maize,2015,735.08,1937.37,2.636
+Madhya Pradesh,Sorghum,2015,636.47,1364.15,2.143
+Madhya Pradesh,Chickpea,2015,370.46,413.52,1.116
+Madhya Pradesh,Pigeon Pea,2015,354.67,325.45,0.918
+Madhya Pradesh,Lentil,2015,418.37,587.38,1.404
+Madhya Pradesh,Mung Bean,2015,110.42,1761.99,15.957
+Madhya Pradesh,Urad,2015,59.26,1269.24,21.42
+Madhya Pradesh,Tomato,2015,213.85,4376.84,20.467
+Madhya Pradesh,Onion,2015,114.45,2164.13,18.909
+Madhya Pradesh,Potato,2015,210.51,4203.31,19.968
+Madhya Pradesh,Brinjal,2015,314.72,5150.17,16.364
+Madhya Pradesh,Cabbage,2015,237.18,4516.65,19.043
+Madhya Pradesh,Cauliflower,2015,166.45,3691.17,22.176
+Rajasthan,Rice,2015,1630.74,6501.56,3.987
+Rajasthan,Wheat,2015,734.04,1949.73,2.656
+Rajasthan,Maize,2015,672.58,1928.68,2.868
+Rajasthan,Sorghum,2015,386.31,818.64,2.119
+Rajasthan,Chickpea,2015,142.3,202.91,1.426
+Rajasthan,Pigeon Pea,2015,187.32,192.26,1.026
+Rajasthan,Lentil,2015,202.07,211.87,1.048
+Rajasthan,Mung Bean,2015,71.39,1441.35,20.191
+Rajasthan,Urad,2015,70.91,1631.12,23.004
+Rajasthan,Tomato,2015,114.92,2344.32,20.4
+Rajasthan,Onion,2015,286.18,6155.37,21.509
+Rajasthan,Potato,2015,194.21,3542.96,18.243
+Rajasthan,Brinjal,2015,141.23,3063.86,21.695
+Rajasthan,Cabbage,2015,316.4,6840.09,21.618
+Rajasthan,Cauliflower,2015,200.78,4478.78,22.307
+Karnataka,Rice,2015,1269.49,3288.26,2.59
+Karnataka,Wheat,2015,1423.85,5604.88,3.936
+Karnataka,Maize,2015,323.45,981.66,3.035
+Karnataka,Sorghum,2015,339.74,952.56,2.804
+Karnataka,Chickpea,2015,146.97,163.91,1.115
+Karnataka,Pigeon Pea,2015,426.55,445.02,1.043
+Karnataka,Lentil,2015,387.87,526.26,1.357
+Karnataka,Mung Bean,2015,298.66,5180.67,17.346
+Karnataka,Urad,2015,158.8,2623.97,16.524
+Karnataka,Tomato,2015,315.96,7668.41,24.27
+Karnataka,Onion,2015,196.06,4591.8,23.42
+Karnataka,Potato,2015,191.03,4056.61,21.236
+Karnataka,Brinjal,2015,76.61,1727.69,22.553
+Karnataka,Cabbage,2015,86.83,2019.76,23.261
+Karnataka,Cauliflower,2015,260.2,5747.15,22.087
+Gujarat,Rice,2015,587.41,1735.62,2.955
+Gujarat,Wheat,2015,948.21,2882.76,3.04
+Gujarat,Maize,2015,267.7,911.64,3.405
+Gujarat,Sorghum,2015,564.14,1386.81,2.458
+Gujarat,Chickpea,2015,274.28,305.29,1.113
+Gujarat,Pigeon Pea,2015,360.6,418.65,1.161
+Gujarat,Lentil,2015,495.75,569.06,1.148
+Gujarat,Mung Bean,2015,315.88,7427.6,23.514
+Gujarat,Urad,2015,108.24,2630.87,24.306
+Gujarat,Tomato,2015,83.83,1942.6,23.174
+Gujarat,Onion,2015,153.84,3658.35,23.78
+Gujarat,Potato,2015,282.99,6525.64,23.059
+Gujarat,Brinjal,2015,262.32,4734.04,18.047
+Gujarat,Cabbage,2015,74.43,1416.44,19.03
+Gujarat,Cauliflower,2015,98.97,2172.34,21.95
+West Bengal,Rice,2015,1080.14,4281.05,3.963
+West Bengal,Wheat,2015,1548.92,5783.24,3.734
+West Bengal,Maize,2015,296.24,975.53,3.293
+West Bengal,Sorghum,2015,798.76,2181.08,2.731
+West Bengal,Chickpea,2015,363.0,484.74,1.335
+West Bengal,Pigeon Pea,2015,180.11,207.44,1.152
+West Bengal,Lentil,2015,274.99,248.17,0.902
+West Bengal,Mung Bean,2015,150.37,2358.14,15.682
+West Bengal,Urad,2015,59.83,978.35,16.352
+West Bengal,Tomato,2015,308.18,6316.26,20.495
+West Bengal,Onion,2015,308.9,5969.45,19.325
+West Bengal,Potato,2015,135.61,2720.56,20.061
+West Bengal,Brinjal,2015,169.45,2720.74,16.057
+West Bengal,Cabbage,2015,222.79,3823.11,17.16
+West Bengal,Cauliflower,2015,217.16,4669.37,21.502
+Bihar,Rice,2015,771.61,2000.03,2.592
+Bihar,Wheat,2015,1771.16,5649.46,3.19
+Bihar,Maize,2015,248.96,869.43,3.492
+Bihar,Sorghum,2015,248.71,756.72,3.043
+Bihar,Chickpea,2015,523.0,505.97,0.967
+Bihar,Pigeon Pea,2015,166.29,147.16,0.885
+Bihar,Lentil,2015,234.55,204.23,0.871
+Bihar,Mung Bean,2015,236.39,3693.08,15.623
+Bihar,Urad,2015,187.97,4693.04,24.967
+Bihar,Tomato,2015,268.66,5682.82,21.152
+Bihar,Onion,2015,134.14,2848.95,21.239
+Bihar,Potato,2015,192.64,3710.37,19.261
+Bihar,Brinjal,2015,87.63,2091.28,23.866
+Bihar,Cabbage,2015,172.17,2917.6,16.946
+Bihar,Cauliflower,2015,150.43,2879.51,19.141
+Andhra Pradesh,Rice,2015,1845.52,6644.65,3.6
+Andhra Pradesh,Wheat,2015,1752.94,4411.36,2.517
+Andhra Pradesh,Maize,2015,476.61,1297.33,2.722
+Andhra Pradesh,Sorghum,2015,224.17,535.71,2.39
+Andhra Pradesh,Chickpea,2015,428.3,383.75,0.896
+Andhra Pradesh,Pigeon Pea,2015,332.92,316.49,0.951
+Andhra Pradesh,Lentil,2015,111.12,107.66,0.969
+Andhra Pradesh,Mung Bean,2015,311.56,7170.71,23.015
+Andhra Pradesh,Urad,2015,307.24,6107.55,19.879
+Andhra Pradesh,Tomato,2015,82.07,1680.72,20.48
+Andhra Pradesh,Onion,2015,173.38,4064.76,23.444
+Andhra Pradesh,Potato,2015,78.98,1570.32,19.882
+Andhra Pradesh,Brinjal,2015,92.75,1692.38,18.247
+Andhra Pradesh,Cabbage,2015,248.36,4907.71,19.76
+Andhra Pradesh,Cauliflower,2015,152.59,2890.75,18.945
+Tamil Nadu,Rice,2015,1260.34,4634.93,3.678
+Tamil Nadu,Wheat,2015,1948.13,7662.01,3.933
+Tamil Nadu,Maize,2015,712.37,1761.76,2.473
+Tamil Nadu,Sorghum,2015,649.56,1725.49,2.656
+Tamil Nadu,Chickpea,2015,213.95,297.09,1.389
+Tamil Nadu,Pigeon Pea,2015,122.28,175.0,1.431
+Tamil Nadu,Lentil,2015,301.62,375.83,1.246
+Tamil Nadu,Mung Bean,2015,227.7,5453.59,23.951
+Tamil Nadu,Urad,2015,221.69,4686.28,21.139
+Tamil Nadu,Tomato,2015,70.65,1426.06,20.184
+Tamil Nadu,Onion,2015,92.78,2075.92,22.374
+Tamil Nadu,Potato,2015,188.71,4114.34,21.802
+Tamil Nadu,Brinjal,2015,64.03,1014.81,15.848
+Tamil Nadu,Cabbage,2015,242.79,3816.87,15.721
+Tamil Nadu,Cauliflower,2015,71.87,1086.79,15.121
+Uttar Pradesh,Rice,2016,1962.06,7075.69,3.606
+Uttar Pradesh,Wheat,2016,1044.41,3075.58,2.945
+Uttar Pradesh,Maize,2016,415.61,1314.14,3.162
+Uttar Pradesh,Sorghum,2016,605.24,1378.62,2.278
+Uttar Pradesh,Chickpea,2016,172.04,149.48,0.869
+Uttar Pradesh,Pigeon Pea,2016,369.26,492.98,1.335
+Uttar Pradesh,Lentil,2016,208.93,170.2,0.815
+Uttar Pradesh,Mung Bean,2016,71.54,1765.47,24.679
+Uttar Pradesh,Urad,2016,125.61,2850.35,22.692
+Uttar Pradesh,Tomato,2016,209.08,3934.67,18.819
+Uttar Pradesh,Onion,2016,102.85,1667.65,16.214
+Uttar Pradesh,Potato,2016,206.63,4700.04,22.746
+Uttar Pradesh,Brinjal,2016,213.95,4343.9,20.303
+Uttar Pradesh,Cabbage,2016,61.34,1514.21,24.685
+Uttar Pradesh,Cauliflower,2016,253.2,4539.46,17.928
+Maharashtra,Rice,2016,1997.76,6798.01,3.403
+Maharashtra,Wheat,2016,1393.02,5045.67,3.622
+Maharashtra,Maize,2016,696.76,2079.63,2.985
+Maharashtra,Sorghum,2016,280.76,703.99,2.507
+Maharashtra,Chickpea,2016,477.88,457.44,0.957
+Maharashtra,Pigeon Pea,2016,252.38,278.24,1.102
+Maharashtra,Lentil,2016,279.65,343.71,1.229
+Maharashtra,Mung Bean,2016,289.8,5044.56,17.407
+Maharashtra,Urad,2016,81.51,1383.6,16.975
+Maharashtra,Tomato,2016,275.57,5913.12,21.458
+Maharashtra,Onion,2016,123.19,2853.04,23.159
+Maharashtra,Potato,2016,269.09,6314.17,23.465
+Maharashtra,Brinjal,2016,283.68,4970.74,17.522
+Maharashtra,Cabbage,2016,242.13,4747.05,19.605
+Maharashtra,Cauliflower,2016,264.18,5887.13,22.285
+Madhya Pradesh,Rice,2016,1688.16,5881.97,3.484
+Madhya Pradesh,Wheat,2016,776.95,2577.58,3.318
+Madhya Pradesh,Maize,2016,801.96,2731.55,3.406
+Madhya Pradesh,Sorghum,2016,229.09,514.82,2.247
+Madhya Pradesh,Chickpea,2016,154.85,202.57,1.308
+Madhya Pradesh,Pigeon Pea,2016,433.14,411.25,0.949
+Madhya Pradesh,Lentil,2016,306.61,425.72,1.388
+Madhya Pradesh,Mung Bean,2016,236.49,4829.71,20.422
+Madhya Pradesh,Urad,2016,200.38,4024.26,20.084
+Madhya Pradesh,Tomato,2016,126.14,2604.87,20.65
+Madhya Pradesh,Onion,2016,225.36,5348.46,23.733
+Madhya Pradesh,Potato,2016,212.02,4794.1,22.611
+Madhya Pradesh,Brinjal,2016,91.29,1790.67,19.616
+Madhya Pradesh,Cabbage,2016,53.07,926.99,17.467
+Madhya Pradesh,Cauliflower,2016,234.88,5852.86,24.918
+Rajasthan,Rice,2016,657.92,2041.03,3.102
+Rajasthan,Wheat,2016,1724.1,4837.91,2.806
+Rajasthan,Maize,2016,540.57,1675.57,3.1
+Rajasthan,Sorghum,2016,577.63,1318.17,2.282
+Rajasthan,Chickpea,2016,245.57,331.19,1.349
+Rajasthan,Pigeon Pea,2016,326.23,262.18,0.804
+Rajasthan,Lentil,2016,410.1,338.22,0.825
+Rajasthan,Mung Bean,2016,239.77,4082.04,17.025
+Rajasthan,Urad,2016,293.6,5484.35,18.679
+Rajasthan,Tomato,2016,133.59,2202.78,16.489
+Rajasthan,Onion,2016,128.18,3046.51,23.767
+Rajasthan,Potato,2016,303.3,5666.66,18.683
+Rajasthan,Brinjal,2016,164.44,3653.99,22.221
+Rajasthan,Cabbage,2016,275.38,5763.85,20.93
+Rajasthan,Cauliflower,2016,149.97,2868.33,19.126
+Karnataka,Rice,2016,1565.21,3920.58,2.505
+Karnataka,Wheat,2016,1449.56,4396.85,3.033
+Karnataka,Maize,2016,686.07,1467.83,2.139
+Karnataka,Sorghum,2016,560.72,1525.99,2.721
+Karnataka,Chickpea,2016,361.97,306.01,0.845
+Karnataka,Pigeon Pea,2016,336.68,401.67,1.193
+Karnataka,Lentil,2016,328.84,401.99,1.222
+Karnataka,Mung Bean,2016,222.21,5121.9,23.05
+Karnataka,Urad,2016,119.11,2769.43,23.25
+Karnataka,Tomato,2016,177.03,2791.82,15.771
+Karnataka,Onion,2016,65.55,1202.34,18.342
+Karnataka,Potato,2016,249.7,5512.56,22.077
+Karnataka,Brinjal,2016,250.64,5056.11,20.173
+Karnataka,Cabbage,2016,162.31,2673.95,16.475
+Karnataka,Cauliflower,2016,133.91,2589.88,19.34
+Gujarat,Rice,2016,641.83,1816.97,2.831
+Gujarat,Wheat,2016,1417.06,5106.36,3.603
+Gujarat,Maize,2016,810.28,2754.7,3.4
+Gujarat,Sorghum,2016,593.8,1562.81,2.632
+Gujarat,Chickpea,2016,359.47,485.27,1.35
+Gujarat,Pigeon Pea,2016,149.41,162.4,1.087
+Gujarat,Lentil,2016,442.07,472.44,1.069
+Gujarat,Mung Bean,2016,195.69,4085.58,20.878
+Gujarat,Urad,2016,97.48,1815.22,18.622
+Gujarat,Tomato,2016,135.51,2068.2,15.262
+Gujarat,Onion,2016,56.84,1325.31,23.317
+Gujarat,Potato,2016,119.94,2420.42,20.181
+Gujarat,Brinjal,2016,126.44,3086.02,24.407
+Gujarat,Cabbage,2016,116.44,2246.98,19.297
+Gujarat,Cauliflower,2016,271.97,6369.29,23.419
+West Bengal,Rice,2016,790.15,2926.68,3.704
+West Bengal,Wheat,2016,1204.04,3882.36,3.224
+West Bengal,Maize,2016,284.04,602.42,2.121
+West Bengal,Sorghum,2016,645.75,1772.38,2.745
+West Bengal,Chickpea,2016,278.62,365.17,1.311
+West Bengal,Pigeon Pea,2016,411.94,375.37,0.911
+West Bengal,Lentil,2016,348.95,312.22,0.895
+West Bengal,Mung Bean,2016,241.2,5202.58,21.57
+West Bengal,Urad,2016,293.23,4600.72,15.69
+West Bengal,Tomato,2016,65.17,1161.46,17.822
+West Bengal,Onion,2016,117.06,2044.93,17.47
+West Bengal,Potato,2016,280.47,4906.89,17.495
+West Bengal,Brinjal,2016,119.65,2703.43,22.594
+West Bengal,Cabbage,2016,164.73,3750.36,22.767
+West Bengal,Cauliflower,2016,67.28,1337.19,19.876
+Bihar,Rice,2016,558.19,1447.93,2.594
+Bihar,Wheat,2016,1885.9,5108.65,2.709
+Bihar,Maize,2016,526.78,1378.4,2.617
+Bihar,Sorghum,2016,414.17,1387.36,3.35
+Bihar,Chickpea,2016,110.26,139.45,1.265
+Bihar,Pigeon Pea,2016,492.21,586.77,1.192
+Bihar,Lentil,2016,481.43,402.75,0.837
+Bihar,Mung Bean,2016,156.88,2761.36,17.602
+Bihar,Urad,2016,235.99,5855.59,24.813
+Bihar,Tomato,2016,115.74,2493.31,21.542
+Bihar,Onion,2016,100.93,2084.52,20.653
+Bihar,Potato,2016,168.33,4161.01,24.72
+Bihar,Brinjal,2016,204.98,3791.2,18.495
+Bihar,Cabbage,2016,79.63,1314.92,16.512
+Bihar,Cauliflower,2016,107.83,1888.06,17.51
+Andhra Pradesh,Rice,2016,1800.99,6018.6,3.342
+Andhra Pradesh,Wheat,2016,1303.22,3482.41,2.672
+Andhra Pradesh,Maize,2016,726.19,2239.73,3.084
+Andhra Pradesh,Sorghum,2016,244.0,747.06,3.062
+Andhra Pradesh,Chickpea,2016,321.89,275.93,0.857
+Andhra Pradesh,Pigeon Pea,2016,287.32,327.34,1.139
+Andhra Pradesh,Lentil,2016,168.66,246.57,1.462
+Andhra Pradesh,Mung Bean,2016,266.2,5773.9,21.69
+Andhra Pradesh,Urad,2016,167.91,3210.05,19.118
+Andhra Pradesh,Tomato,2016,215.75,4412.93,20.454
+Andhra Pradesh,Onion,2016,66.49,1338.18,20.125
+Andhra Pradesh,Potato,2016,255.15,4999.03,19.592
+Andhra Pradesh,Brinjal,2016,63.88,1460.43,22.863
+Andhra Pradesh,Cabbage,2016,101.76,1789.52,17.586
+Andhra Pradesh,Cauliflower,2016,92.46,1692.28,18.302
+Tamil Nadu,Rice,2016,1658.2,5437.38,3.279
+Tamil Nadu,Wheat,2016,818.71,3124.83,3.817
+Tamil Nadu,Maize,2016,738.02,2439.79,3.306
+Tamil Nadu,Sorghum,2016,348.12,931.87,2.677
+Tamil Nadu,Chickpea,2016,500.97,671.5,1.34
+Tamil Nadu,Pigeon Pea,2016,112.43,95.08,0.846
+Tamil Nadu,Lentil,2016,289.6,416.0,1.436
+Tamil Nadu,Mung Bean,2016,187.28,3741.54,19.978
+Tamil Nadu,Urad,2016,77.45,1670.34,21.568
+Tamil Nadu,Tomato,2016,259.13,4872.77,18.804
+Tamil Nadu,Onion,2016,247.34,6095.76,24.645
+Tamil Nadu,Potato,2016,102.37,2071.2,20.233
+Tamil Nadu,Brinjal,2016,123.5,2831.75,22.929
+Tamil Nadu,Cabbage,2016,197.14,4208.15,21.346
+Tamil Nadu,Cauliflower,2016,253.0,4796.79,18.96
+Uttar Pradesh,Rice,2017,1806.95,5962.1,3.3
+Uttar Pradesh,Wheat,2017,711.08,2519.97,3.544
+Uttar Pradesh,Maize,2017,652.25,1614.4,2.475
+Uttar Pradesh,Sorghum,2017,689.25,2315.34,3.359
+Uttar Pradesh,Chickpea,2017,203.37,302.71,1.488
+Uttar Pradesh,Pigeon Pea,2017,150.8,141.97,0.941
+Uttar Pradesh,Lentil,2017,167.6,238.96,1.426
+Uttar Pradesh,Mung Bean,2017,206.08,3404.68,16.521
+Uttar Pradesh,Urad,2017,154.47,3267.41,21.153
+Uttar Pradesh,Tomato,2017,68.38,1629.1,23.824
+Uttar Pradesh,Onion,2017,242.1,4854.6,20.052
+Uttar Pradesh,Potato,2017,281.55,5399.39,19.178
+Uttar Pradesh,Brinjal,2017,285.64,6192.52,21.679
+Uttar Pradesh,Cabbage,2017,201.35,3354.37,16.66
+Uttar Pradesh,Cauliflower,2017,260.99,5030.63,19.275
+Maharashtra,Rice,2017,717.27,1806.75,2.519
+Maharashtra,Wheat,2017,1292.64,4254.21,3.291
+Maharashtra,Maize,2017,609.46,2032.77,3.335
+Maharashtra,Sorghum,2017,238.96,740.11,3.097
+Maharashtra,Chickpea,2017,168.83,236.48,1.401
+Maharashtra,Pigeon Pea,2017,412.63,486.3,1.179
+Maharashtra,Lentil,2017,370.62,378.05,1.02
+Maharashtra,Mung Bean,2017,161.91,3758.87,23.216
+Maharashtra,Urad,2017,159.03,2954.55,18.578
+Maharashtra,Tomato,2017,167.47,3899.01,23.282
+Maharashtra,Onion,2017,129.11,2160.97,16.738
+Maharashtra,Potato,2017,220.01,5117.28,23.26
+Maharashtra,Brinjal,2017,72.52,1261.81,17.399
+Maharashtra,Cabbage,2017,82.49,1524.44,18.479
+Maharashtra,Cauliflower,2017,156.88,3528.06,22.488
+Madhya Pradesh,Rice,2017,1424.92,4889.46,3.431
+Madhya Pradesh,Wheat,2017,992.48,3733.89,3.762
+Madhya Pradesh,Maize,2017,465.84,1615.83,3.469
+Madhya Pradesh,Sorghum,2017,560.12,1226.33,2.189
+Madhya Pradesh,Chickpea,2017,357.48,367.33,1.028
+Madhya Pradesh,Pigeon Pea,2017,361.39,306.73,0.849
+Madhya Pradesh,Lentil,2017,163.99,229.43,1.399
+Madhya Pradesh,Mung Bean,2017,103.05,2408.29,23.37
+Madhya Pradesh,Urad,2017,115.62,2477.51,21.429
+Madhya Pradesh,Tomato,2017,215.7,4341.22,20.127
+Madhya Pradesh,Onion,2017,121.9,2087.65,17.126
+Madhya Pradesh,Potato,2017,56.25,1014.76,18.039
+Madhya Pradesh,Brinjal,2017,205.81,5018.25,24.383
+Madhya Pradesh,Cabbage,2017,258.41,5855.67,22.661
+Madhya Pradesh,Cauliflower,2017,238.44,5162.27,21.65
+Rajasthan,Rice,2017,859.2,3317.18,3.861
+Rajasthan,Wheat,2017,1453.27,4854.87,3.341
+Rajasthan,Maize,2017,257.24,686.99,2.671
+Rajasthan,Sorghum,2017,459.51,1514.93,3.297
+Rajasthan,Chickpea,2017,307.48,327.86,1.066
+Rajasthan,Pigeon Pea,2017,473.51,415.5,0.878
+Rajasthan,Lentil,2017,259.58,215.3,0.829
+Rajasthan,Mung Bean,2017,226.73,5482.59,24.181
+Rajasthan,Urad,2017,115.8,2730.95,23.583
+Rajasthan,Tomato,2017,118.74,2862.5,24.108
+Rajasthan,Onion,2017,230.12,5304.16,23.049
+Rajasthan,Potato,2017,52.59,1295.19,24.628
+Rajasthan,Brinjal,2017,223.54,4034.36,18.048
+Rajasthan,Cabbage,2017,248.32,4423.9,17.815
+Rajasthan,Cauliflower,2017,258.78,4173.05,16.126
+Karnataka,Rice,2017,1500.96,4969.76,3.311
+Karnataka,Wheat,2017,622.18,1781.21,2.863
+Karnataka,Maize,2017,200.17,541.08,2.703
+Karnataka,Sorghum,2017,367.4,1064.56,2.898
+Karnataka,Chickpea,2017,211.22,213.32,1.01
+Karnataka,Pigeon Pea,2017,383.34,319.59,0.834
+Karnataka,Lentil,2017,444.98,621.45,1.397
+Karnataka,Mung Bean,2017,209.34,4381.97,20.932
+Karnataka,Urad,2017,263.5,4440.79,16.853
+Karnataka,Tomato,2017,67.3,1170.62,17.395
+Karnataka,Onion,2017,239.92,3682.02,15.347
+Karnataka,Potato,2017,188.84,4712.3,24.954
+Karnataka,Brinjal,2017,254.67,5147.94,20.214
+Karnataka,Cabbage,2017,63.6,1482.71,23.314
+Karnataka,Cauliflower,2017,192.74,3112.59,16.149
+Gujarat,Rice,2017,618.31,2389.42,3.864
+Gujarat,Wheat,2017,1451.05,5432.63,3.744
+Gujarat,Maize,2017,701.87,2005.71,2.858
+Gujarat,Sorghum,2017,492.56,1303.14,2.646
+Gujarat,Chickpea,2017,218.82,241.63,1.104
+Gujarat,Pigeon Pea,2017,395.19,482.66,1.221
+Gujarat,Lentil,2017,440.98,489.65,1.11
+Gujarat,Mung Bean,2017,194.69,4149.54,21.313
+Gujarat,Urad,2017,190.98,4206.62,22.026
+Gujarat,Tomato,2017,105.52,2123.49,20.124
+Gujarat,Onion,2017,73.39,1383.01,18.845
+Gujarat,Potato,2017,165.89,3570.24,21.522
+Gujarat,Brinjal,2017,277.54,5830.21,21.007
+Gujarat,Cabbage,2017,227.62,4566.73,20.063
+Gujarat,Cauliflower,2017,201.21,3160.89,15.709
+West Bengal,Rice,2017,850.66,2588.38,3.043
+West Bengal,Wheat,2017,1166.34,2995.71,2.568
+West Bengal,Maize,2017,274.05,661.9,2.415
+West Bengal,Sorghum,2017,755.46,1886.39,2.497
+West Bengal,Chickpea,2017,282.54,264.82,0.937
+West Bengal,Pigeon Pea,2017,332.23,331.06,0.996
+West Bengal,Lentil,2017,176.38,204.89,1.162
+West Bengal,Mung Bean,2017,49.57,747.41,15.077
+West Bengal,Urad,2017,101.09,1553.5,15.367
+West Bengal,Tomato,2017,74.31,1366.37,18.389
+West Bengal,Onion,2017,241.85,5011.34,20.72
+West Bengal,Potato,2017,171.92,3083.31,17.935
+West Bengal,Brinjal,2017,273.01,5179.11,18.97
+West Bengal,Cabbage,2017,69.26,1466.19,21.171
+West Bengal,Cauliflower,2017,75.71,1396.97,18.452
+Bihar,Rice,2017,1216.88,4637.94,3.811
+Bihar,Wheat,2017,1196.81,4252.74,3.553
+Bihar,Maize,2017,767.78,1686.99,2.197
+Bihar,Sorghum,2017,352.04,912.44,2.592
+Bihar,Chickpea,2017,259.3,282.05,1.088
+Bihar,Pigeon Pea,2017,446.8,580.76,1.3
+Bihar,Lentil,2017,331.12,336.61,1.017
+Bihar,Mung Bean,2017,246.97,6063.25,24.551
+Bihar,Urad,2017,246.34,3699.02,15.016
+Bihar,Tomato,2017,201.77,3129.66,15.511
+Bihar,Onion,2017,110.39,1721.54,15.595
+Bihar,Potato,2017,193.9,4239.8,21.866
+Bihar,Brinjal,2017,75.86,1429.16,18.838
+Bihar,Cabbage,2017,158.3,2958.79,18.691
+Bihar,Cauliflower,2017,77.44,1486.05,19.189
+Andhra Pradesh,Rice,2017,1569.7,4091.45,2.607
+Andhra Pradesh,Wheat,2017,598.51,1814.78,3.032
+Andhra Pradesh,Maize,2017,738.2,2216.71,3.003
+Andhra Pradesh,Sorghum,2017,585.9,1489.88,2.543
+Andhra Pradesh,Chickpea,2017,325.63,262.81,0.807
+Andhra Pradesh,Pigeon Pea,2017,342.01,492.25,1.439
+Andhra Pradesh,Lentil,2017,332.93,469.96,1.412
+Andhra Pradesh,Mung Bean,2017,222.89,3612.07,16.206
+Andhra Pradesh,Urad,2017,265.95,4165.88,15.664
+Andhra Pradesh,Tomato,2017,177.06,2907.49,16.421
+Andhra Pradesh,Onion,2017,51.07,981.58,19.22
+Andhra Pradesh,Potato,2017,119.42,2371.66,19.86
+Andhra Pradesh,Brinjal,2017,187.48,2894.27,15.437
+Andhra Pradesh,Cabbage,2017,77.92,1604.06,20.586
+Andhra Pradesh,Cauliflower,2017,131.03,2920.85,22.292
+Tamil Nadu,Rice,2017,1426.58,5375.92,3.768
+Tamil Nadu,Wheat,2017,1484.76,4669.43,3.145
+Tamil Nadu,Maize,2017,582.6,1405.86,2.413
+Tamil Nadu,Sorghum,2017,370.33,1178.92,3.183
+Tamil Nadu,Chickpea,2017,268.8,365.26,1.359
+Tamil Nadu,Pigeon Pea,2017,413.92,579.61,1.4
+Tamil Nadu,Lentil,2017,450.28,496.07,1.102
+Tamil Nadu,Mung Bean,2017,125.17,2606.21,20.822
+Tamil Nadu,Urad,2017,137.78,2894.95,21.011
+Tamil Nadu,Tomato,2017,218.45,4780.68,21.884
+Tamil Nadu,Onion,2017,138.6,2310.26,16.669
+Tamil Nadu,Potato,2017,152.1,2498.43,16.426
+Tamil Nadu,Brinjal,2017,262.96,4854.0,18.459
+Tamil Nadu,Cabbage,2017,85.51,1304.36,15.254
+Tamil Nadu,Cauliflower,2017,204.04,4360.09,21.369
+Uttar Pradesh,Rice,2018,934.4,2436.51,2.608
+Uttar Pradesh,Wheat,2018,1030.1,3056.13,2.967
+Uttar Pradesh,Maize,2018,560.39,1629.99,2.909
+Uttar Pradesh,Sorghum,2018,387.06,900.64,2.327
+Uttar Pradesh,Chickpea,2018,457.74,511.66,1.118
+Uttar Pradesh,Pigeon Pea,2018,346.91,311.66,0.898
+Uttar Pradesh,Lentil,2018,271.97,222.82,0.819
+Uttar Pradesh,Mung Bean,2018,163.02,4016.76,24.64
+Uttar Pradesh,Urad,2018,135.0,2077.62,15.39
+Uttar Pradesh,Tomato,2018,53.37,1007.6,18.88
+Uttar Pradesh,Onion,2018,83.19,1267.35,15.234
+Uttar Pradesh,Potato,2018,220.96,4327.59,19.585
+Uttar Pradesh,Brinjal,2018,113.05,2713.41,24.001
+Uttar Pradesh,Cabbage,2018,73.05,1794.13,24.559
+Uttar Pradesh,Cauliflower,2018,118.77,2836.64,23.884
+Maharashtra,Rice,2018,1298.13,4855.08,3.74
+Maharashtra,Wheat,2018,1826.47,5356.33,2.933
+Maharashtra,Maize,2018,717.9,1855.22,2.584
+Maharashtra,Sorghum,2018,398.67,1000.88,2.511
+Maharashtra,Chickpea,2018,292.61,265.66,0.908
+Maharashtra,Pigeon Pea,2018,297.15,350.4,1.179
+Maharashtra,Lentil,2018,374.13,517.63,1.384
+Maharashtra,Mung Bean,2018,147.99,2667.33,18.023
+Maharashtra,Urad,2018,106.14,1798.73,16.946
+Maharashtra,Tomato,2018,59.54,1096.94,18.424
+Maharashtra,Onion,2018,108.66,2680.13,24.664
+Maharashtra,Potato,2018,175.09,3234.42,18.473
+Maharashtra,Brinjal,2018,180.35,2956.3,16.392
+Maharashtra,Cabbage,2018,148.83,3164.38,21.262
+Maharashtra,Cauliflower,2018,159.19,3027.45,19.018
+Madhya Pradesh,Rice,2018,1840.11,7030.09,3.82
+Madhya Pradesh,Wheat,2018,1326.5,4449.17,3.354
+Madhya Pradesh,Maize,2018,529.08,1217.92,2.302
+Madhya Pradesh,Sorghum,2018,404.0,831.92,2.059
+Madhya Pradesh,Chickpea,2018,268.25,316.57,1.18
+Madhya Pradesh,Pigeon Pea,2018,176.64,260.51,1.475
+Madhya Pradesh,Lentil,2018,428.68,559.65,1.306
+Madhya Pradesh,Mung Bean,2018,169.47,4016.41,23.7
+Madhya Pradesh,Urad,2018,76.41,1750.11,22.905
+Madhya Pradesh,Tomato,2018,75.06,1722.02,22.942
+Madhya Pradesh,Onion,2018,109.94,2613.38,23.771
+Madhya Pradesh,Potato,2018,264.37,4358.84,16.488
+Madhya Pradesh,Brinjal,2018,153.13,3799.16,24.81
+Madhya Pradesh,Cabbage,2018,157.92,3732.56,23.635
+Madhya Pradesh,Cauliflower,2018,182.26,3417.98,18.753
+Rajasthan,Rice,2018,858.39,2407.65,2.805
+Rajasthan,Wheat,2018,1518.38,4676.32,3.08
+Rajasthan,Maize,2018,468.41,1282.74,2.738
+Rajasthan,Sorghum,2018,505.02,1665.73,3.298
+Rajasthan,Chickpea,2018,455.04,493.86,1.085
+Rajasthan,Pigeon Pea,2018,398.39,531.92,1.335
+Rajasthan,Lentil,2018,304.48,447.35,1.469
+Rajasthan,Mung Bean,2018,92.54,1489.24,16.093
+Rajasthan,Urad,2018,243.55,4722.79,19.391
+Rajasthan,Tomato,2018,241.93,5789.69,23.931
+Rajasthan,Onion,2018,60.65,1445.54,23.835
+Rajasthan,Potato,2018,149.81,3011.9,20.104
+Rajasthan,Brinjal,2018,191.01,4634.61,24.264
+Rajasthan,Cabbage,2018,50.63,1000.94,19.768
+Rajasthan,Cauliflower,2018,205.13,4559.54,22.227
+Karnataka,Rice,2018,1422.34,3842.67,2.702
+Karnataka,Wheat,2018,877.27,2665.2,3.038
+Karnataka,Maize,2018,631.0,1525.84,2.418
+Karnataka,Sorghum,2018,301.72,1036.76,3.436
+Karnataka,Chickpea,2018,95.71,143.42,1.498
+Karnataka,Pigeon Pea,2018,342.67,472.86,1.38
+Karnataka,Lentil,2018,201.36,163.11,0.81
+Karnataka,Mung Bean,2018,216.72,5058.62,23.341
+Karnataka,Urad,2018,217.33,3570.33,16.429
+Karnataka,Tomato,2018,220.32,4998.85,22.689
+Karnataka,Onion,2018,198.39,4495.78,22.661
+Karnataka,Potato,2018,241.69,5108.4,21.136
+Karnataka,Brinjal,2018,66.69,1325.56,19.876
+Karnataka,Cabbage,2018,64.16,1223.86,19.075
+Karnataka,Cauliflower,2018,140.29,2196.96,15.66
+Gujarat,Rice,2018,945.79,2521.95,2.666
+Gujarat,Wheat,2018,1582.76,6206.85,3.922
+Gujarat,Maize,2018,224.97,772.25,3.433
+Gujarat,Sorghum,2018,474.68,1162.66,2.449
+Gujarat,Chickpea,2018,120.85,139.03,1.15
+Gujarat,Pigeon Pea,2018,386.19,500.1,1.295
+Gujarat,Lentil,2018,111.0,94.47,0.851
+Gujarat,Mung Bean,2018,139.31,2501.05,17.953
+Gujarat,Urad,2018,99.92,1779.5,17.81
+Gujarat,Tomato,2018,231.88,5633.01,24.292
+Gujarat,Onion,2018,139.83,3364.4,24.061
+Gujarat,Potato,2018,120.51,2381.75,19.764
+Gujarat,Brinjal,2018,98.45,2107.23,21.405
+Gujarat,Cabbage,2018,272.44,5730.73,21.035
+Gujarat,Cauliflower,2018,128.9,2768.53,21.478
+West Bengal,Rice,2018,632.59,2424.7,3.833
+West Bengal,Wheat,2018,1159.68,3680.84,3.174
+West Bengal,Maize,2018,509.78,1497.31,2.937
+West Bengal,Sorghum,2018,224.67,679.39,3.024
+West Bengal,Chickpea,2018,181.88,236.4,1.3
+West Bengal,Pigeon Pea,2018,396.55,540.4,1.363
+West Bengal,Lentil,2018,296.71,345.4,1.164
+West Bengal,Mung Bean,2018,79.23,1802.8,22.753
+West Bengal,Urad,2018,108.93,2175.07,19.967
+West Bengal,Tomato,2018,111.91,1828.35,16.338
+West Bengal,Onion,2018,191.69,2979.56,15.543
+West Bengal,Potato,2018,219.21,3984.38,18.176
+West Bengal,Brinjal,2018,46.25,930.09,20.111
+West Bengal,Cabbage,2018,57.04,1013.17,17.762
+West Bengal,Cauliflower,2018,209.58,3275.15,15.627
+Bihar,Rice,2018,1625.89,4074.03,2.506
+Bihar,Wheat,2018,804.38,2904.89,3.611
+Bihar,Maize,2018,360.26,775.59,2.153
+Bihar,Sorghum,2018,384.65,925.3,2.406
+Bihar,Chickpea,2018,404.01,411.82,1.019
+Bihar,Pigeon Pea,2018,384.12,547.11,1.424
+Bihar,Lentil,2018,252.83,363.3,1.437
+Bihar,Mung Bean,2018,133.41,3287.24,24.641
+Bihar,Urad,2018,66.85,1462.0,21.87
+Bihar,Tomato,2018,160.33,3026.4,18.876
+Bihar,Onion,2018,192.42,4240.73,22.039
+Bihar,Potato,2018,47.22,787.21,16.67
+Bihar,Brinjal,2018,210.99,4570.78,21.664
+Bihar,Cabbage,2018,269.45,6092.37,22.61
+Bihar,Cauliflower,2018,265.92,5857.01,22.025
+Andhra Pradesh,Rice,2018,875.4,2326.86,2.658
+Andhra Pradesh,Wheat,2018,1546.14,5359.28,3.466
+Andhra Pradesh,Maize,2018,211.59,537.45,2.54
+Andhra Pradesh,Sorghum,2018,715.5,1968.05,2.751
+Andhra Pradesh,Chickpea,2018,252.42,282.81,1.12
+Andhra Pradesh,Pigeon Pea,2018,169.66,179.52,1.058
+Andhra Pradesh,Lentil,2018,229.16,191.73,0.837
+Andhra Pradesh,Mung Bean,2018,223.59,4285.03,19.165
+Andhra Pradesh,Urad,2018,236.21,5551.65,23.503
+Andhra Pradesh,Tomato,2018,95.2,2053.88,21.574
+Andhra Pradesh,Onion,2018,155.35,3697.59,23.802
+Andhra Pradesh,Potato,2018,96.07,2092.21,21.778
+Andhra Pradesh,Brinjal,2018,186.66,3351.03,17.953
+Andhra Pradesh,Cabbage,2018,77.78,1673.58,21.516
+Andhra Pradesh,Cauliflower,2018,216.89,3937.93,18.156
+Tamil Nadu,Rice,2018,1356.21,4194.34,3.093
+Tamil Nadu,Wheat,2018,1451.01,4061.11,2.799
+Tamil Nadu,Maize,2018,678.57,1649.68,2.431
+Tamil Nadu,Sorghum,2018,388.84,811.55,2.087
+Tamil Nadu,Chickpea,2018,133.66,155.19,1.161
+Tamil Nadu,Pigeon Pea,2018,191.37,265.01,1.385
+Tamil Nadu,Lentil,2018,97.86,104.26,1.065
+Tamil Nadu,Mung Bean,2018,124.17,1886.55,15.193
+Tamil Nadu,Urad,2018,74.96,1434.37,19.136
+Tamil Nadu,Tomato,2018,160.11,3048.9,19.043
+Tamil Nadu,Onion,2018,168.91,3538.78,20.951
+Tamil Nadu,Potato,2018,48.51,952.77,19.641
+Tamil Nadu,Brinjal,2018,268.86,5428.4,20.19
+Tamil Nadu,Cabbage,2018,202.78,3674.14,18.119
+Tamil Nadu,Cauliflower,2018,225.07,5115.66,22.729
+Uttar Pradesh,Rice,2019,1156.63,4584.91,3.964
+Uttar Pradesh,Wheat,2019,621.04,1568.39,2.525
+Uttar Pradesh,Maize,2019,597.37,1918.01,3.211
+Uttar Pradesh,Sorghum,2019,245.52,588.86,2.398
+Uttar Pradesh,Chickpea,2019,96.56,97.07,1.005
+Uttar Pradesh,Pigeon Pea,2019,369.25,429.28,1.163
+Uttar Pradesh,Lentil,2019,215.85,228.85,1.06
+Uttar Pradesh,Mung Bean,2019,45.42,817.43,17.998
+Uttar Pradesh,Urad,2019,190.93,4723.95,24.742
+Uttar Pradesh,Tomato,2019,236.18,3598.38,15.236
+Uttar Pradesh,Onion,2019,247.79,5657.61,22.832
+Uttar Pradesh,Potato,2019,221.14,4329.82,19.58
+Uttar Pradesh,Brinjal,2019,134.89,2431.9,18.029
+Uttar Pradesh,Cabbage,2019,59.93,1035.74,17.282
+Uttar Pradesh,Cauliflower,2019,100.74,1998.69,19.841
+Maharashtra,Rice,2019,1462.69,4696.29,3.211
+Maharashtra,Wheat,2019,529.41,2084.11,3.937
+Maharashtra,Maize,2019,690.79,2195.19,3.178
+Maharashtra,Sorghum,2019,717.1,2019.88,2.817
+Maharashtra,Chickpea,2019,437.69,373.31,0.853
+Maharashtra,Pigeon Pea,2019,222.2,212.81,0.958
+Maharashtra,Lentil,2019,160.9,144.58,0.899
+Maharashtra,Mung Bean,2019,185.51,4231.97,22.813
+Maharashtra,Urad,2019,175.55,2891.31,16.47
+Maharashtra,Tomato,2019,228.07,4871.49,21.36
+Maharashtra,Onion,2019,132.67,2884.37,21.741
+Maharashtra,Potato,2019,103.74,1914.15,18.452
+Maharashtra,Brinjal,2019,252.06,4513.18,17.905
+Maharashtra,Cabbage,2019,151.12,3612.07,23.901
+Maharashtra,Cauliflower,2019,204.75,3198.57,15.622
+Madhya Pradesh,Rice,2019,650.48,1633.85,2.512
+Madhya Pradesh,Wheat,2019,1304.99,4138.8,3.172
+Madhya Pradesh,Maize,2019,253.14,870.01,3.437
+Madhya Pradesh,Sorghum,2019,467.18,1103.87,2.363
+Madhya Pradesh,Chickpea,2019,270.89,345.59,1.276
+Madhya Pradesh,Pigeon Pea,2019,117.74,116.83,0.992
+Madhya Pradesh,Lentil,2019,381.46,427.91,1.122
+Madhya Pradesh,Mung Bean,2019,168.4,3254.85,19.328
+Madhya Pradesh,Urad,2019,55.01,916.4,16.657
+Madhya Pradesh,Tomato,2019,145.61,2488.74,17.092
+Madhya Pradesh,Onion,2019,56.39,1321.48,23.436
+Madhya Pradesh,Potato,2019,266.43,6109.66,22.931
+Madhya Pradesh,Brinjal,2019,237.69,4140.57,17.42
+Madhya Pradesh,Cabbage,2019,261.79,4442.43,16.969
+Madhya Pradesh,Cauliflower,2019,259.72,6479.51,24.948
+Rajasthan,Rice,2019,1414.35,5617.39,3.972
+Rajasthan,Wheat,2019,1221.92,3530.51,2.889
+Rajasthan,Maize,2019,417.02,1205.32,2.89
+Rajasthan,Sorghum,2019,220.01,645.41,2.934
+Rajasthan,Chickpea,2019,444.33,414.59,0.933
+Rajasthan,Pigeon Pea,2019,376.27,540.15,1.436
+Rajasthan,Lentil,2019,430.81,634.19,1.472
+Rajasthan,Mung Bean,2019,162.73,4031.41,24.773
+Rajasthan,Urad,2019,215.93,3588.09,16.617
+Rajasthan,Tomato,2019,152.68,3387.01,22.183
+Rajasthan,Onion,2019,100.9,2159.94,21.406
+Rajasthan,Potato,2019,195.47,3250.11,16.627
+Rajasthan,Brinjal,2019,172.57,3920.24,22.716
+Rajasthan,Cabbage,2019,157.64,2383.74,15.121
+Rajasthan,Cauliflower,2019,47.15,875.61,18.57
+Karnataka,Rice,2019,1704.61,4846.22,2.843
+Karnataka,Wheat,2019,1309.65,3710.39,2.833
+Karnataka,Maize,2019,354.58,1160.22,3.272
+Karnataka,Sorghum,2019,575.02,1232.32,2.143
+Karnataka,Chickpea,2019,244.94,200.96,0.82
+Karnataka,Pigeon Pea,2019,263.78,333.34,1.264
+Karnataka,Lentil,2019,132.99,133.29,1.002
+Karnataka,Mung Bean,2019,134.85,3262.72,24.195
+Karnataka,Urad,2019,269.15,4158.17,15.449
+Karnataka,Tomato,2019,216.77,4057.27,18.717
+Karnataka,Onion,2019,133.64,3012.51,22.543
+Karnataka,Potato,2019,252.27,6183.06,24.509
+Karnataka,Brinjal,2019,175.29,3255.33,18.571
+Karnataka,Cabbage,2019,222.75,3900.41,17.51
+Karnataka,Cauliflower,2019,172.35,3203.18,18.586
+Gujarat,Rice,2019,1339.79,3832.6,2.861
+Gujarat,Wheat,2019,710.42,2754.55,3.877
+Gujarat,Maize,2019,235.56,649.9,2.759
+Gujarat,Sorghum,2019,300.01,617.53,2.058
+Gujarat,Chickpea,2019,103.22,95.24,0.923
+Gujarat,Pigeon Pea,2019,403.04,402.13,0.998
+Gujarat,Lentil,2019,433.24,522.98,1.207
+Gujarat,Mung Bean,2019,143.6,2986.92,20.801
+Gujarat,Urad,2019,161.66,3651.53,22.588
+Gujarat,Tomato,2019,108.83,2016.72,18.531
+Gujarat,Onion,2019,246.79,6037.51,24.465
+Gujarat,Potato,2019,246.44,4730.28,19.194
+Gujarat,Brinjal,2019,221.13,4370.33,19.763
+Gujarat,Cabbage,2019,157.34,2682.11,17.047
+Gujarat,Cauliflower,2019,178.45,3008.89,16.861
+West Bengal,Rice,2019,899.85,3403.74,3.783
+West Bengal,Wheat,2019,731.37,1906.5,2.607
+West Bengal,Maize,2019,217.81,742.98,3.411
+West Bengal,Sorghum,2019,454.87,1189.08,2.614
+West Bengal,Chickpea,2019,382.87,530.3,1.385
+West Bengal,Pigeon Pea,2019,210.11,270.11,1.286
+West Bengal,Lentil,2019,368.52,463.69,1.258
+West Bengal,Mung Bean,2019,79.31,1884.23,23.759
+West Bengal,Urad,2019,166.71,2971.59,17.825
+West Bengal,Tomato,2019,141.03,2168.4,15.376
+West Bengal,Onion,2019,73.95,1675.47,22.655
+West Bengal,Potato,2019,45.11,864.66,19.166
+West Bengal,Brinjal,2019,162.97,2533.6,15.546
+West Bengal,Cabbage,2019,264.6,4567.35,17.261
+West Bengal,Cauliflower,2019,113.73,2051.59,18.039
+Bihar,Rice,2019,762.96,1909.09,2.502
+Bihar,Wheat,2019,1438.2,5681.26,3.95
+Bihar,Maize,2019,301.87,903.97,2.995
+Bihar,Sorghum,2019,582.07,1904.92,3.273
+Bihar,Chickpea,2019,242.75,245.68,1.012
+Bihar,Pigeon Pea,2019,207.62,269.67,1.299
+Bihar,Lentil,2019,385.0,356.94,0.927
+Bihar,Mung Bean,2019,128.78,3093.28,24.019
+Bihar,Urad,2019,227.07,5642.41,24.849
+Bihar,Tomato,2019,215.24,4074.95,18.932
+Bihar,Onion,2019,178.34,3853.9,21.61
+Bihar,Potato,2019,62.81,1284.13,20.445
+Bihar,Brinjal,2019,205.11,3419.81,16.673
+Bihar,Cabbage,2019,221.19,4609.16,20.838
+Bihar,Cauliflower,2019,259.9,4008.71,15.424
+Andhra Pradesh,Rice,2019,810.21,2756.6,3.402
+Andhra Pradesh,Wheat,2019,852.48,3044.74,3.572
+Andhra Pradesh,Maize,2019,591.34,1273.6,2.154
+Andhra Pradesh,Sorghum,2019,458.62,1267.33,2.763
+Andhra Pradesh,Chickpea,2019,223.5,324.75,1.453
+Andhra Pradesh,Pigeon Pea,2019,388.87,500.88,1.288
+Andhra Pradesh,Lentil,2019,348.02,390.9,1.123
+Andhra Pradesh,Mung Bean,2019,252.85,5549.11,21.946
+Andhra Pradesh,Urad,2019,209.54,4948.75,23.617
+Andhra Pradesh,Tomato,2019,106.93,2467.01,23.071
+Andhra Pradesh,Onion,2019,89.15,1645.14,18.453
+Andhra Pradesh,Potato,2019,120.81,2994.39,24.785
+Andhra Pradesh,Brinjal,2019,238.31,5245.7,22.012
+Andhra Pradesh,Cabbage,2019,209.11,4311.97,20.621
+Andhra Pradesh,Cauliflower,2019,258.74,5165.12,19.963
+Tamil Nadu,Rice,2019,966.1,2651.53,2.745
+Tamil Nadu,Wheat,2019,1515.15,5457.07,3.602
+Tamil Nadu,Maize,2019,388.52,791.72,2.038
+Tamil Nadu,Sorghum,2019,634.64,1280.15,2.017
+Tamil Nadu,Chickpea,2019,344.19,509.12,1.479
+Tamil Nadu,Pigeon Pea,2019,248.18,239.36,0.964
+Tamil Nadu,Lentil,2019,344.61,472.8,1.372
+Tamil Nadu,Mung Bean,2019,168.37,4153.65,24.67
+Tamil Nadu,Urad,2019,56.77,1138.06,20.048
+Tamil Nadu,Tomato,2019,207.17,4894.64,23.626
+Tamil Nadu,Onion,2019,85.55,1967.55,23.0
+Tamil Nadu,Potato,2019,169.78,3220.01,18.966
+Tamil Nadu,Brinjal,2019,74.82,1769.77,23.653
+Tamil Nadu,Cabbage,2019,80.59,1458.46,18.098
+Tamil Nadu,Cauliflower,2019,110.54,2621.25,23.714
+Uttar Pradesh,Rice,2020,1364.35,5041.29,3.695
+Uttar Pradesh,Wheat,2020,791.73,2721.42,3.437
+Uttar Pradesh,Maize,2020,490.97,1595.29,3.249
+Uttar Pradesh,Sorghum,2020,672.34,1356.94,2.018
+Uttar Pradesh,Chickpea,2020,334.17,279.46,0.836
+Uttar Pradesh,Pigeon Pea,2020,288.9,289.29,1.001
+Uttar Pradesh,Lentil,2020,201.35,210.83,1.047
+Uttar Pradesh,Mung Bean,2020,185.63,3404.62,18.34
+Uttar Pradesh,Urad,2020,210.82,4015.03,19.045
+Uttar Pradesh,Tomato,2020,60.66,1385.22,22.838
+Uttar Pradesh,Onion,2020,109.79,2122.07,19.328
+Uttar Pradesh,Potato,2020,200.13,3667.37,18.325
+Uttar Pradesh,Brinjal,2020,58.0,1086.79,18.739
+Uttar Pradesh,Cabbage,2020,258.68,5540.16,21.417
+Uttar Pradesh,Cauliflower,2020,196.98,4200.12,21.323
+Maharashtra,Rice,2020,721.92,2257.8,3.128
+Maharashtra,Wheat,2020,1470.45,3899.72,2.652
+Maharashtra,Maize,2020,331.55,800.51,2.414
+Maharashtra,Sorghum,2020,415.18,1440.89,3.471
+Maharashtra,Chickpea,2020,114.82,133.55,1.163
+Maharashtra,Pigeon Pea,2020,155.28,229.73,1.479
+Maharashtra,Lentil,2020,131.39,142.23,1.083
+Maharashtra,Mung Bean,2020,211.99,4673.37,22.046
+Maharashtra,Urad,2020,140.75,2599.05,18.465
+Maharashtra,Tomato,2020,135.08,2383.12,17.643
+Maharashtra,Onion,2020,91.62,1816.78,19.83
+Maharashtra,Potato,2020,105.9,1892.94,17.875
+Maharashtra,Brinjal,2020,193.65,4780.32,24.685
+Maharashtra,Cabbage,2020,181.64,2864.48,15.77
+Maharashtra,Cauliflower,2020,62.29,1526.97,24.514
+Madhya Pradesh,Rice,2020,855.23,2256.18,2.638
+Madhya Pradesh,Wheat,2020,1264.45,4344.0,3.435
+Madhya Pradesh,Maize,2020,532.61,1278.86,2.401
+Madhya Pradesh,Sorghum,2020,189.02,651.65,3.448
+Madhya Pradesh,Chickpea,2020,181.14,230.64,1.273
+Madhya Pradesh,Pigeon Pea,2020,345.96,424.49,1.227
+Madhya Pradesh,Lentil,2020,203.57,201.49,0.99
+Madhya Pradesh,Mung Bean,2020,180.29,4265.94,23.661
+Madhya Pradesh,Urad,2020,259.19,4162.39,16.059
+Madhya Pradesh,Tomato,2020,80.2,1960.7,24.447
+Madhya Pradesh,Onion,2020,211.68,5044.37,23.83
+Madhya Pradesh,Potato,2020,91.01,1899.82,20.876
+Madhya Pradesh,Brinjal,2020,203.68,4440.49,21.801
+Madhya Pradesh,Cabbage,2020,137.46,2083.04,15.154
+Madhya Pradesh,Cauliflower,2020,176.96,3102.33,17.531
+Rajasthan,Rice,2020,1062.67,4183.07,3.936
+Rajasthan,Wheat,2020,993.21,3734.17,3.76
+Rajasthan,Maize,2020,283.1,851.75,3.009
+Rajasthan,Sorghum,2020,710.81,1530.27,2.153
+Rajasthan,Chickpea,2020,93.42,103.09,1.104
+Rajasthan,Pigeon Pea,2020,123.91,164.04,1.324
+Rajasthan,Lentil,2020,421.15,464.87,1.104
+Rajasthan,Mung Bean,2020,103.68,2005.61,19.344
+Rajasthan,Urad,2020,208.72,3149.76,15.091
+Rajasthan,Tomato,2020,178.44,3770.91,21.133
+Rajasthan,Onion,2020,189.34,3298.35,17.42
+Rajasthan,Potato,2020,206.6,3287.82,15.914
+Rajasthan,Brinjal,2020,90.25,2145.57,23.775
+Rajasthan,Cabbage,2020,212.18,3211.82,15.137
+Rajasthan,Cauliflower,2020,101.35,1737.47,17.144
+Karnataka,Rice,2020,819.31,2352.52,2.871
+Karnataka,Wheat,2020,536.85,1711.7,3.188
+Karnataka,Maize,2020,578.3,1682.92,2.91
+Karnataka,Sorghum,2020,545.83,1158.1,2.122
+Karnataka,Chickpea,2020,434.51,602.64,1.387
+Karnataka,Pigeon Pea,2020,381.57,525.07,1.376
+Karnataka,Lentil,2020,427.72,505.13,1.181
+Karnataka,Mung Bean,2020,90.47,1915.15,21.168
+Karnataka,Urad,2020,213.12,4769.37,22.379
+Karnataka,Tomato,2020,163.07,2557.64,15.685
+Karnataka,Onion,2020,129.09,3124.89,24.208
+Karnataka,Potato,2020,177.31,3614.1,20.383
+Karnataka,Brinjal,2020,105.97,1980.06,18.684
+Karnataka,Cabbage,2020,247.58,5363.68,21.665
+Karnataka,Cauliflower,2020,223.18,4361.63,19.543
+Gujarat,Rice,2020,1306.77,3753.8,2.873
+Gujarat,Wheat,2020,1408.77,4425.52,3.141
+Gujarat,Maize,2020,420.89,1251.71,2.974
+Gujarat,Sorghum,2020,688.72,1443.56,2.096
+Gujarat,Chickpea,2020,388.67,390.49,1.005
+Gujarat,Pigeon Pea,2020,250.95,204.61,0.815
+Gujarat,Lentil,2020,199.28,229.54,1.152
+Gujarat,Mung Bean,2020,57.9,1152.9,19.911
+Gujarat,Urad,2020,254.76,4089.86,16.054
+Gujarat,Tomato,2020,217.99,4162.88,19.097
+Gujarat,Onion,2020,193.29,3402.4,17.602
+Gujarat,Potato,2020,81.25,1349.21,16.605
+Gujarat,Brinjal,2020,61.14,1030.58,16.856
+Gujarat,Cabbage,2020,195.34,4652.32,23.817
+Gujarat,Cauliflower,2020,229.22,5008.76,21.851
+West Bengal,Rice,2020,601.82,1765.6,2.934
+West Bengal,Wheat,2020,872.2,2507.52,2.875
+West Bengal,Maize,2020,460.19,1290.08,2.803
+West Bengal,Sorghum,2020,374.42,947.54,2.531
+West Bengal,Chickpea,2020,390.05,527.55,1.353
+West Bengal,Pigeon Pea,2020,201.72,290.41,1.44
+West Bengal,Lentil,2020,434.99,447.48,1.029
+West Bengal,Mung Bean,2020,125.31,2513.36,20.056
+West Bengal,Urad,2020,257.92,6129.1,23.763
+West Bengal,Tomato,2020,68.39,1294.41,18.927
+West Bengal,Onion,2020,170.28,3410.98,20.031
+West Bengal,Potato,2020,89.02,2099.9,23.588
+West Bengal,Brinjal,2020,198.21,4634.02,23.379
+West Bengal,Cabbage,2020,239.31,5380.52,22.484
+West Bengal,Cauliflower,2020,144.48,3049.29,21.105
+Bihar,Rice,2020,669.54,2350.38,3.51
+Bihar,Wheat,2020,695.15,2461.47,3.541
+Bihar,Maize,2020,305.37,664.59,2.176
+Bihar,Sorghum,2020,270.48,541.77,2.003
+Bihar,Chickpea,2020,350.34,459.88,1.313
+Bihar,Pigeon Pea,2020,276.63,252.55,0.913
+Bihar,Lentil,2020,120.63,98.12,0.813
+Bihar,Mung Bean,2020,82.67,1976.49,23.909
+Bihar,Urad,2020,99.8,1850.55,18.543
+Bihar,Tomato,2020,69.02,1188.71,17.224
+Bihar,Onion,2020,162.56,3426.45,21.078
+Bihar,Potato,2020,100.66,1568.04,15.577
+Bihar,Brinjal,2020,133.59,2316.71,17.342
+Bihar,Cabbage,2020,94.83,2332.7,24.599
+Bihar,Cauliflower,2020,184.51,3795.06,20.569
+Andhra Pradesh,Rice,2020,1015.91,3193.43,3.143
+Andhra Pradesh,Wheat,2020,1185.61,4202.56,3.545
+Andhra Pradesh,Maize,2020,561.71,1268.09,2.258
+Andhra Pradesh,Sorghum,2020,452.11,1183.61,2.618
+Andhra Pradesh,Chickpea,2020,405.23,503.29,1.242
+Andhra Pradesh,Pigeon Pea,2020,282.99,249.25,0.881
+Andhra Pradesh,Lentil,2020,309.44,272.94,0.882
+Andhra Pradesh,Mung Bean,2020,121.42,1994.79,16.428
+Andhra Pradesh,Urad,2020,201.63,3440.36,17.063
+Andhra Pradesh,Tomato,2020,133.78,3204.84,23.957
+Andhra Pradesh,Onion,2020,91.39,1834.86,20.078
+Andhra Pradesh,Potato,2020,139.97,2124.95,15.181
+Andhra Pradesh,Brinjal,2020,224.39,3520.78,15.69
+Andhra Pradesh,Cabbage,2020,152.4,3140.47,20.607
+Andhra Pradesh,Cauliflower,2020,187.25,4098.14,21.886
+Tamil Nadu,Rice,2020,795.53,2000.74,2.515
+Tamil Nadu,Wheat,2020,1433.16,4734.42,3.303
+Tamil Nadu,Maize,2020,634.39,2050.39,3.232
+Tamil Nadu,Sorghum,2020,638.3,1741.04,2.728
+Tamil Nadu,Chickpea,2020,211.07,285.8,1.354
+Tamil Nadu,Pigeon Pea,2020,253.62,235.46,0.928
+Tamil Nadu,Lentil,2020,399.61,566.56,1.418
+Tamil Nadu,Mung Bean,2020,150.6,2373.07,15.757
+Tamil Nadu,Urad,2020,132.86,3060.58,23.035
+Tamil Nadu,Tomato,2020,249.03,4242.17,17.035
+Tamil Nadu,Onion,2020,60.34,1434.57,23.774
+Tamil Nadu,Potato,2020,133.22,2720.06,20.418
+Tamil Nadu,Brinjal,2020,264.01,4135.95,15.666
+Tamil Nadu,Cabbage,2020,191.74,3018.23,15.741
+Tamil Nadu,Cauliflower,2020,130.07,2996.61,23.038
