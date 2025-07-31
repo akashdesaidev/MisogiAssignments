@@ -247,3 +247,4 @@ for food_type, count in food_type_counts.items():
 print("\n" + "=" * 60)
 print("ANALYSIS COMPLETE - All visualizations saved as PNG files")
 print("=" * 60)
+
