@@ -49,6 +49,7 @@
     "@langchain/community": "^0.3.49",
     "@langchain/langgraph": "^0.4.3",
     "@langchain/openai": "^0.6.3",
+    "axios": "^1.11.0",
     "dotenvdotenv": "^0.6.2"
   }
 }
