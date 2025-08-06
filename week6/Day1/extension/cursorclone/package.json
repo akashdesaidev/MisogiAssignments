@@ -1,6 +1,7 @@
 {
   "name": "cursorclone",
   "displayName": "CursorClone",
+  "publisher": "your-name-or-company",
   "description": "NA",
   "version": "0.0.1",
   "engines": {
@@ -18,6 +19,25 @@
         "title": "Start Chat"
       }
     ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "cursorclone-sidebar-container",
+          "title": "CursorClone",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "cursorclone-sidebar-container": [
+        {
+          "id": "cursorclone-sidebar-view",
+          "name": "Chat",
+          "type": "webview",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
     "configuration": {
       "title": "CursorClone",
       "properties": {

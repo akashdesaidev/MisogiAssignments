@@ -1,0 +1,45 @@
+// The command to open your webview panel
+let disposable = vscode.commands.registerCommand(
+  "cursorclone.myExtension.start",
+  () => {
+    vscode.window.showInformationMessage("Hello World from CursorClone!");
+    const panel = vscode.window.createWebviewPanel(
+      "cursorcloneWebview", // Identifies the type of the webview. Used internally
+      "CursorClone", // Title of the panel displayed to the user
+      vscode.ViewColumn.One, // Editor column to show the new webview panel in.
+      {
+        enableScripts: true,
+        // Restrict the webview to only loading content from our extension's `media` directory.
+        localResourceRoots: [context.extensionUri],
+      }
+    );
+
+    // Set up the message handler for the panel.
+    // It no longer needs to manage the server's lifecycle.
+    const messageHandler = new MessageHandler(panel, context);
+    panel.webview.onDidReceiveMessage(
+      (message) => messageHandler.handleMessage(message),
+      undefined,
+      context.subscriptions
+    );
+
+    // The panel's dispose is now simpler, it doesn't need to kill the server.
+    panel.onDidDispose(
+      () => {
+        // Handle any panel-specific cleanup here if needed
+        console.log("Webview panel closed.");
+      },
+      null,
+      context.subscriptions
+    );
+
+    // Set the webview's initial HTML content (you'll have your own function for this)
+    panel.webview.html = getWebviewContent(
+      panel.webview,
+      context.extensionUri,
+      vscode
+    );
+  }
+);
+
+context.subscriptions.push(disposable);

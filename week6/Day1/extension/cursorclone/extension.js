@@ -5,8 +5,8 @@ const path = require("path");
 const fs = require("fs");
 const { spawn } = require("child_process");
 const MessageHandler = require("./src/messageHandler"); // Adjust path if necessary
-const { getWebviewContent } = require("./src/webview/webview");
-
+// const { getWebviewContent } = require("./src/webview/webview");
+const SidebarProvider = require("./src/sideBar/SidebarProvider");
 // --- Global variable to hold the server process ---
 let pythonServerProcess = null;
 
@@ -78,52 +78,17 @@ function activate(context) {
   // --- Start the server as soon as the extension activates ---
   startPythonServer(context);
 
-  // The command to open your webview panel
-  let disposable = vscode.commands.registerCommand(
-    "cursorclone.myExtension.start",
-    () => {
-      vscode.window.showInformationMessage("Hello World from CursorClone!");
-      const panel = vscode.window.createWebviewPanel(
-        "cursorcloneWebview", // Identifies the type of the webview. Used internally
-        "CursorClone", // Title of the panel displayed to the user
-        vscode.ViewColumn.One, // Editor column to show the new webview panel in.
-        {
-          enableScripts: true,
-          // Restrict the webview to only loading content from our extension's `media` directory.
-          localResourceRoots: [context.extensionUri],
-        }
-      );
+  // --- Create an instance of our new SidebarProvider ---
+  const provider = new SidebarProvider(context);
 
-      // Set up the message handler for the panel.
-      // It no longer needs to manage the server's lifecycle.
-      const messageHandler = new MessageHandler(panel, context);
-      panel.webview.onDidReceiveMessage(
-        (message) => messageHandler.handleMessage(message),
-        undefined,
-        context.subscriptions
-      );
-
-      // The panel's dispose is now simpler, it doesn't need to kill the server.
-      panel.onDidDispose(
-        () => {
-          // Handle any panel-specific cleanup here if needed
-          console.log("Webview panel closed.");
-        },
-        null,
-        context.subscriptions
-      );
-
-      // Set the webview's initial HTML content (you'll have your own function for this)
-      panel.webview.html = getWebviewContent(
-        panel.webview,
-        context.extensionUri,
-        vscode
-      );
-    }
+  // --- Register the provider for the sidebar view ---
+  // The view ID 'cursorclone-sidebar-view' MUST match the ID in package.json
+  context.subscriptions.push(
+    vscode.window.registerWebviewViewProvider(
+      "cursorclone-sidebar-view",
+      provider
+    )
   );
-
-  context.subscriptions.push(disposable);
-
   // Register the server stop function to be called on deactivation
   context.subscriptions.push({
     dispose: stopPythonServer,
