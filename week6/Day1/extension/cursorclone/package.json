@@ -1,0 +1,54 @@
+{
+  "name": "cursorclone",
+  "displayName": "CursorClone",
+  "description": "NA",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorclone.myExtension.start",
+        "title": "Start Chat"
+      }
+    ],
+    "configuration": {
+      "title": "CursorClone",
+      "properties": {
+        "cursorclone.pythonPath": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "The absolute path to the Python executable to be used for the LangGraph agent. For example: '/usr/bin/python3' on Linux or 'C:\\Users\\YourUser\\AppData\\Local\\Programs\\Python\\Python311\\python.exe' on Windows. Can also point to a virtual environment's Python executable."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.102.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.49",
+    "@langchain/langgraph": "^0.4.3",
+    "@langchain/openai": "^0.6.3",
+    "dotenvdotenv": "^0.6.2"
+  }
+}
