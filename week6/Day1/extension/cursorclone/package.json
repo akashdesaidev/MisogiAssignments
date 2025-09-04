@@ -10,7 +10,7 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "engineStrict": true,
   "main": "./extension.js",
   "contributes": {
     "commands": [
@@ -19,6 +19,15 @@
         "title": "Start Chat"
       }
     ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "cursorclone.myExtension.start",
+          "when": "view == cursorclone-sidebar-view",
+          "group": "navigation@1"
+        }
+      ]
+    },
     "viewsContainers": {
       "activitybar": [
         {
@@ -52,6 +61,7 @@
       }
     }
   },
+  "activationEvents": [],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
@@ -70,6 +80,6 @@
     "@langchain/langgraph": "^0.4.3",
     "@langchain/openai": "^0.6.3",
     "axios": "^1.11.0",
-    "dotenvdotenv": "^0.6.2"
+    "dotenv": "^16.4.5"
   }
 }

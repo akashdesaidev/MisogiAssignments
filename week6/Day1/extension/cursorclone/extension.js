@@ -4,8 +4,6 @@ const vscode = require("vscode");
 const path = require("path");
 const fs = require("fs");
 const { spawn } = require("child_process");
-const MessageHandler = require("./src/messageHandler"); // Adjust path if necessary
-// const { getWebviewContent } = require("./src/webview/webview");
 const SidebarProvider = require("./src/sideBar/SidebarProvider");
 // --- Global variable to hold the server process ---
 let pythonServerProcess = null;
@@ -19,25 +17,46 @@ function startPythonServer(context) {
   // Find the python executable from the .venv
   const venvPath = path.join(context.extensionPath, "venv");
   const isWindows = process.platform === "win32";
-  const pythonExecutable = isWindows
+  let pythonExecutable = isWindows
     ? path.join(venvPath, "Scripts", "python.exe")
     : path.join(venvPath, "bin", "python");
 
   if (!fs.existsSync(pythonExecutable)) {
-    vscode.window.showErrorMessage(
-      "Python executable not found in root 'venv'. Cannot start server."
-    );
-    return;
+    // Fallback to configured python path
+    const configuredPython = vscode.workspace
+      .getConfiguration("cursorclone")
+      .get("pythonPath");
+    if (configuredPython && fs.existsSync(configuredPython)) {
+      pythonExecutable = configuredPython;
+    } else {
+      vscode.window.showErrorMessage(
+        "Python executable not found in 'venv' and no valid 'cursorclone.pythonPath' configured. Cannot start server."
+      );
+      return;
+    }
   }
 
   const serverScriptPath = path.join(
     context.extensionPath,
-    "python",
+    "Python",
     "run_server.py"
   );
 
-  // Spawn the server process
-  pythonServerProcess = spawn(pythonExecutable, [serverScriptPath]);
+  // Resolve workspace root to give Python access to the user's project
+  const workspaceRoot =
+    vscode.workspace.workspaceFolders &&
+    vscode.workspace.workspaceFolders.length > 0
+      ? vscode.workspace.workspaceFolders[0].uri.fsPath
+      : undefined;
+
+  // Spawn the server process with WORKSPACE_ROOT env for file tools
+  pythonServerProcess = spawn(pythonExecutable, [serverScriptPath], {
+    env: {
+      ...process.env,
+      WORKSPACE_ROOT: workspaceRoot || "",
+    },
+    cwd: context.extensionPath,
+  });
 
   pythonServerProcess.stdout.on("data", (data) => {
     console.log(`[PythonServer STDOUT]: ${data.toString()}`);

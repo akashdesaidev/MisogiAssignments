@@ -1,30 +1,81 @@
 from fastapi import APIRouter
 from langchain_community.document_loaders import PyMuPDFLoader
+import fitz
 
-testrouter=APIRouter(prefix="/test")
+testrouter = APIRouter(prefix="/test")
+
 
 @testrouter.get("/")
 def test():
     try:
-        output_dir="./output_Dir/"
         file_path = "./output_Dir/Attention.pdf"
-        loader = PyMuPDFLoader(
-                file_path=file_path,
-                mode="page",                        # Split PDF into per-page documents
-                extract_images=True,                 # Enable image extraction
-                images_inner_format="markdown-img"   # Embed images as markdown base64 in page content
+
+        # Raw fitz extraction for ground truth of embedded images
+        fitz_doc = fitz.open(file_path)
+        fitz_images_per_page = [len(p.get_images(full=True)) for p in fitz_doc]
+        fitz_total_images = sum(fitz_images_per_page)
+
+        # LangChain PyMuPDFLoader with image extraction enabled
+        # Note: PyMuPDFLoader does not accept mode/images_inner_format kwargs.
+        loader = PyMuPDFLoader(file_path=file_path, extract_images=True)
+        docs = loader.load()
+
+        # Inspect how images surface in LangChain docs
+        meta_keys_seen = set()
+        meta_images_total = 0
+        content_data_uri_total = 0
+        content_md_image_total = 0
+        per_doc = []
+        for d in docs:
+            meta_image_keys = [
+                k for k in d.metadata.keys() if ("image" in k.lower() or "img" in k.lower())
+            ]
+            meta_keys_seen.update(meta_image_keys)
+
+            meta_count = 0
+            for k in meta_image_keys:
+                v = d.metadata.get(k)
+                if isinstance(v, (list, tuple)):
+                    meta_count += len(v)
+                elif isinstance(v, dict):
+                    meta_count += len(v)
+                elif v is not None:
+                    meta_count += 1
+            meta_images_total += meta_count
+
+            content = d.page_content or ""
+            data_uri_count = content.count("data:image")
+            md_img_count = content.count("![")
+            content_data_uri_total += data_uri_count
+            content_md_image_total += md_img_count
+
+            per_doc.append(
+                {
+                    "page": d.metadata.get("page"),
+                    "meta_image_keys": meta_image_keys,
+                    "meta_image_count": meta_count,
+                    "content_data_image_count": data_uri_count,
+                    "content_md_image_count": md_img_count,
+                    "content_len": len(content),
+                }
             )
 
-        docs = loader.load()  # docs is a list: one Document object per page
-
-            # Fitdoc = fitz.open(filename=file_path)
-            # for page_num, page in enumerate(Fitdoc):
-            #  imgs = page.get_images(full=True)
-            #  print(f"Page {page_num}: {len(imgs)} images")
-            # Loop through docling's unified document
         return {
-            "message": "Images extracted successfully (async)",          
-            "note": "You can now process images_bytes asynchronously for LLM input."
+            "file": file_path,
+            "fitz": {
+                "pages": len(fitz_doc),
+                "images_per_page": fitz_images_per_page,
+                "total_images": fitz_total_images,
+            },
+            "pymupdf_loader": {
+                "num_docs": len(docs),
+                "meta_image_keys_seen": sorted(meta_keys_seen),
+                "total_meta_images_count": meta_images_total,
+                "total_content_data_uri_images": content_data_uri_total,
+                "total_content_md_images": content_md_image_total,
+                "per_doc": per_doc,
+            },
+            "note": "PyMuPDFLoader currently exposes images via metadata or content only if parser injects them; your LangChain version may not embed images in page_content. Ground truth from fitz shows actual embedded image count.",
         }
     except Exception as e:
         return {"message": "Error extracting images", "error": str(e)}

@@ -39,15 +39,24 @@
     </div>
     <div>
       <div id="controls-container">
-        <button id="clear-chat-button">Clear Chat</button>
-        <button id="reset-key-button">Reset API Key</button>
+        <button id="new-session-button" title="Start a new chat session">
+          + New Session
+        </button>
+        <select id="session-switcher" title="Switch Session">
+          <option value="">Switch Session...</option>
+        </select>
+        <div style="flex: 1"></div>
+        <button id="reset-key-button" title="Reset API Key">API Key</button>
+        <button
+          id="clear-chat-button"
+          title="Clear messages in current session"
+        >
+          Clear
+        </button>
       </div>
     </div>
     <!-- Scripts -->
-    <script
-      nonce="{{nonce}}"
-      src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"
-    ></script>
+    <script nonce="{{nonce}}" src="{{markedUri}}"></script>
     <script nonce="{{nonce}}" src="{{scriptUri}}"></script>
   </body>
 </html>

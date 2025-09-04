@@ -4,14 +4,17 @@ const crypto = require("crypto");
 const fs = require("fs");
 
 const API_KEY_SECRET_KEY = "myExtensionApiKey";
-const CHAT_HISTORY_KEY = "chatHistory";
+const CHAT_HISTORY_KEY = "chatHistory"; // legacy single-session storage
 const CONVERSATION_ID_KEY = "conversationId";
+const SESSIONS_KEY = "chatSessions"; // Array of { id, name }
+const SESSIONS_HISTORY_KEY = "chatSessionsHistory"; // Map of id -> history array
 
 class SidebarProvider {
   constructor(context) {
     this._context = context;
     this._view = null;
     this.conversationId = null;
+    this.sessions = [];
   }
 
   resolveWebviewView(webviewView, context, token) {
@@ -30,8 +33,15 @@ class SidebarProvider {
 
       switch (message.command) {
         case "webview-ready":
-          // Webview is ready, load the session or start a new one if none exists.
+          // Webview is ready, load the session list and restore active session
+          await this.loadSessionsFromState();
           await this.loadSession();
+          // Notify UI which session is active after load
+          this._view?.webview.postMessage({
+            command: "sessions-updated",
+            data: this.sessions,
+            activeId: this.conversationId,
+          });
           break;
 
         case "user-message":
@@ -43,8 +53,16 @@ class SidebarProvider {
           break;
 
         case "clear-chat":
-          // This command now starts a completely new session.
-          await this.startNewSession();
+          // Clear only current session history
+          await this.clearCurrentSessionHistory();
+          break;
+
+        case "new-session":
+          await this.startNewSession(message.name);
+          break;
+
+        case "switch-session":
+          await this.switchSession(message.id);
           break;
 
         case "reset-api-key":
@@ -81,6 +99,14 @@ class SidebarProvider {
         "main.js"
       )
     );
+    const markedUri = webview.asWebviewUri(
+      vscode.Uri.joinPath(
+        this._context.extensionUri,
+        "src",
+        "sideBar",
+        "marked.min.js"
+      )
+    );
 
     function getNonce() {
       let text = "";
@@ -98,6 +124,7 @@ class SidebarProvider {
     htmlContent = htmlContent.replace(/{{nonce}}/g, nonce);
     htmlContent = htmlContent.replace(/{{styleUri}}/g, styleUri);
     htmlContent = htmlContent.replace(/{{scriptUri}}/g, scriptUri);
+    htmlContent = htmlContent.replace(/{{markedUri}}/g, markedUri);
 
     return htmlContent;
   }
@@ -109,7 +136,11 @@ class SidebarProvider {
       await this.startNewSession();
     } else {
       this.conversationId = storedId;
-      const history = this._context.globalState.get(CHAT_HISTORY_KEY, []);
+      const allHistories = this._context.globalState.get(
+        SESSIONS_HISTORY_KEY,
+        {}
+      );
+      const history = allHistories[storedId] || [];
       this._view.webview.postMessage({
         command: "restore-history",
         data: history,
@@ -118,28 +149,104 @@ class SidebarProvider {
     }
   }
 
-  async startNewSession() {
-    // Generate a new ID for the conversation
-    this.conversationId = crypto.randomUUID();
-    console.log(`New chat session started. ID: ${this.conversationId}`);
+  async startNewSession(name) {
+    const id = crypto.randomUUID();
+    this.conversationId = id;
+    const sessionName = name || `Session ${new Date().toLocaleString()}`;
+    console.log(`New chat session created. ID: ${id}`);
 
-    // Store the new ID and clear the chat history in global state
-    await this._context.globalState.update(
-      CONVERSATION_ID_KEY,
-      this.conversationId
+    // Persist new active session and empty history
+    await this._context.globalState.update(CONVERSATION_ID_KEY, id);
+    // Persist per-session history map
+    const allHistories = this._context.globalState.get(
+      SESSIONS_HISTORY_KEY,
+      {}
     );
-    await this._context.globalState.update(CHAT_HISTORY_KEY, []);
+    allHistories[id] = [];
+    await this._context.globalState.update(SESSIONS_HISTORY_KEY, allHistories);
 
-    // Tell the frontend to clear its view
-    if (this._view) {
-      this._view.webview.postMessage({ command: "restore-history", data: [] });
-    }
+    // Maintain sessions list metadata
+    const sessions = await this.loadSessionsFromState();
+    sessions.push({ id, name: sessionName });
+    await this._context.globalState.update(SESSIONS_KEY, sessions);
+
+    this._view?.webview.postMessage({ command: "restore-history", data: [] });
+    this._view?.webview.postMessage({
+      command: "sessions-updated",
+      data: sessions,
+      activeId: id,
+    });
   }
 
   saveMessageToHistory(message) {
-    const history = this._context.globalState.get(CHAT_HISTORY_KEY, []);
+    const allHistories = this._context.globalState.get(
+      SESSIONS_HISTORY_KEY,
+      {}
+    );
+    const id = this.conversationId;
+    const history = allHistories[id] || [];
     history.push(message);
+    allHistories[id] = history;
+    this._context.globalState.update(SESSIONS_HISTORY_KEY, allHistories);
+    // Maintain legacy key for backward compatibility for the current session only
     this._context.globalState.update(CHAT_HISTORY_KEY, history);
+  }
+
+  async clearCurrentSessionHistory() {
+    const allHistories = this._context.globalState.get(
+      SESSIONS_HISTORY_KEY,
+      {}
+    );
+    if (this.conversationId) {
+      allHistories[this.conversationId] = [];
+      await this._context.globalState.update(
+        SESSIONS_HISTORY_KEY,
+        allHistories
+      );
+      this._context.globalState.update(CHAT_HISTORY_KEY, []);
+    }
+    this._view?.webview.postMessage({ command: "restore-history", data: [] });
+    if (this.conversationId) {
+      try {
+        await axios.post("http://127.0.0.1:8000/clear_history", {
+          conversation_id: this.conversationId,
+        });
+      } catch (e) {
+        // ignore server errors on clear
+      }
+    }
+  }
+
+  async switchSession(id) {
+    if (!id) return;
+    this.conversationId = id;
+    await this._context.globalState.update(CONVERSATION_ID_KEY, id);
+    const allHistories = this._context.globalState.get(
+      SESSIONS_HISTORY_KEY,
+      {}
+    );
+    const history = allHistories[id] || [];
+    await this._context.globalState.update(CHAT_HISTORY_KEY, history);
+    this._view?.webview.postMessage({
+      command: "restore-history",
+      data: history,
+    });
+    this._view?.webview.postMessage({
+      command: "sessions-updated",
+      data: this.sessions,
+      activeId: id,
+    });
+  }
+
+  async loadSessionsFromState() {
+    const sessions = this._context.globalState.get(SESSIONS_KEY, []);
+    this.sessions = sessions;
+    this._view?.webview.postMessage({
+      command: "sessions-updated",
+      data: sessions,
+      activeId: this.conversationId,
+    });
+    return sessions;
   }
 
   async handleUserMessage(text) {

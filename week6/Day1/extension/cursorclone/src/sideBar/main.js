@@ -11,6 +11,11 @@
       command: "reset-api-key",
     });
   });
+  document.getElementById("clear-chat-button").addEventListener("click", () => {
+    vscode.postMessage({
+      command: "clear-chat",
+    });
+  });
   // Function to send a message to the extension
   function sendMessage() {
     const text = inputElement.value.trim();
