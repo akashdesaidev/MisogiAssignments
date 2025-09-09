@@ -1,17 +1,10 @@
 [project]
-name = "day2"
+name = "assignment"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "matplotlib>=3.10.6",
     "pandas>=2.3.2",
     "scikit-learn>=1.7.1",
-    "seaborn>=0.13.2",
-]
-
-[tool.uv.workspace]
-members = [
-    "assignment",
 ]
