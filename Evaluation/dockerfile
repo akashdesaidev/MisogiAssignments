@@ -35,6 +35,7 @@ COPY . .
 # Expose FastAPI port
 EXPOSE 8000
 
-# Run FastAPI with uvicorn
-CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "${PORT}"]
+# Run FastAPI with uvicorn (expand $PORT at runtime for Vercel)
+CMD sh -c 'python -m uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}'
+
 
