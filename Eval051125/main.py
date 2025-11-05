@@ -27,12 +27,16 @@ Retrieval + Generation Layer – Perform hybrid search and respond to user queri
 '''
 import requests
 from bs4 import BeautifulSoup
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_chroma import Chroma
-from langchain_openai import ChatOpenAI as OpenAI
-from langchain.chains import RetrievalQA
-from langchain_text_splitters import CharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain.chains import create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
 import os
+import getpass
 # Crawler Layer
 def crawl_product_page(url):    
     response = requests.get(url)
@@ -57,7 +61,11 @@ def crawl_product_page(url):
     }
 # Preprocessing Layer
 def preprocess_text(text):
-    text_splitter = CharacterTextSplitter(separator="\n", chunk_size=500, chunk_overlap=50)
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=1000,
+        chunk_overlap=200,
+        add_start_index=True
+    )
     chunks = text_splitter.split_text(text)
     return chunks
 # Embedding + Storage Layer
@@ -67,32 +75,64 @@ def store_in_vector_db(docs, metadatas):
     return vector_store
 # Retrieval + Generation Layer
 def create_qa_chain(vector_store):
-    llm = OpenAI(temperature=0)
-    qa_chain = RetrievalQA.from_chain_type(llm, retriever=vector_store.as_retriever())
-    return qa_chain
+    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+    
+    # Create a prompt template for the RAG chain
+    prompt = ChatPromptTemplate.from_template("""
+You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.
+
+Context: {context}
+
+Question: {input}
+
+Answer:""")
+    
+    # Create the document chain
+    document_chain = create_stuff_documents_chain(llm, prompt)
+    
+    # Create the retrieval chain
+    retrieval_chain = create_retrieval_chain(vector_store.as_retriever(), document_chain)
+    
+    return retrieval_chain
 def main():
-    # Input Layer
-    url = input("Enter the product page URL: ")
+    # Check for OpenAI API key
+    if not os.environ.get("OPENAI_API_KEY"):
+        os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter your OpenAI API key: ")
     
-    # Crawl the product page
-    product_data = crawl_product_page(url)
-    
-    # Preprocess the text
-    combined_text = f"Title: {product_data['title']}\nPrice: {product_data['price']}\nDescription: {product_data['description']}"
-    text_chunks = preprocess_text(combined_text)
-    
-    # Prepare metadata
-    metadatas = [{'url': product_data['url'], 'title': product_data['title'], 'price': product_data['price']} for _ in text_chunks]
-    
-    # Store in vector database
-    vector_store = store_in_vector_db(text_chunks, metadatas)
-    
-    # Create QA chain
-    qa_chain = create_qa_chain(vector_store)
-    
-    # User query
-    query = input("Enter your query (e.g., 'Find all products that have a price less than $50'): ")
-    
-    # Get answer
-    answer = qa_chain.run(query)
-    print("Answer:", answer)
+    try:
+        # Input Layer
+        url = input("Enter the product page URL: ")
+        
+        # Crawl the product page
+        print("Crawling product page...")
+        product_data = crawl_product_page(url)
+        
+        # Preprocess the text
+        combined_text = f"Title: {product_data['title']}\nPrice: {product_data['price']}\nDescription: {product_data['description']}"
+        text_chunks = preprocess_text(combined_text)
+        
+        # Prepare metadata
+        metadatas = [{'url': product_data['url'], 'title': product_data['title'], 'price': product_data['price']} for _ in text_chunks]
+        
+        # Store in vector database
+        print("Creating vector embeddings and storing in database...")
+        vector_store = store_in_vector_db(text_chunks, metadatas)
+        
+        # Create QA chain
+        qa_chain = create_qa_chain(vector_store)
+        
+        # User query
+        query = input("Enter your query (e.g., 'Find all products that have a price less than $50'): ")
+        
+        # Get answer
+        print("Generating answer...")
+        answer = qa_chain.invoke({"input": query})
+        print("Answer:", answer["answer"])
+        print("Sources:", [doc.metadata.get('url', 'Unknown') for doc in answer.get("context", [])])
+        
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        print("Please check your inputs and try again.")
+
+if __name__ == "__main__":
+    main()
