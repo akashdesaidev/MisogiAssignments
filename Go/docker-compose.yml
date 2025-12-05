@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - sqlite_data:/data
+    environment:
+      - SERVER_PORT=8080
+      - DATABASE_FILE=/data/app.db
+      - SERVER_MODE=release
+    restart: unless-stopped
+
+volumes:
+  sqlite_data:
